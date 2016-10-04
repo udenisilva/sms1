@@ -1,0 +1,842 @@
+# Execute this command to generate Sinhala resource file ->
+# native2ascii -encoding UTF-8 global_si.properties.native global_si.properties
+
+
+button.next=ඊළඟට
+button.submit=යොමු කරන්න
+button.reset=ප්‍රත්‍යාරම්භ කරන්න
+button.cancel=අවලංගු කරන්න
+button.back=ආපසු
+button.checkUser=Lookup
+button.proceedToPayment=ගෙවීම කරන්න
+amount=වටිනාකම (රු.)
+
+
+
+#Global messages
+globa.label.sinhala=\u0DC3\u0DD2\u0D82\u0DC4\u0DBD
+globa.label.english=English
+globa.label.tamil=\u0BA4\u0BAE\u0BBFnature
+
+globa.label.sinhala_en=Sinhala
+globa.label.tamil_en=Tamil
+
+global.home=මුල් පිටුව
+global.btn.submit=පිරුම
+global.btn.reset=යළි පිහිටුවීම
+global.btn.cancel=අවලංගුකිරීම
+global.btn.create=සෑදීම
+global.btn.modify=වෙනස් කිරීම
+global.btn.edit=සංස්කරණය
+global.btn.remove=ඉවත්කිරීම
+global.save=සුරැකීම
+global.btn.next=ඊළඟ
+global.username=පරිශීලක
+global.password=මුරපදය
+global.btn.forgotPassword=Forgot Password 
+global.lbl.title=හිමිකම
+global.btn.delete=මැකීම
+global.btn.add.to.table=Add to Table
+global.btn.update=Update
+global.change.password=Change Password 
+global.btn.logout=Logout
+global.btn.land.registry=ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලය
+global.btn.back.to.login=Back to Login
+global.btn.back=Back
+global.send.for.approval= අනුමැතියට යොමු කිරීම
+global.send.registar.review= රෙජිස්ට්‍රේර්ගෙ විමර්ශනයට යැවීම  
+
+#Document Submission Page Start --------------------------------------------------
+page.doc.sub.label.paymentReferenceNumber=ගෙවීම් යොමු අංකය
+page.doc.sub.label.documentSubmission=ලේඛන ඉදිරිපත්කිරීම
+
+page.doc.sub.label.priorRegNo=පෙර ලියාපදිංචි අංකය
+page.doc.sub.label.deedNo=ඔප්පු  අංකය
+page.doc.sub.label.deedDate=ඔප්පුව ලියාපදිංචි කල දිනය
+page.doc.sub.label.numberOfLands=ඉඩම් ගණන
+page.doc.sub.label.select=තෝරන්න
+page.doc.sub.label.rrrnNo=RRRN
+page.doc.sub.label.status=තත්වය
+page.doc.sub.label.deedNumber=ඔප්පු  අංකය
+
+page.doc.sub.label.nameOfAttestingNotaryOrJudge= සහතික කරන නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+page.doc.sub.label.nameOfApplicant=ඉල්ලුම්කරුගේ නම
+page.doc.sub.label.applicant.type=ඉල්ලුම්කරු වර්ගය
+page.doc.sub.label.number=අංකය
+page.doc.sub.label.dateOfDeed=ඔප්පුව ලියාපදිංචි කල දිනය
+page.doc.sub.label.deedNo=ඔප්පු  අංකය
+page.doc.sub.label.nature=ස්වභාවය
+page.doc.sub.label.priorRegistrationNo=පෙර ලියාපදිංචි අංකය/අංක
+page.doc.sub.label.numberOfLandEntries=ඉඩම් කොටස් ගණන
+page.doc.sub.label.paymentAmount=ලියාපදිංචි ගාස්තුව
+page.doc.sub.label.valueOrConsideration=වටිනාකම හෝ මුදල
+page.doc.sub.label.language=භාෂාව
+page.doc.sub.label.stampFees=දෙවන පිටපත සඳහා මුද්දර ගාස්තුව
+page.doc.sub.label.notaryOrJudgeName=නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+page.doc.sub.label.receiptNo=මුද්දර ගාස්තු කුවිතාන්සි  අංකය
+page.doc.sub.label.date=දිනය
+page.doc.sub.label.documentChecklist=ලේඛන පිරික්සුම් ලැයිස්තුව 
+page.doc.sub.label.documents=ලේඛන
+page.doc.sub.label.available=ඇත
+page.doc.sub.label.notAvailable=නැත
+page.doc.sub.label.notApplicable=අවශ්‍ය නැත
+
+page.doc.sub.label.documnets.needed.to.be.produced=ඉදිරිපත් කල යුතු ලේඛන
+page.doc.sub.label.any.other.reason.to.be.printed.in.the.report=වෙනත් කාරණා
+
+page.doc.sub.label.head.inaccurate.incomplete.documents=සාවද්‍ය / අසම්පූර්ණ ලේඛන
+page.doc.sub.label.head.print.inaccurate.incomplete.documents=සාවද්‍ය / අසම්පූර්ණ ලේඛන මුද්‍රණය
+
+page.doc.sub.alert.msg.noDocumentsAvailable=No documents are available for the given payment reference number!
+page.doc.sub.alert.msg.enterPaymentreference=Please enter the payment reference number!
+page.doc.sub.alert.msg.selectedDocumentNotAvailable=The selected document is not available!
+page.doc.sub.alert.msg.selectADocument=Please select a document!
+
+page.doc.sub.alert.msg.confirm.submission.for.registration=Are you sure you want to send this document for registration?
+page.doc.sub.alert.msg.confirm.submission.for.printing=Are you sure you want to print Inaccurate/Incomplete document report?
+
+page.doc.sub.alert.msg.confirm.to.sent.to.pending=Are you sure you want to send this document to pending status?
+
+page.doc.sub.alert.msg.confirm.submission.for.forwarding=Are you sure you want to forward this document to OR-RDLR Approval?
+
+page.doc.sub.alert.msg.confirm.enter.descripency=Please enter or select a Discrepancy!
+
+page.doc.sub.alert.msg.confirm.submission.for.print.acknowledgement=Are you sure you want to print Acknowledgement?
+
+page.doc.sub.alert.msg.no.documnets.marked.as.not.available=There are no documents marked as 'Not Available'!
+page.doc.sub.alert.msg.documnets.marked.as.not.available=There are documents marked as 'Not Available'!
+
+page.doc.sub.alert.msg.confirm.submission.for.forwarding.to.register.general=Are you sure you want to forward this document to Register General Approval?
+
+page.doc.sub.alert.msg.confirm.to.scan.docs=Are you sure you want to scan documents for this record?
+
+page.doc.sub.btn.forward=රෙජිස්ට්‍රාර් වෙත යොමු කරන්න
+page.doc.sub.btn.sendToPending="Pending" සඳහා  යොමු කෙරන්න
+page.doc.sub.btn.inaccurateReport=සාවද්‍ය / අසම්පූර්ණ ලේඛන
+page.doc.sub.btn.sendForRegistration=ලියාපදිංචියට යොමු කරන්න
+page.doc.sub.btn.scanForDocs=ලේඛන සුපිරික්සුම
+page.doc.sub.btn.printAcknowledgement= කුවිතන්සිය මුද්‍රනය කිරීම
+page.doc.sub.btn.viewFolio=පත් ඉරුව බැලීම
+page.doc.sub.btn.viewFolioTree=View Folio Tree
+page.doc.sub.btn..workFlowNoted=කාර්ය ප්‍රවාහ සටහන් 
+page.doc.sub.btn.workFlowNoted=කාර්ය ප්‍රවාහ සටහන් 
+page.doc.sub.btn.pending.note="Pending" සටහන් බලීම
+page.doc.sub.btn.search=සෙවීම
+
+page.doc.sub.btn.reject.and.generate.note=ප්‍රතික්ෂේපකර මුද්‍රනය කිරීම
+page.doc.sub.btn.approve=අනුමතකර මුද්‍රනය කිරීම
+page.doc.sub.btn.reject=ප්‍රතික්ෂේපකිරීම
+page.doc.sub.btn.view.pending.reason= "Pending" හේතුව  බලීම  
+page.doc.sub.btn.view.checklist=පිරික්සුම් ලැයිස්තුව බැලීම
+page.doc.sub.btn.generate.rejection.letter=ප්‍රතික්ෂේපකිරීමේ ලිපිය ( රෙජිස්ට්‍රාර් ජෙනෙරාල් වෙනුවෙන්)
+page.doc.sub.btn.forward.to.register.general=රෙජිස්ට්‍රාර් ජෙනෙරාල් වෙත යොමු කිරීම
+page.doc.sub.btn.view.observations.by.qr.edlr=OR-EDLR නිරීක්ෂණය
+
+page.doc.sub.btn.markDocumentAsPending=ලිපි "Pending" ලෙස සලකුනු කිරීම
+page.doc.sub.btn.sendToPendingPrintReport="Pending"  යොමු කර මුද්‍රණය කරන්න 
+
+
+page.doc.sub.btn.ok=OK
+
+page.doc.sub.success.message.sent.to.registration=The document was successfully sent to registration!
+page.doc.sub.success.message.forward.for.approval=The document was successfully forwarded for OR-RDLR approval!
+page.doc.sub.success.message.incomplete.documents.were.printed=Inaccurate/Incompleted documents were successfully printed!
+page.doc.sub.success.message.acknowledgement.prinetd=Acknowledegement was printed successfully!
+
+page.doc.sub.error.message.internal.error.occured=An internal error occurred! Please contact system administrator!
+page.doc.sub.error.message.internal.error.occured.try.later=An internal error occurred! Please try again later!
+
+page.doc.sub.label.head.forward.to.approval=රෙජිස්ට්‍රාර් වෙත යොමු කරන්න
+page.doc.sub.label.descripency=විෂමතා
+page.doc.sub.label.any.other.descripency=වෙනත් විෂමතා
+
+page.doc.sub.label.head.acknowledgement.report=Print Acknowledgement Report
+page.doc.sub.alert.msg.confirm.view.folio=Are you sure you want to view this folio?
+
+
+#Document Submission Page END --------------------------------------------------
+
+# WORKFLOW POPUP START ---------------------------------------------------------
+popup.workflow.page.title=කාර්ය ප්‍රවාහ සටහන් 
+popup.workflow.page.label.previous.notes=පූර්ව සටහන් 
+popup.workflow.page.label.user.name=පරිශීලක නම 
+popup.workflow.page.label.user.type=පරිශීලක වර්ගය
+popup.workflow.page.label.user.full.name=පරිශීලක සම්පූර්ණ නම
+popup.workflow.page.label.note=සටහන
+popup.workflow.page.label.date=දිනය
+popup.workflow.page.label.enter.a.note=කාර්ය ප්‍රවාහ සටහන් ඇතුළත්කිරීම
+popup.workflow.button.save=සුරකින්න
+popup.workflow.button.exit=ඉකුත් වීම
+
+popup.workflow.alert.msg.please.enter.workflow.note=Please enter a workflow note!
+popup.workflow.alert.msg.please.select.document=Please select a document first!
+popup.workflow.confirm.submission.workflow.note=Are you sure you want to submit this workflow note?
+
+popup.workflow.alert.workflow.note.successfully.added=Workflow note was successfully saved!
+popup.workflow.alert.workflow.note.failed.to.add.server.error=Internal server error! could not add the Workflow note!
+popup.workflow.alert.workflow.note.failed.to.add=Could not add the Workflow note!
+
+popup.workflow.alert.workflow.note.failed.to.load.server.error=Internal server error! could not load previous workflow notes!
+popup.workflow.alert.workflow.notes.not.available=No previous workflow notes are available to display!
+# WORKFLOW POPUP END ---------------------------------------------------------
+
+# DOCUMENT CHANGE HISTORY POPUP START ---------------------------------------------------------
+popup.document.change.history.page.title=Document Change History
+popup.document.change.history.page.label.user.name=UserName 
+popup.document.change.history.page.label.user.type=User Type 
+popup.document.change.history.page.label.user.full.name=User Full Name 
+popup.document.change.history.page.label.action=Action 
+popup.document.change.history.page.label.date=Date 
+
+popup.document.change.history.button.exit=Close
+
+popup.document.change.history.failed.to.load.server.error=Internal server error! could not load document change history!
+popup.document.change.history.not.available=No previous history actions are available to display!
+popup.document.change.history.msg.please.select.document=Please select a document first!
+
+page.doc.sub.btn..documentHistory=Document History 
+
+# DOCUMENT CHANGE HISTORY POPUP END ---------------------------------------------------------
+
+global.footermsg1=Copyright  
+global.footermsg1_1=2015 ICTA, Information and Communication Technology Agency of Sri Lanka. All Rights Reserved.
+global.footermsg2=Best Viewed in 1024x768 Resolution
+
+
+global.error.page.common_1=Please click
+global.error.page.common_2=here
+global.error.page.common_3=to go to the home page
+
+global.error.page.400.error.heading=Error - The syntax used in the URL is incorrect!
+global.error.page.400.error.description=Sorry! The link you followed is not valid.
+
+global.error.page.401.error.heading=Error - Authentication Failed!
+global.error.page.401.error.description=The URL you've requested, requires a correct username and password. Either you entered an incorrect username/password, or your browser doesn't support this feature.
+
+global.error.page.403.error.heading=Error - Permission Denied!
+global.error.page.403.error.description=Sorry! You do not have permission to retrieve the URL or link you requested.
+
+global.error.page.404.error.heading=Error - The requested object or URL, was not found on this server!
+global.error.page.404.error.description= Sorry! The link you followed is either outdated, inaccurate, or the server has been instructed not to let you have it.
+
+global.error.page.500.error.heading=Error - There was an internal server error!
+global.error.page.500.error.description= Sorry! The server encountered an internal error or misconfiguration and was unable to complete your request.
+
+#Initial Application
+global.initial.application.notary.number=නොතාරිස් අංකය 
+global.initial.application.notary.or.judge=නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+global.initial.application.nic.no=ජාතික හැඳුනුම්පත් අංකය
+global.initial.application.name=නම
+global.initial.application.address=ලිපිනය
+global.initial.application.email.to.notify=E-mail (දැනුම්දීම සඳහා)
+global.initial.application.phone.mobile=දුරකථන අංකය
+global.initial.application.prior.reg.no=පෙර ලියාපදිංචි අංකය
+global.initial.application.division=කොට්ඨාශය
+global.initial.application.volume=වෙළුම
+global.initial.application.folio=පත් ඉරුව
+global.initial.application.folio.no=පත් ඉරුව
+global.initial.application.deedNo=ඔප්පු  අංකය
+global.initial.application.nature=ස්වභාවය
+global.initial.application.nature.category=ස්වභාවය 
+global.initial.application.deedDate=ඔප්පුවේ දිනය
+global.initial.application.noOfLandEntries=ඉඩම්  ගණන
+global.initial.application.durationToRegister=ලියපදිංචි කිරීමට යන කාල සීමාව
+global.initial.application.stamp.fee=මුද්දර ගාස්තුව
+global.initial.application.amount=ලියාපදිංචිකිරීමෙ ගාස්තුව
+global.initial.application.shortcut.keys=Shortcut Keys [යතුරුපුවරු කෙටිමඟ]
+global.initial.application.shortcut.key.lease=Lease [බද්ද]
+global.initial.application.shortcut.key.morgadge=Mortgage [උකස]
+global.initial.application.shortcut.key.transfer=Transfer [මාරුව]
+global.initial.application.shortcut.key.rectification=Rectification [නිවැරදි කිරීම]
+global.initial.application.shortcut.key.declaration=Deceleration [ප්‍රකාශය]
+global.initial.application.shortcut.key.xxxxxx=Special Division [විශේෂ ..]
+global.btn.add=Add [එකතු කිරීම]
+global.initial.application.nooflands=ඉඩම් ගණන
+
+global.initial.application.no.of.docs=ලේඛන ගණන  
+global.initial.application.total.amount=මුළු එකතුව :
+global.initial.application.previous.payment=පූර්ව ගෙවීම්
+global.initial.application.modeofpayment=ගෙවූ ක්‍රමය
+global.initial.application.receiptno=කුවිතාන්සි අංකය
+global.initial.application.paidto=ගෙවීම් කරනු ලැබුවෙ
+global.initial.application.bankslipno=බැංකු ලදුපත
+global.initial.application.bankbranch=බැංකු ශාඛාව
+global.initial.application.date=දිනය
+global.initial.application.oprn=OPRN(Online Payment Ref No)
+global.initial.application.msg.notary.record.updated=Notary record updated for
+global.initial.application.msg.new.notary.record=New notary record added for  
+global.initial.application.error.msg.add.atleast.one.document=Unable to save the initial application. You should enter atleast one document
+global.initial.application.error.msg.unable.to.generate.referenceno=Unable to save the initial application. Error generating payment reference number
+global.initial.application.msg.application.save.success=Initial application saved successfully
+global.initial.application.error.msg.could.not.generate.file=Could not generate the file. Internal Server Error!
+global.initial.application.error.msg.no.document.selected=No document has been selected!
+global.initial.application.title=ඉල්ලුම් පත්‍ර බාර ගැනීම
+global.initial.application.page.message=ඔප්පුව ලියාපදිංචි කිරීම සඳහා ඉදිරිපත්වු පුද්ගලයාගේ විස්තර
+global.initial.application.validate.priorRegDivisionId=Please insert a Division   
+global.initial.application.validate.priorRegVolume=Please insert a Volume
+global.initial.application.validate.priorRegFolioNo=Please insert a Folio
+global.initial.application.validate.deedNo=Please insert a Deed numberf
+global.initial.application.validate.documentType=Please insert a nature
+global.initial.application.validate.deedDate=Please insert a Date of deed
+global.initial.application.validate.noOfLandEntries=Please insert a No of land entries
+global.initial.application.validate.durationToRegister=Please insert a Duration to register
+global.initial.application.error.select.atleast.one.doc=You should enter at least one document.
+global.initial.application.validate.finalAmount=Amount cannot be zero
+global.initial.application.validate.stampfee=Stamp fee cannot be zero
+global.initial.application.validate.receiptNo=Receipt number is empty
+global.initial.application.validate.paidTo=Paid to is empty
+global.initial.application.validate.bankSlipNo=Bank slip number is empty
+global.initial.application.validate.bankOrBranch=Bank or branch is empty
+global.initial.application.validate.bankSlipDate=Bank slip date is empty
+global.initial.application.validate.onlinePaymentRefNo=Online payment reference number is empty
+global.initial.application.validate.notaryNo=Notary Number is empty
+global.initial.application.validate.notaryJudgeName=Notary or Judge Name is empty
+global.initial.application.validate.nic=NIC Number is empty
+global.initial.application.validate.nic.invalid=NIC Number is invalid
+global.initial.application.validate.name=Name is empty
+global.initial.application.validate.addressOne=Address is empty
+global.initial.application.validate.email=e Mail address is empty
+global.initial.application.validate.email.invalid=e Mail address is invalid
+global.initial.application.validate.mobile=Phone/Mobile Number is empty
+global.initial.application.validate.mobile.invalid=Phone/Mobile Number is invalid
+global.initial.application.validate.prior.reg.no=Please enter at-least one prior registration number.
+global.initial.application.user.type=User Type
+global.initial.application.reference.no=යොමු අංකය
+global.initial.application.citizen.name=නම
+global.initial.application.judge.name=විනිසුරු / අධිකරණයේ නම
+global.initial.application.bank.name=බැංකුවේ නම
+global.initial.application.ministry.name=අමාත්‍යංශයේ නම
+global.initial.application.other.name=නම
+global.initial.application.msg.new.application.owner.added=New record added for 
+global.initial.application.msg.delete.row=Are you sure ?
+global.initial.application.document.type=ලේඛන වර්ගය
+
+global.appeal.refusal.application.rrrn=RRRN
+global.appeal.refusal.application.nameofnotary= සහතික කරන නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+global.appeal.refusal.application.folio.details=පත් ඉරුවෙ තොරතුරු
+global.appeal.refusal.application.number=අංකය
+global.appeal.refusal.application.deednumber=ඔප්පු  අංකය
+global.appeal.refusal.application.priorregistrationno=පෙර ලියාපදිංචි අංකය
+global.appeal.refusal.application.dateofdeed=ඔප්පුවේ දිනය
+global.appeal.refusal.application.numberoflandentries=ඉඩම් ඒකක ගනන
+global.appeal.refusal.application.nature=ස්වභාවය
+global.appeal.refusal.application.receipno=කුවිතාන්සි අංකය
+global.appeal.refusal.application.amountpaid=ගෙවන ලද මුදල
+global.appeal.refusal.application.valueofconsideration=වටිනාකම හෝ මුදල
+global.appeal.refusal.application.division=කොට්ඨාශය
+global.appeal.refusal.application.volume=වෙළුම
+global.appeal.refusal.application.foliono=පත් ඉරු අංකය
+global.appeal.refusal.application.new.foliono=නව පත් ඉරුව
+global.appeal.refusal.application.stampfees=මුද්දර ගාස්තුව
+global.appeal.refusal.application.receiptno= කුවිතාන්සි  අංකය
+global.appeal.refusal.application.date=දිනය
+global.appeal.refusal.application.province=පලාත
+global.appeal.refusal.application.district=දිස්ත්‍රික්කය
+global.appeal.refusal.application.divisionalsecretariat=ප්‍රා.ලේ.කොට්ඨාසය
+global.appeal.refusal.application.gramaniladaridivision=ග්‍රාම නිලධාරි කොට්ඨාසය
+global.appeal.refusal.application.localauthority=පළාත් පාලන ආයතනය
+global.appeal.refusal.application.villageortownandstreet=ගම හෝ නගරය හෝ වීථිය 
+global.appeal.refusal.application.documentchecklist=ලේඛන පිරික්සුම් ලැයිස්තුව 
+global.appeal.refusal.application.documents=ලේඛන
+global.appeal.refusal.application.available=ඇත 
+global.appeal.refusal.application.notavailable=නැත
+global.appeal.refusal.application.notapplicable=අවශ්‍ය නැත
+global.appeal.refusal.application.error.rrrn.not.found=Please select application for make appeal registration
+global.appeal.refusal.application.msg.save.success=The appeal/refusal registration was successfully forwarded to OR-RDLR...
+global.appeal.refusal.application.error.save.error=Appeal registration fail...
+global.appeal.refusal.application.error.has.registration=This RRRN has previous appeal registration. Cannot create another registration
+global.appeal.refusal.application.observations=නිරීක්ෂණය
+global.appeal.refusal.application.stated.by.or.edlr=OR-EDLR විසින් සටහන් කරන ලද විෂමතා
+global.appeal.refusal.application.initial.approve.as.a.new.registration=නව ලියපදිංචියක් ලෙස අනුමත කිරීම
+global.appeal.refusal.application.initial.approve.and.continue.in.same.registration=පවතින ලියපදිංචිකිරීම යටතේ අනුමත කිරීම
+global.check.appeal.and.refusal.registration.detail.title=Appeal and Refusal Registration Approval Detail
+global.check.appeal.and.refusal.registration.approval.detail.title=අභියාචනා -  අනුමතකිරීම/ප්‍රතික්ෂේපකිරීම
+global.appeal.refusal.application.error.has.approved=This RRRN has previously approved appeal registration. Cannot create another registration
+global.appeal.refusal.application.mesage.confirm.to.orrdrl=Are you sure you want to forward this document to Register Approval?
+global.appeal.refusal.application.alert.please.select.appeal=Please select application for make appeal request...
+global.appeal.refusal.application.alert.please.enter.correct.rrrn=Please enter correct RRRN
+
+
+#Appeal rejection note
+global.check.appeal.and.refusal.rejected.note.title=ප්‍රතික්ෂේපකල සටහන
+global.check.appeal.and.refusal.rejected.note.registed.under.law=ප්‍රතික්ෂේපකිරීමෙ වගන්තිය
+global.check.appeal.and.refusal.rejected.note.reason.for.refusal=ප්‍රතික්ෂේප කිරීමට  හේතුව
+global.check.appeal.and.refusal.rejected.note.any.other.reason=වෙනත් හේතු
+global.check.appeal.and.refusal.rejected.note.Appeal.under.law=අභියාචනයක් ඉදිරිපත් කිරීමට හැකි පනත
+global.check.appeal.and.refusal.rejected.note.submit.appeal.on.or.before=අභියාචනය ඉදිරිපත්කල යුතු අවසන් දිනය
+global.check.appeal.and.refusal.rejected.note.appeal.to.be.addressed.to=අභියාචනය යොමු කල යුත්තේ
+global.check.appeal.and.refusal.rejected.note.print.letter=ලිපිය
+global.check.appeal.and.refusal.rejected.note.print.title=ලිපිය
+global.check.appeal.and.refusal.rejected.note.conform.message=Are you sure you want to reject this record ?
+
+
+#Document Issuance
+global.check.document.issuance.btn.print.registration.letter=ලියාපදිංචිය තහවුරු කිරීමෙ ලිපිය
+global.check.document.issuance.btn.signature.pad=Signature Pad
+global.check.document.issuance.btn.ok=OK
+
+global.check.document.issuance.label.mode.of.delivery=බෙදාහැරීමෙ ක්‍රමය
+global.check.document.issuance.label.postal.reference.no=තැපැල් යොමු අංකය
+global.check.document.issuance.label.date=දිනය
+global.check.document.issuance.label.status=තත්වය : 
+
+global.check.document.issuance.message.postal.ref.no=Please enter postal reference no
+global.check.document.issuance.message.date.of.delivery=Please select date of delivery
+global.check.document.issuance.message.signaure=Please enter signature
+global.check.document.issuance.message.mode.of.delivery=Please select mode of delivery
+global.check.document.issuance.message.select.document=Please Select Document
+global.check.document.issuance.message.issue.on.save=Error on document issue
+global.check.document.issuance.message.save.success=Document issue success
+
+
+#Alteration Request
+global.check.document.issuance.btn.view.folio=පත් ඉරුව බැලීම
+global.check.document.issuance.btn.view.add=Add
+global.check.document.issuance.btn.view.forward.to.registrar=රෙජිස්ට්‍රාර් වෙත යොමු කිරීම
+
+global.check.document.issuance.label.deed.number=ඔප්පු අංකය 
+global.check.document.issuance.label.date.of.deed=ඔප්පුවෙ දිනය
+global.check.document.issuance.label.devision=කොට්ඨාශය
+global.check.document.issuance.label.volume=වෙළුම
+global.check.document.issuance.label.folio=පත් ඉරුව
+global.check.document.issuance.label.nature.of.alteration=සංශෝධනයෙ සොබාවය
+global.check.document.issuance.label.alteration.note=සංශෝධන සටහන
+
+#Requested for Registered Information
+global.check.requested.for.registered.information.title.page.header=Request Registration Informtion 
+
+global.check.requested.for.registered.information.label.requested.folio.no=Requested Folio No
+global.check.requested.for.registered.information.label.requested.folio.details=Requested Folio Details
+global.check.requested.for.registered.information.label.no.of.requested.folios=No of Requested Folios :
+global.check.requested.for.registered.information.label.total.amount=Total Amount :
+
+global.check.requested.for.registered.information.message.select.requester.type=Please select requester type
+global.check.requested.for.registered.information.message.error.add.request.details=Please add folio details...
+global.check.requested.for.registered.information.message.error.add.request.credit.limit.not.enough=Available credit amount not enough to place this request
+global.check.requested.for.registered.information.message.error.select.reject.reason=Please select reject reason...
+global.check.requested.for.registered.information.message.error.select.reuest=Please select pending request...
+global.check.requested.for.registered.information.request.successfully.set.to.registar=Request successfully send to OR-AOIA approval..Payment receipt can be generate.
+global.check.requested.for.registered.information.confirm=Money Received?
+global.check.requested.for.registered.information.confirm.reject=Are you sure you want to reject this record ?
+global.check.requested.for.registered.information.confirm.approve=Are you sure you want to approve this record ?
+
+global.check.requested.for.registered.information.btn.cancel.request=Cancel Request
+global.check.requested.for.registered.information.btn.print.receipt=Print Receipt
+global.check.requested.for.registered.information.btn.received.amount=Received Amount
+global.check.requested.for.registered.information.btn.received.amount=Received Amount
+global.check.requested.for.registered.information.btn.send.email=Send e-mail
+
+global.check.requested.for.registered.information.btn.search=Search
+global.check.requested.for.registered.information.btn.new.form=New Form
+global.check.requested.for.registered.information.btn.reset=Reset
+global.check.requested.for.registered.information.label.orrnNo=ORRN No
+global.check.requested.for.registered.information.label.citizen.type=Citizen Type
+global.check.requested.for.registered.information.label.nic.passport.no=NIC/Passport Number
+global.check.requested.for.registered.information.label.access.code=Access Code
+global.check.requested.for.registered.information.message.not.available.in.system=A folio with entered details is not currently available in the system or incorrect details...
+
+
+
+#Check Ownership
+global.check.ownership.title=රෙජිස්ට්‍රාර් විසින් විෂමතා පරීක්ෂා කර බැලීම
+global.check.ownership.from.date=දින සිට\:
+global.check.ownership.to.date= දින දක්වා \:
+global.check.ownership.date=දිනය
+global.check.ownership.rrn.no=RRRN අංකය
+global.check.ownership.deed.no=ඔප්පු අංකය
+global.check.ownership.nature=ස්වභාවය
+global.check.ownership.status=තත්වය
+global.check.ownership.total.no.of.doc.to.check=පරීක්ෂා කිරීම සඳහා මුලු ලේඛන ගණන : 
+global.check.ownership.total.no.of.doc.to.pending=පරීක්ෂාකිරීමට ඇති ලේඛන ගණන:
+global.check.ownership.discrepancy.stated.by=  OR-EDLR  විසින් දෙනු ලබන විෂමතා
+global.button.revert.to.previous=පසුපසට යොමුකිරීම
+global.button.send.to.pending="Pending" ලෙස යොමු කරන්න
+global.button.approve=අනුමත කිරීම
+global.button.view.follo=පත් ඉරුව බැලීම
+global.button.incomplete.report=සාවද්‍ය / අසම්පූර්ණ වාර්තාව
+global.check.ownership.conf.msg.approve=Are you sure you want to approve this record ?
+global.check.ownership.conf.msg.send.to.pending=Are you sure you want to send this record as pending ?
+global.check.ownership.conf.msg.revert.to.previous=Are you sure you want to revert this record as previous ?
+global.check.ownership.send.to.pending="Pending" ලෙස යොමු කරන්න
+global.check.ownership.send.to.pending.msg=ඔප්පුව ලියාපදිංචි කිරීම සඳහා ඉදිරිපත්වු පුද්ගලයාගේ විස්තර
+global.check.ownership.registered.under.law=ප්‍රතික්ෂේපකිරීමෙ වගන්තිය
+global.check.ownership.reason=හේතුව
+global.check.ownership.reason.any.othre=වෙනත් හේතු
+global.check.ownership.appeal.under.law=අභියාචනයක් ඉදිරිපත් කිරීමට හැකි පනත
+global.check.ownership.submit.appeal.date=අභියාචනය ඉදිරිපත්කල යුතු දිනය
+global.check.ownership.appeal.addressed.to=අභියාචනය යොමු කල යුත්තේ
+global.check.ownership.success.message.sendtopending.printed=Send to pending documents were successfully printed!
+global.check.ownership.date.error=From date should be less than To date..
+global.check.ownership.empty.date.error=Please select From and To date..
+global.check.ownership.success.message.update.approved.status=Successfully update the document in to approved status
+global.check.ownership.error.inable.to.update.doc=Unable to update the document
+global.check.ownership.success.message.update.previous.status=Successfully revert document in to previous
+global.check.ownership.error.unable.to.generate.inaccurate.report=Unable to generate inaccurate/incomplete report.
+global.check.ownership.report.send.to.pending="Pending" ලෙස යොමුකල වාර්තාව   
+global.check.ownership.validate.registeredUnderLaw=  ප්‍රතික්ෂේපකරන වගන්තිය තෝරන්න
+global.check.ownership.validate.reason= හේතුව තෝරන්න
+global.check.ownership.validate.appealedUnderLaw=අභියාචනයක් ඉදිරිපත් කිරීමට හැකි පනත තෝරන්න
+global.check.ownership.validate.appealSubmitDate=අභියාචනය ඉදිරිපත්කල යුතු දිනය තෝරන්න
+global.check.ownership.validate.addressedTo=අභියාචනය යොමු කල යුත්තේ
+global.check.ownership.validate.incompleteDocumentComment=Enter comment
+global.check.ownership.msg.view.folio=Are you sure you want to view this folio?
+global.check.ownership.msg.view.folio.tree=Are you sure you want to view this folio tree?
+global.check.ownership.pending.type=Select pending type
+global.check.ownership.correcton.date=වැරදි සාදා ඉදිරිපත් කල යුතු කාල සීමාව  
+global.check.ownership.msg.select.pending.type=Please select pending type
+global.check.ownership.msg.select.correction.date=Please select correction date
+
+#Registration
+page.lris.success.message.sent.to.registration.approval=The document was successfully sent to registration approval.
+page.lris.label.registration=ලියාපදිංචිකිරීම
+page.lris.label.normal.registration=Normal Registration
+page.lris.label.ldo.registration=LDO ලියාපදිංචිකිරීම
+#Scan Document Page Start --------------------------------------------------
+page.scan.doc.page.titile=ලේඛන සුපිරික්සුම
+
+page.scan.doc.label.rrn=RRRN
+page.scan.doc.label.nameOfAttestingNotaryOrJudge=නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+page.scan.doc.label.deedNo=ඔප්පු අංකය
+page.scan.doc.label.deedDate=ඔප්පුවෙ දිනය
+page.scan.doc.label.nature=ස්වභාවය
+
+page.scan.doc.label.division=කොට්ඨාශය
+page.scan.doc.label.volume=වෙළුම
+page.scan.doc.label.folioNumber=පත් ඉරුව:
+page.scan.doc.label.new.folioNumber=නව පත් ඉරු අංකය
+page.scan.doc.label.seq=Seq
+page.scan.doc.label.document=ලේඛනය
+page.scan.doc.label.no.of.pages=පිටු ගණන
+page.scan.doc.label.browse.scan.file=Browse Scan File
+page.scan.doc.label.upload=උත්පතනය
+
+
+page.scan.doc.error.message.enter.rrn=Please enter an RRRN to continue
+page.scan.doc.error.message.select.document=Please select a document to continue
+page.scan.doc.error.message.internal.error.occured=An internal error occurred! Please contact system administrator!
+page.scan.doc.error.document.with.rrn.not.available=A document is not available with given RRRN
+page.scan.doc.error.selected.document.not.available=The selected document is not available
+
+page.scan.doc.sub.btn.ok=OK
+
+page.scan.doc.alert.message.select.rrrn=Please select a RRRN
+page.scan.doc.alert.message.update.browser.file.upload=Please update your browser to upload
+page.scan.doc.alert.message.file.upload.fail.message.check.size=File upload failed, please check the file size and reupload!
+page.scan.doc.alert.message.file.upload.fail.message.error.occured=File upload failed, An error occurred!
+
+#Scan Document Page End --------------------------------------------------
+
+
+#Registration
+global.registration.title=ලියාපදිංචි කිරීම
+global.registration.lable.name.of.attesting.notary=සහතික කරන නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+global.registration.lable.type.of.applicant=ඉල්ලුම්කරු වර්ගය
+global.registration.lable.number=අංකය
+global.registration.lable.number.of.land.entries=ඉඩම් ඒකක සංඛ්‍යාව
+global.registration.lable.name.of.survey=මැනුම්කරුගේ නම
+global.registration.lable.name.of.land=ඉඩමේ නම
+global.registration.lable.lot.no=කැබිලි අංකය
+global.registration.lable.lot.number=කැබිලි අංකය
+global.registration.lable.tp.number=හි.පි අංකය
+global.registration.lable.plan.no=සිතියමේ අංකය
+global.registration.lable.date.of.plan=සිතියමේ දිනය
+global.registration.lable.asst.no=වරිපනම් අංකය
+global.registration.lable.grant.no=දීමනා අංකය
+global.registration.lable.grant.date=දීමනා  දිනය
+global.registration.alert.fill.mandotery.fields=Please fill all the required fields !
+global.registration.title.folio.information=පත්තීරුවෙ තොරතුරු
+global.registration.lable.tp.number.plan=හි.පි අංකය/සිතියම
+global.registration.lable.plan.number=සැලැස්මේ අංකය
+global.registration.title.extend=බිම් ප්‍රමාණය
+global.registration.lable.acers=අ
+global.registration.lable.roots=රූ
+global.registration.lable.purches=ප
+global.registration.lable.hectier=හෙ
+global.registration.lable.squrefeet=වර්ග අඩි - 
+global.registration.lable.length=දිග  
+global.registration.lable.width=පළල
+global.registration.lable.others=වෙනත්
+global.registration.lable.village.or.town.and.street=ගම හෝ නගරය සහ වීථිය
+global.registration.lable.pattu=පත්තුව
+global.registration.lable.korale=කෝරළේ
+global.registration.lable.divisional.secretarial=ප්‍රා.ලේ.කොට්ඨාශය
+global.registration.lable.local.authority=පළාත් පාලන ආයතනය
+global.registration.lable.north=උ 
+global.registration.lable.east=නැ
+global.registration.lable.west=බ
+global.registration.lable.south=ද
+global.registration.lable.user.defined=User Defined
+global.registration.lable.other.specification=වෙනත්
+global.registration.lable.other.transaction.type=Transaction Type
+global.registration.lable.brought.forward.folio=ඉදිරියට ගෙන අවේ:
+global.registration.lable.cross.reference.folio=හරස් සටහන්:
+global.registration.lable.date.of.registry=Date of Registry
+global.registration.lable.grantors.name=දීමනාකරුවෝ (සම්පූර්ණ නම සහ පදිංචිය)
+global.registration.lable.grantees.name=ලැබුම්කරුවෝ (සම්පූර්ණ නම සහ පදිංචිය)
+global.registration.lable.nature.and.particulars=අන්සතු කිරීම සහ බැඳීම් පිළිබඳ විස්තර සහ ස්වභාවය
+global.registration.lable.remarks=වෙනත් කරුණු
+global.registration.lable.with.land=ඉඩම සමඟ
+global.registration.lable.comments=Comments
+global.registration.lable.reference.to.title.registration=හිමිකම් ලියාපදිංචි කිරීමේ යොමුව:
+global.registration.lable.title.number=හිමිකම්  අංකය
+global.registration.lable.cadastral.map.no=කැඩැස්තර සිතියම් අංකය
+page.lris.success.message.revert.to.privious=පසුපසට යොමුකිරීම
+global.registration.lable.folio.rec.updated=Folio information updated
+global.registration.lable.receiptNo= කුවිතාන්සි  අංකය
+global.registration.lable.special.division=විශේෂ කොට්ඨාශ
+
+
+#Condominium Registration
+global.registration.lable.administrative.district= දිස්ත්‍රික්කය
+global.registration.cond.lable.name.schema.number.blocks=යෝජනා ක්‍රමයේනම සහ කට්ටියේ අංකය (ඇතොත්)
+global.registration.cond.lable.number.of.storeys=මහල්, පතුල් මහල් සහ ඒකක ගණන
+global.registration.cond.lable.name.of.architect= 5(1) (i) (f) වන වගන්තිය යටතේ සහතිකය නිකුත් කරන ගෘහහිර්මණ ශිල්පියාගේ හෝ ඉංජිනේරුතැනගේ නම
+global.registration.cond.lable.text.one=සභාධිපත්‍ය දේපල පිඹුරක් නම් (117 වන අධිකාරය වූ) ලේඛන ලියාපදිංචි කිරිමේ ආඥාපනත යටතේ පූර්වග ඉඩම් ලියාපදිංචි කිරීම සම්බන්ධ යොමුව :
+global.registration.cond.lable.text.two=නැවත බෙදා වෙන්කිරීම හෝ ඒකාබද්ධ කිරීමේ පිඹුරක් හෝ එකකය අන්සතු කිරීමක් නම් සභාධිපත්‍ය දේපල ලේඛණයේ පූර්වග ලියාපදිංචි කිරීම සම්බන්ධ යොමුව:
+global.registration.lable.top=මුදුන
+global.registration.lable.bottom=පතුල
+global.registration.lable.unit=ඒකකය
+global.registration.cond.lable.description=විස්තරය
+global.registration.cond.lable.unit.number.with.floor.area=එක් එක් එකකයේ බිම් ප්‍රමාණය සහිතව එකක අංක :
+global.registration.cond.lable.unit.or.symbol=එකකයේ අංකය හෝ සංකේතය
+global.registration.cond.lable.floor.area=බිම් ප්‍රමාණය
+global.registration.cond.lable.Reference.to.subsequent.registration.of.plan=නැවත බෙදා වෙන්කිරීම හෝ ඒකාබද්ධ කිරීමේ පිඹුරක් හෝ ඒකකය අන්සතු කිරීම පිළිබඳව පසුව කරන ලද ලියාපදිංචිය පිළිබඳ යොමුව
+
+#Special Division Registration
+global.registration.sd.lable.textarea.one=හිමිකම හා අයිතිය පිළිගනු ලබූ අයිතිකරුගේ ද, අනික් සෑම පුද්ගලයෙකුගේ ද නම සහ පදිංචිය
+global.registration.sd.lable.textarea.two=නිකුත්කළ යුතු හිමිකම් සහතිකයේ පන්තිය හා ස්වභාවය
+
+#User Registration
+global.user.registration.title=පරිශ්‍රීලක ලියාපදිංචි කිරීම
+global.user.registration.lbl.usertype=පරිශ්‍රීලක වර්ගය
+global.user.registration.lbl.notaryno=නොතාරිස් අංකය
+global.user.registration.lbl.fullname=සම්පූර්ණ නම
+global.user.registration.lbl.address=ලිපිනය
+global.user.registration.lbl.nicpassport=ජාතික හැඳුනුම්පත් අංකය/ විදේශ ගමන් බලපත්‍ර අංකය/ රියදුරු බලපත්‍ර අංකය:
+global.user.registration.lbl.primarytelephone=දුරකථන අංකය
+global.user.registration.lbl.secondarytelephone=වෙනත් දුරකථන අංක
+global.user.registration.lbl.email=විද්‍යුත් තැපෑල
+global.user.registration.lbl.reason=අයදුම් කිරීමට හේතුව
+global.user.registration.lbl.type=ඉල්ලුම් කරන ලද තොරතුරු වර්ගය
+global.user.registration.lbl.uploaddocument=ලේඛන උඩුගත කිරීම
+global.user.registration.lbl.document=ලේඛන
+global.user.registration.lbl.entertext=ලේඛනය පිලිබඳ සටහන්
+global.user.registration.lbl.preview=පූර්වදර්ශනය
+global.user.registration.lbl.upload=උඩුගත කිරීම
+global.user.registration.lbl.description=කරුණාකර පහත සඳහන් තොරතුරු පුරවා යොමු කරන්න
+global.user.registration.success=User registered successfully. Forward to OR-AOIA approval.
+global.user.registration.unable.to.register=Unable to register the user
+global.user.registration.unable.to.register.try.again=Unable to register the user.Please try again
+global.user.registration.upload.at.least.one.doc=You should upload at least one document.
+global.btn.submitbtn=යොමු කරන්න
+global.approve.online.registration.title=මාර්ගගත අයදුම  අනුමත  කිරීම
+global.approve.online.registration.date=දිනය
+global.approve.online.registration.from=සිට
+global.approve.online.registration.to=දක්වා
+global.approve.online.registration.orrn=ORRN
+global.approve.online.registration.name=නම
+global.approve.online.registration.approval.status=අනුමත තත්වය
+global.approve.online.registration.status=සක්‍රිය / අක්‍රිය  
+global.approve.online.registration.btn.search=සෙවීම
+global.approve.online.registration.oiarn=Online Information Access Registration Number
+global.approve.online.registration.generate.letter=ලිපිය සැකසීම
+global.approve.online.registration.reset.password=Reset Password
+global.approve.online.registration.incomplete.report=අසම්පූර්ණ වාර්තාව
+global.approve.online.registration.view.incomplete.report=අසම්පූර්ණ වාර්තාව බැලීම
+global.approve.online.registration.view.request=අයදුම බැලීම
+global.approve.online.registration.message.successfully.updated=Successfully Update the record
+global.approve.online.registration.message.unable.to.update=Unable to update the record
+global.approve.online.registration.message.user=Please select a user!
+global.approve.online.registration.message.user.not.available=Selected user not available
+global.approve.online.registration.message.no.records=No records found
+global.approve.online.registration.inaccurate.incomplete.report=සාවද්‍ය / අසම්පූර්ණ වාර්තාව
+global.approve.online.registration.print.report= වාර්තාව මුද්‍රණය කිරීම
+global.approve.online.registration.correction=පහත සඳහන් වැරදි නිවරදි කල යුතුයි
+global.approve.online.registration.descripencies=විෂමතා
+global.approve.online.registration.other.reason=වෙනත් හේතු
+global.approve.online.registration.btn.add=Add
+global.approve.online.registration.print.incomplete.report=අසම්පූර්ණ වාර්තාව මුද්‍රණය කරන්න
+global.approve.online.registration.msg.incomplete.report=Are you sure you want to save incomplete report details ?
+global.approve.online.registration.msg.incomplete.report.print=Are you sure you want to view and print incomplete report ?
+global.approve.online.registration.msg.enter.todate=Please enter to date
+global.approve.online.registration.msg.enter.fromdate=Please enter from date
+global.approve.online.registration.msg.enter.searchdata=Please enter at least one search term
+global.approve.online.registration.msg.generate.letter=Are you sure you want to generate letter ?
+global.approve.online.registration.print.genarate.letter=ලිපිය මුද්‍රණය කරන්න
+global.approve.online.registration.msg.reset.password=Are you sure you want to reset this password ?
+global.approve.online.registration.print.reset.password=Print Reset Password
+global.registration.alert.select.province=Please select Province
+global.registration.alert.select.district=Please select District
+global.registration.alert.select.divisional.secretarial=Please select Divisional Secretarial
+global.registration.alert.select.local.authority=Please select Local Authority
+
+
+#View Folio Page Start --------------------------------------------------
+page.view.folio.title=පත් ඉරුව බැලීම
+page.view.folio.lable.division=කොට්ඨාශය
+page.view.folio.lable.volume=වෙළුම
+page.view.folio.lable.folio.no=පත් ඉරුව
+
+page.view.folio.lable.name.of.attesting.notary=නොතරිස්වරයා / විනිසුරුවරයාගෙ නම
+page.view.folio.lable.number=අංකය
+page.view.folio.lable.deed.number=ඔප්පු අංකය
+page.view.folio.lable.date.of.deed=ඔප්පු දිනය
+page.view.folio.lable.nature=ස්වභාවය
+page.view.folio.lable.prior.registration.no=පෙර ලියාපදිංචි අංකය
+page.view.folio.lable.number.of.land.entries=ඉඩම් ඒකක සංඛ්‍යාව
+page.view.folio.lable.amount.paid=ගෙවන ලද මුදල
+page.view.folio.lable.receipt.no= කුවිතාන්සි  අංකය
+page.view.folio.lable.folio=පත් ඉරුව
+page.view.folio.lable.value.or.consideration=වටිනාකම හෝ මුදල
+page.view.folio.lable.stamp.fees=මුද්දර ගාස්තුව
+page.view.folio.lable.date=දිනය
+page.view.folio.lable.stamp.fee.receipt.no=මුද්දර ගාස්තු ගෙවූ ලදුපත් අංකය
+page.view.folio.lable.duplicate.stamp.fees=දෙවන පිටපත සඳහා ගෙවූ මුද්දර ගාස්තු  
+
+page.view.folio.lable.dro.division=D.R.O's Division
+page.view.folio.lable.wardNoAndName=පලාත් පාලන චන්ද කොට්ඨාශය ( නම හා අංකය )
+
+
+page.view.folio.lable.name.of.land=ඉඩමේ නම
+page.view.folio.lable.name.of.survey=මැනුම්කරුගේ නම
+page.view.folio.lable.lot.number=කැබිලි අංකය
+page.view.folio.lable.asst.no=වරිපනම් අංකය
+page.view.folio.lable.number.plan=සැලැස්මේ අංකය
+page.view.folio.lable.number.tp=හි.පි අංකය
+page.view.folio.lable.date.of.plan=සැලැස්මේ දිනය
+page.view.folio.title.extend=බිම් ප්‍රමාණය
+page.view.folio.lable.acers=අ
+page.view.folio.lable.roots=රූ
+page.view.folio.lable.purches=ප
+page.view.folio.lable.hectair=හෙ
+page.view.folio.lable.squre_feet=වර්ග අඩි - 
+page.view.folio.lable.length=දිග
+page.view.folio.lable.width=පළල
+page.view.folio.lable.others=වෙනත්
+page.view.folio.lable.unit.no.or.symbol=එකකයේ අංකය හෝ සංකේතය
+page.view.folio.lable.floor.area=බිම් ප්‍රමානය
+page.view.folio.lable.reference.to.subsequent.registratio.of.plan=නැවත බෙදා වෙන්කිරීම හෝ ඒකාබද්ධ කිරීමේ පිඹුරක් හෝ එකකය අන්සතු කිරීම පිළිබඳව පසුව කරන ලද ලියාපදිංචිය පිළිබඳ යොමුව
+page.view.folio.lable.unit.number.with.floor.area.for.each.unit=එක් එක් එකකයේ බිම් ප්‍රමානය සහිතව එකක අංක 
+page.view.folio.lable.folio.transactions=Folio Transactions
+page.view.folio.lable.reference.prior.registration.document.ordinance=සභාධිපත්‍ය දේපල පිඹුරක් නම් (117 වන අධිකාරය වූ) ලේඛන ලියාපදිංචි කිරිමේ ආඥාපනත යටතේ පූර්වග ඉඩම් ලියාපදිංචි කිරීම සම්බන්ධ යොමුව :
+page.view.folio.lable.reference.prior.registration.register.of.condomonium.property=නැවත බෙදා වෙන්කිරීම හෝ ඒකාබද්ධ කිරීමේ පිඹුරක් හෝ එකකය අන්සතු කිරීමක් නම් සභාධිපත්‍ය දේපල ලේඛණයේ පූර්වග ලියාපදිංචි කිරීම සම්බන්ධ යොමුව:
+page.view.folio.lable.accessory.units=අතිරේක ඒකක
+page.view.folio.lable.top=මුදුන
+page.view.folio.lable.bottom=පතුල
+page.view.folio.lable.unit=ඒකක
+page.view.folio.lable.description=විස්තර
+
+page.view.folio.lable.province=පලාත
+page.view.folio.lable.divisional.secretariat=ප්‍රා.ලේ.කොට්ඨාසය
+page.view.folio.lable.local.authority=පළාත් පාලන ආයතනය
+page.view.folio.lable.korale=කෝරළේ
+page.view.folio.lable.pattu=පත්තුව
+page.view.folio.lable.district=දිස්ත්‍රික්කය
+page.view.folio.lable.g.n.division=ග්‍රාම නිලධාරී කොට්ඨාශය
+page.view.folio.lable.village.or.town.and.street=ගම හෝ නගරය හෝ වීථිය 
+
+
+page.view.folio.lable.name.and.schema.and.no.of.blocks=යෝජනා ක්‍රමයේනම සහ කට්ටියේ අංකය (ඇතොත්)
+page.view.folio.lable.no.of.stories.basements.units=මහල්, පතුල් මහල් සහ එකක ගණන
+page.view.folio.lable.name.of.architect.or.engineer.issuing.certificate=5(1) (i) (f) වන වගන්තිය යටතේ සහතිකය නිකුත් කරන ගෘහහිර්මණ ශිල්පියාගේ හෝ ඉංජිනේරුතැනගේ නම
+
+page.view.folio.lable.boundaries=මායිම්
+page.view.folio.lable.north=උතුරට
+page.view.folio.lable.east=නගෙනහිරට
+page.view.folio.lable.west=බටහිරට
+page.view.folio.lable.south=දකුනට
+page.view.folio.lable.user.defined=User Defined
+page.view.folio.lable.other.specification=වෙනත්:
+
+page.view.folio.lable.scan.image.of.folio=පත් ඉරුවෙ අනුරූපය
+
+page.view.folio.lable.brought.forward.folio=ඉදිරියට ගෙන ආවේ:
+page.view.folio.lable.cross.reference.folio=හරස් සටහන්:
+
+page.view.folio.lable.reference.to.title.registration=හිමිකම් ලියාපදිංචි කිරීමෙ යොමුව
+page.view.folio.lable.title.no=හිමිකම්  අංකය
+page.view.folio.lable.cadastrail.map.no=කැඩැස්තර සිතියම් අංකය
+
+page.view.folio.lable.date.of.registry=Date of Registry
+page.view.folio.lable.rrrn=RRRN
+page.view.folio.lable.grantors.name=දීමනාකරුවෝ (සම්පූර්ණ නම සහ පදිංචිය)
+page.view.folio.lable.grantees.name=ලැබුම්කරුවෝ (සම්පූර්ණ නම සහ පදිංචිය)
+page.view.folio.lable.grantors.name.in.full=දීමනාකරුවෝ (සම්පූර්ණ නම සහ පදිංචිය)
+page.view.folio.lable.grantees.name.in.full=ලැබුම්කරුවෝ (සම්පූර්ණ නම සහ පදිංචිය)
+page.view.folio.lable.nature.and.particulars=අන්සතු කිරීම සහ බැඳීම් පිළිබඳ විස්තර සහ ස්වභාවය
+page.view.folio.lable.remarks=වෙනත් කරුණු
+
+page.view.folio.lable.with.land=ඉඩම සමඟ
+page.view.folio.lable.comments=Comments
+
+page.view.button.exit=පිටවීම
+page.view.button.view.alterations=සංශෝධන
+
+page.view.folio.folio.with.given.reference.not.available=A folio with given reference is not available!
+page.view.folio.folio.error.message.internal.error.occured=An internal error occurred! Please contact system administrator!
+
+page.view.folio.alert.select.transaction.to.view.details=Please select the transaction to view details!
+page.view.folio.alert.transaction.details.not.available=Transaction details are not available for the selected transaction!
+
+page.view.folio.lable.exit=පිටවීම
+page.view.folio.lable.view.alterations=සංශෝධන
+
+page.view.folio.folio.confirm.message.to.exit=Are you sure you want to leave this page?
+
+#Alterations popup Start --------------------------------------------------
+
+page.view.folio.alteration.popup.title.alterations=සංශෝධන
+page.view.folio.alteration.popup.label.date=දිනය:
+page.view.folio.alteration.popup.label.ref=යොමුව:
+page.view.folio.alteration.popup.label.alteration=සංශෝධන:
+page.view.folio.alteration.popup.message.no.alteartions.are.available=No alteration records are available for this folio!
+
+#Alterations popup End --------------------------------------------------
+
+#View Folio Page End --------------------------------------------------
+
+
+#View folio tree
+global.folio.tree.title=Folio Tree View
+global.folio.tree.folio.reference=පත් ඉරුව
+
+global.folio.tree.folio.tree=Folio Tree
+global.folio.tree.search.folio.tree=පත් ඉරුව සෙවීම
+global.folio.tree.land.registry=ඉඩම් රෙජිස්ට්‍රාර් කාර්යාලය
+global.folio.tree.division=කොට්ඨාශය
+global.folio.tree.volume.number=වෙළුම
+global.folio.tree.folio.number=පත් ඉරුව
+global.folio.tree.serach=සෙවීම
+global.folio.tree.print=Print Folio Tree 
+
+
+#View folio tree end
+
+
+#Reload Local Credit account
+global.reloadlocal.credit.account.title.page.header=Reload Local Credit account
+global.reloadlocal.credit.account.current.account.balance=Current account balance
+global.reloadlocal.credit.account.new.balance.to.account=Add new amount to account
+ 
+global.reloadlocal.credit.account.validate.new.amount=New amount can't contain letters or special characters
+global.reloadlocal.credit.account.validate.new.amount.select.user=Please select valid online user
+
+global.reloadlocal.credit.account.error.save=Unable to save the new amount.Please try again
+global.reloadlocal.credit.account.msg.save=Successfully saved..
+
+#Refuse Letter
+
+global.refuse.acrion.S1 = ප්‍රතික්ෂේප කරන ලද ඔප්පුව
+global.refuse.acrion.S2 = ප්‍රතික්ෂේප කිරිමේ හේතුවට අදාළව නිවැරදි කිරීම් සහිත දිවුරුම් ප්‍රකාශය
+global.refuse.acrion.S3 = ඈපැලට ඉල්ලීමේ ලිපියක්
+global.refuse.acrion.S4 = ප්‍රමාදයට හේතු දැක්වූ ලිපියක්(ඈපැල ඉදිරිපත් කිරීමට වූ ප්‍රමාදය )
+global.refuse.acrion.S5 = හිග දඩ ගෙවූ රිසිට්පත
+global.refuse.acrion.S6 = ලියාපදිංචි කිරීමේ ගාස්තු ගෙවූ රිසිට්පත
+global.refuse.acrion.S7 = වෙනත්
+
+global.refuse.screen.label.refuse.document.list = ඉදිරිපත් කල යුතු ලියවිලි
+page.doc.sub.alert.msg.select.submite.document = කරුණාකර ඉදිරිපත් කල යුතු ලියවිලි තෝරන්න
+page.doc.sub.alert.msg.enter.address = කරුණාකර ලිපිනය ඉදිරිපත් කරන්න
+
+
+

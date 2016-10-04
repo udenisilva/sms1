@@ -1,0 +1,17 @@
+package com.lk.std.dao;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.lk.std.constant.OLSIMSEnumConstant.UseOfLandType;
+
+import lk.nbro.lsmis.model.UseOfLand;
+
+public interface UseOfLandRepository extends CrudRepository<UseOfLand, Long> {
+
+  public UseOfLand findByUseOfLandType(UseOfLandType useOfLandType);
+
+  public List<UseOfLand> findByApplicationType(String applicationType);
+
+}

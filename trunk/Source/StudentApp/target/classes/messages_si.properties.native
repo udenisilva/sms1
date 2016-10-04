@@ -1,0 +1,667 @@
+# Execute this command to generate Sinhala resource file ->
+# native2ascii -encoding UTF-8 global_si.properties.native global_si.properties
+
+#------------------------Application processing start-------------------------
+application.main.button.label=අයදුම්පත
+attachments.main.button.label=ඇමුණුම්
+cost.estimate.main.button.label=පිරිවැය ඇස්තමේන්තුව
+payment.main.button.label=ගෙවීම
+investigation.main.button.label=පරීක්ෂණය
+clearance.issue.main.button.label=නිශ්කාෂණ නිකුත්
+ren.mod.appeal.main.button.label=ස්ථාවර අළුත් කිරීම / වෙනස් කරන්න / අභියාචනා
+status.main.button.label=තත්ත්වය
+application.review.summary=අයැදුම්පත් සමාලෝචනය
+office.use.only.button.label=කාර්යාලය භාවිත
+google.map.button.label=සිතියම
+
+label.current.status=වර්තමාන තත්ත්වය
+label.reveiwer.comment=පරීක්ෂක අදහස් 
+label.forward.application=ඉදිරි නිරීක්ෂණ සදහා යොමුකිරීම් 
+label.application.received.by=අයදුම්පත බාරගත් අයගේ නම 
+
+review.history.header=සමාලෝචන ඉතිහාසය
+review.history.action=ක්‍රියාකාරකම් 
+review.history.completed.user=සම්පූර්ණ කරන ලද පරිශීලක
+review.history.completed.date=සම්පූර්ණ කරන ලද දිනය
+review.history.assigned.user=පවරපු පරිශීලක
+
+my.home.heading.text=මුල්පිටුව
+my.pending.count.text=මගේ විභාග වෙමින් පවතින කටයුතු 
+
+home.summay.table.No=අංකය
+home.summay.table.sent.date=යවපු  දිනය
+home.summay.table.sent.by=එවනු ලැබූ පුද්ගලයා 
+home.summay.table.current.status=වර්තමාන තත්ත්වය
+
+contact.main.button.label=Contact
+register.main.button.label=Register
+application.review.button.label=සුරකින්න සහ ඉදිරි පැවරීම 
+
+#------------------------Application processing end-------------------------
+
+#------------------------User Profile start-------------------------
+user.profile.title=පරිශීලක පැතිකඩ
+user.profile.username=පරිශීලක නාමය
+user.profile.staff.name=නිලධාරියාගේ  නම
+user.profile.email=විද්යුත් තැපෑල
+user.profile.designation=තනතුර
+user.profile.staff.id=නිලධාරියාගේ අංකය 
+user.profile.button.value=යාවත්කාලීන කරන්න 
+#------------------------User Profile end-------------------------
+
+
+#------------------------Change Password start-------------------------
+change.password.title=මුරපදය වෙනස් කරන්න
+change.password.old=පැරණි මුරපදය
+change.password.new=නව මුරපදය
+change.password.confirm=මුරපදය තහවුරු කරන්න
+change.password.button.value=මුරපදය යාවත්කාලීන කරන්න
+#------------------------Change Password end-------------------------
+
+#------------------------Register User start-------------------------
+find.user=පරිශීලක සොයන්න
+find.button.label=සොයන්න
+create.new.button.label=නව යොමුව 
+create.update.user.heading=නව පරිශීලකයෙක් සැදීම හෝ යාවත්කාලීන කරන්න
+register.username=පරිශීලක නාමය
+register.password=මුරපදය
+register.confirm.password=මුරපදය තහවුරු කරන්න
+register.display.name=ප්‍රදර්ශන වන   නාමය
+register.is.admin=පරිපාලක වේ ද 
+register.active.status=ක්‍රියාකාරී තත්ත්වය
+register.Districts=දිස්ත්රික්ක
+register.add.District.button.label=එක් කරන්න
+register.email=විද්යුත් තැපෑල
+register.staff.id=නිලධාරියාගේ අංකය 
+register.staff.name=නිලධාරියාගේ  නම
+register.designation=තනතුර
+create.udpate.button.label=නව /යාවත් කාලීන
+reset.button.label=Reset
+
+register.error.empty.username=පරිශීලක නාමය ඇතුලත් කරන්න
+register.error.invalid.username=පරිශීලක නාමය පවතී, තවත් උත්සාහ කරන්න
+register.error.empty.password=මුරපදය ඇතුලත් කරන්න
+register.error.empty.confirm.password=තහවුරු මුරපදය ඇතුලත් කරන්න
+register.error.invalid.password=මුරපදය නොගැලපේ, නැවත උත්සාහ කරන්න
+register.error.empty.display.name=ප්‍රදර්ශන නම ඇතුලත් කරන්න
+register.error.empty.districts=අවම වශයෙන් එක් දිස්ත්රික්කයේ ඇතුලත් කරන්න
+register.error.staff.id=නිලධාරියාගේ අංකය ඇතුලත් කරන්න
+register.error.staff.name=නිලධාරියාගේ නම ඇතුලත් කරන්න
+register.error.designation=තනතුර ඇතුලත් කරන්න
+
+#------------------------Register User end-------------------------
+
+#----------------------- Application ------------------#
+
+#-------------------------Headings-----------------------------------#
+application.head=LAD අයදුම්පත
+application.head.lab=LAB අයදුම්පත
+application.head.li=LI අයදුම්පත
+application.head.LAP=LAP අයදුම්පත
+
+application.head.renew.modify=අළුත් කිරීම / වෙනස් කිරීම / අභියාචනා /C of C
+application.form.label.constructionInfo=ඉදිකිරීම් තොරතුරු
+application.form.label.attachments=ඇමුණුම්
+
+application.form.heading.particularsOfApplicant=අයදුම්කරු පිළිබඳ විස්තර
+application.form.heading.particularsOfApplicant.small=අයදුම්කරුගේ තොරතුරු ඇතුලත් කරන්න
+application.form.heading.presentUseOfLand=ඉඩමේ යෝජිත භාවිතය
+application.form.heading.presentUseOfLand.small=(සුදුසු සලකුණු තුල  ලකුණ යොදන්න)
+application.form.heading.whereProposedConstructionsAreToBeDone=යෝජිත භාවිතයට අදාල භුමිය පිළිබද  විස්තර
+application.form.heading.whereProposedConstructionsAreToBeDone.small=ඉඩම් තොරතුරු ඇතුලත් කරන්න
+application.form.heading.any.other.related.special.information=වෙනත් 
+application.form.heading.briefly.describe.access.root=පරික්ෂාවට ලක්කළ යුතු ස්ථානය 
+application.form.heading.briefly.describe.access.root.small=ළඟම ඇති ප්‍රධාන නගරයේ සිට හෝ ප්‍රධාන ස්ථානයේ සිට  ළගාවිය  හැකි  අයූරු  සැකෙවින් විස්තර කරන්න.
+application.form.heading.if.proposed.purpose.sublotting.land=යෝජිත භාවිතය  ඉඩම් අනුබෙදුමක් නම්
+application.form.heading.if.proposed.purpose.sublotting.land.small=අනුබෙදුම් විස්තර දන්න
+application.form.heading.supportDescription=ළඟම ඇති ප්‍රධාන නගරයේ සිට හෝ ප්‍රධාන ස්ථානයේ සිට  ළගාවිය  හැකි  අයූරු  සැකෙවින් විස්තර කරන්න .
+application.form.heading.anyOtherRelatedInformation=වෙනත් අදාළ හෝ විශේෂ තොරතුරු / ප්‍රකාශ 
+application.form.heading.anyOtherRelatedInformation.small=අයදුම්පත අදාළ වන වෙනත්  තොරතුරු ඇතුලත් කරන්න.
+application.form.heading.officeUseOnly=කාර්යාලය ප්‍රයෝජනය සඳහා පමණයි
+application.form.heading.acknowledgment=අයදුම්පත ලැබුණු බව සලකුණු කිරීම
+
+application.form.heading.useofland=ඉඩමේ යෝජිත භාවය 
+
+application.form.heading.generalInformation=සාමාන්‍ය තොරතුරු
+application.form.heading.generalInformation.small=සාමාන්‍ය තොරතුරු ඇතුලත් කරන්න
+application.form.heading.incidentInformation=සිද්ධිය සම්බන්ධයෙන් තොරතුරු
+application.form.heading.incidentInformation.small=සිද්ධිය සම්බන්ධයෙන් තොරතුරු ඇතුලත් කරන්න
+application.form.heading.affectedPeople=පීඩාවට පත් ජනතාව (සඳහන් අතරින්)
+application.form.heading.affectedPeople.small=පීඩාවට පත් ජනතාව තොරතුරු ඇතුලත් කරන්න
+
+application.form.heading.particular.of.relevant.land=යෝජිත භාවිතය සඳහා අදාළ ඉඩම් පිළිබඳ විස්තර
+
+#-------------------------End Headings-----------------------------------#
+
+
+#-------------------------Labels---------------------------------------#
+application.form.label.initialsName=මුලකුරු සමඟ නම
+application.form.label.nic=හැදුනුම්පත් අංකය
+application.form.label.permanentAddress=ස්ථිර ලිපිනය
+application.form.lable.occupation=රැකියාව
+application.form.lable.telNo=දුරකථන අංකය
+application.form.lable.telLand=ස්ථාවර 
+application.form.lable.telMobile=ජංගම දුරකථන අංකය
+application.form.lable.telFax=ෆැක්ස් අංකය
+application.form.lable.telemail=විද්යුත් තැපෑල
+application.form.lable.ifTheApplicantIsNotTheOwnerOfLand=අයදුම්කරු ඉඩමේ අයිතිකරැ නොවේ නම්
+application.form.lable.ownerOrganizationName=හිමියන්ගේ / සංවිධානයේ නම
+application.form.lable.ownerOrganizationAddress= හිමියන්ගේ / සංවිධානයේ ලිපිනය
+application.form.lable.OwnerNICBusinessOrganizationNo=හිමියන්ගේ ජාතික හැඳුනුම්පත් අංකය
+application.form.lable.OwnerNICBusinessRegistrationNo=ව්යාපාරික ලියාපදිංචි අංකය
+
+application.form.lable.UseoflandResidential=නේවාසික
+application.form.lable.UseoflandInstitutional=ආයතනික
+application.form.lable.UseoflandCommercial=වාණිජ
+application.form.lable.UseoflandIndustrial=කර්මාන්ත
+
+application.form.lable.UseoflandConstructionandrepairroads=ඉදිකිරීම් සහ අලුත්වැඩියා මාර්ග
+application.form.lable.UseoflandStartingAMetalQuarry=ගල්වල ආරම්භ කිරීම 
+application.form.lable.UseoflandRenewalOfAQuarryPermit=ගල්වල අලුත් කිරීම 
+application.form.lable.UseoflandGemMining=මැණික් පතල් කැනීම 
+application.form.lable.UseoflandSandMining=වැලි කැනීම 
+application.form.lable.UseoflandExcavationOrDumping of soils=පස් කැණීම් සහ පිරවීම 
+application.form.lable.UseoflandMiniTypeHydroPowerProjects=කුඩා පරිමාණ ජලවිදුලි බලාර ි
+application.form.lable.UseoflandWaterSupplyAndDrainageSystem=ජල සම්පාදන හා ජලාපවහන 
+application.form.lable.UseoflandGraphiteMining=මිනිරන් කැනීම
+application.form.lable.UseoflandConstructionOfPylons=සංඥා කුළුණු ඉදිකිරිම 
+application.form.lable.UseoflandIrrigationProjects=වාරිමාර්ග ව්යාපෘති
+application.form.lable.UseoflandMediumAndLargeScaleCultivation=මධ්යම හා මහා පරිමාණ වගා කටයුතු
+application.form.lable.UseoflandExcavationOrDumpingOfSoils=පස් කැණීම් සහ ඉවතලීම
+application.form.lable.UseoflandWaterSupplyAndDrainageSystem=ජල සම්පාදන හා ජලාපවහන පද්ධතිය
+
+application.form.lable.ProposedConstructionBrief=යෝජිත ඉදිකිරීම් ගොඩනැගිලි සමග සම්බන්ධව සිටි අනෙකුත් භාවිතය සඳහා නම්, කෙටියෙන් විස්තර කරන්න
+
+application.form.lable.addressOfSite=ස්ථානයේ ලිපිනය 
+application.form.lable.assessmentNo=වරිපනම් අංකය
+
+application.form.lable.deedNo=ඉඩමේ ඔප්පුව අංකය
+
+application.form.lable.deedNot=ඉඩමේ ඔප්පුව අංකය
+
+application.form.lable.paid.to.NBRO= NBRO වෙත ගෙවනලදී  
+
+application.form.lable.district=දිස්ත්‍රිකය 
+application.form.lable.districts=දිස්ත්‍රිකය/ දිසා
+application.form.lable.divisionalSecretariat=ප්රාදේශීය ලේකම් කොට්ඨාශය 
+application.form.lable.divisionalSecretariats=ප්රාදේශීය ලේකම් කොට්ඨාශය /කොට්ඨාශ
+application.form.lable.localGovernamentAuthority=පළාත් පාලන ආයතනය
+application.form.lable.localGovernamentAuthoritys=පළාත් පාලන ආයතනය /ආයතන
+application.form.lable.gramaNiladhariDivision=ග්‍රාම නිලධාරී වසම
+application.form.lable.gramaNiladhariDivisions=ග්‍රාම නිලධාරී වසම /වසම් 
+application.form.lable.gNDivisionNo=ග්‍රාම නිලධාරී වසමේ අංකය
+application.form.lable.street=වීදිය
+application.form.lable.gPSCoordinate=ජී.පී.එස් ඛණ්ඩාංක
+application.form.lable.latitude=අක්ෂාංශ
+application.form.lable.longitude=දේශාංශ
+application.form.lable.surveyPlanNo=මිනින්දෝරු සැලසුෙම් අංකය
+application.form.lable.lotNo=කැබලි අංකය
+application.form.lable.lotNos=කැබලි අංකය / අංක  
+application.form.lable.date=දිනය
+application.form.lable.extentOfLand=ඉඩමේ විශාලත්වය
+application.form.lable.acres=අක්කර
+application.form.lable.roods=රූඩ්
+application.form.lable.perches=පර්චස්
+application.form.lable.presentUseOfLand=ඉඩෙම් වර්තමාන භාවිතය
+application.form.lable.withBuilding=ගොඩනැගිලි සහිත
+application.form.lable.bareLand=හිස් භුමි
+
+application.form.lable.cultivated.Type.Of.Crop=වගාකර ඇතේ  කුමන භෝග වර්ගයද 
+
+application.form.lable.other=වෙනත්  
+application.form.lable.otherSpecify=වෙනත්  (විශේෂයෙන් සදහන් කරන්න  )
+application.form.lable.contactno=දුරකථන අංකය
+
+application.form.lable.choosefile=ගොනුව තෝරන්න
+application.form.lable.noFileChosen=ගොනුව තෝරා නැත
+application.form.lable.contactNo=දුරකථන අංකය
+
+application.form.lable.appliedDate=අයඳුම් කරන ලද දිනය
+application.form.lable.applicationCompletedDate=ඉල්ලුම් පත්රය සම්පුර්ණ කල දිනය
+application.form.lable.allRequiredDocumentSubmitted=සියලු ලියකියවිලි බාර දී තිබේද යන වග 
+application.form.lable.yes=ඔව් 
+application.form.lable.dropdown.no=නැත
+
+application.form.lable.totalEstimatedAmount=ඇස්තෙම්න්තුගත මුළු මුදල
+application.form.lable.applicationReceivedBy=අයදුම්පත බාරගනු ලැබූ පුද්ගලයා 
+application.form.lable.receiptNo=කුවිතාන්සි අංකය
+application.form.lable.designation=තනතුර
+application.form.lable.acceptedAmount=භාරගත්  මුළු මුදල 
+application.form.lable.payment.accepted.date=ගෙවීම් භාරගත්  දිනය 
+application.form.lable.paymentDate=ගෙවීම් කල දිනය 
+application.form.lable.app.received.date=අයදුම්පත ලැබුණු දිනය
+application.form.lable.app.issued.to=වාර්තාව භාරගත් අයගේ නම  
+
+application.form.lable.Application reference No =අයදුම්පත් අංකය
+application.form.lable.dateOfReceiptOfApplication=අයදුම්පත ලැබුණු දිනය
+application.form.lable.amountPaid=ගෙවන ලද මුදල
+application.form.lable.nameOfRecipientOfApplication=අයදුම්පත බාරගනු ලැබූ පුද්ගලයා 
+application.form.lable.reportIssuedTo=වාර්තාව භාරගත් අය 
+
+application.form.lable.institute=ආයතනය
+application.form.lable.requestedBy= ඉල්ලුම් කරන කරන ලද පුද්යලයා 
+application.form.lable.designation=තනතුර
+application.form.lable.address=ලිපිනය
+application.form.lable.applicationReceivedDate=අයදුම්පත ලැබුණු දිනය
+application.form.lable.instituterefNo=ආයතනයේ අනු අංක
+
+application.form.lable.description=විස්තර
+application.form.lable.type=වර්ගය
+application.form.lable.dateforLandslideOccuredOnly=දිනය (නායයෑම් සඳහා පමණයි)
+
+application.form.lable.name=නම
+application.form.lable.gramaNiladhariOffice=ග්‍රාම නිලධාරී කාර්යාලය
+application.form.lable.incident=සිද්ධිය
+
+application.form.label.A = අ
+application.form.label.B = ආ 
+application.form.label.C = ඇ 
+application.form.label.D = ඈ 
+application.form.label.E = ඉ
+application.form.label.F = ඊ
+application.form.label.G = උ
+application.form.label.H = ඌ
+application.form.label.I = එ
+application.form.label.J = ඒ
+application.form.label.K = ඔ
+application.form.label.L = ඕ 
+application.form.label.N = ඖ 
+
+application.form.label.purchse.sale.of.land=ඉඩම් මිලදී ගැනීම / විකිණීම
+application.form.label.sublotting.amalgamation.lots=කැබලි අනුබෙදුම් / ඒකාබද්ධ කිරීම
+application.form.label.issue.of.longterm.shortterm.land.permits=දිගු කාලීන හෝ කෙටි කාලීන ඉඩම් බලපත්ර හෝ ඔප්පු නිකුත් කිරීම
+application.form.label.land.investigation.prior.construction.building=ගොඩනැගිල්ල ඉදි කිරීමට පෙර ඉඩම් පරීක්ෂණය කිරීම
+application.form.label.land.investigation.for.the.purpose.bank.loan=බැංකු ණය සඳහා ඉඩම් පරීක්ෂණය කිරීම
+
+application.form.label.if.other=වෙනත්
+application.form.label.address.of.site=ස්ථානයේ ලිපිනය 
+application.form.label.asset.no=වරිපනම් අංකය 
+application.form.label.deed.no=ඉඩමේ ඔප්පුව අංකය
+
+application.form.label.type.of.use=පරිහරණ  ආකාරය 
+application.form.label.no.of.building=ගොඩනැගිලි සංඛ්යාව
+application.form.label.lot.nos=කැබලි අංකය ./ අංක
+application.form.label.lot.no=කැබලි අංකය .
+application.form.label.total.extent.each.building=එක් එක් ගොඩනැගිල්ලේ මුළු ඉඩම් ප්‍රමාණය (වර්ග මීටර)
+application.form.label.no.of.floors.and.height.of.building=මහල් හා ගොඩනැගිල්ලේ උස 
+application.form.label.extent.of.ground.floor=බිම් මහලේ ප්රමාණය ප්‍රමාණය (වර්ග මීටර)
+application.form.label.residential=නේවාසික
+application.form.label.commercial=වාණිජ
+application.form.label.industrial=කර්මාන්ත
+application.form.label.institutional=ආයතනික
+application.form.label.other=වෙනත්
+
+application.form.label.upload.file=ගොනුව උඩුගත කරන්න
+application.form.label.no.of.lots=කැබලි ගණන
+application.form.label.minimum.extent.of.a.lot=බිම් කට්ටියක අවම බිම් ප්‍රමාණය 
+application.form.label.lots.for.building=එම බිම් කට්ටවල යෝජිත භාවිතය ගොඩනැගිලක්  නම් 
+application.form.label.applied.date=අයඳුම් කල දිනය
+application.form.label.app.completed.date=ඉල්ලුම් පත්රය සම්පුර්ණ කල දිනය
+application.form.label.required.document.submited=සියලු ලියකියවිලි බාර දී තිබේද යන වග 
+
+application.form.label.renewal=අළුත් කිරීම
+application.form.label.modification=සංශෝදනය කිරීම
+application.form.label.appeal=අභියාචනාධිකරණය
+application.form.label.cofc=C of C
+
+application.form.label.owner.name=හිමිකරුගේ නම
+application.form.label.owner.address=හිමිකරුගේ ලිපිනය
+application.form.label.owner.nic=හිමිකරුගේ ජාතික හැඳුනුම්පත් අංකය
+application.form.label.date.requested=ඉල්ලුම්කරන ලද දිනය 
+application.form.lable.extended.date =දීර්ග ලද දිනය 
+application.form.lable.land.area=ඉඩම් පමාණය
+application.form.lable.nature=ඉදිකිරීම් ස්වභාවය
+application.form.lable.noOfStairs=පඩි පෙළවල්  ගණන
+application.form.lable.survey.name=මිනින්දෝරුවගේ නම  
+application.form.lable.reg.no=ලියාපදිංචි අංකය
+application.form.lable.status=තත්ත්වය
+application.form.lable.select.status=තත්ත්වය තෝරන්න
+ 
+
+application.form.lable.no=අංකය
+application.form.lable.name=නම
+application.form.lable.grama.Niladhari.Office=ග්‍රාම නිලධාරී වසම
+application.form.lable.grama.Niladhari.No=ග්‍රාම නිලධාරී වසමේ අංකය
+application.form.lable.grama.Niladhari.Tele=ග්‍රාම නිලධාරී වසමේ දුරකතන අංකය
+application.form.lable.address=ලිපිනය
+application.form.lable.incident=සිද්ධිය
+
+#-------------------------End Labels---------------------------------------#
+
+#-------------------------messages----------------------------------------#
+application.common.message.mandatory.field=කරුණාකර සියලු අනිවාර්ය තොරතුරු ඇතුලත් කරන්න
+application.common.message.success.save=සාර්ථකයි 
+application.common.message.error.save.title=දෝෂයක් සිදුවිය 
+application.common.message.error.save.message=කරුණාකර නැවත උත්සාහ කරන්න
+application.common.message.error.tel.format=වලංගු නොවන දුරකථන අංකයක් 
+application.common.message.error.amount.format=ඇතුලත් කරන ලද අගය මුල්‍යමය අගයක් නොවේ 
+application.common.message.field.already.added=දැනටමත් එකතු ඇත 
+
+application.message.select.district=දිස්ත්‍රිකය තෝරන්න
+application.message.select.district.sectratariat=ප්රාදේශීය ලේකම් කොට්ඨාශය තෝරන්න
+application.message.select.local.authority=පළාත් පාලන ආයතනය තෝරන්න
+application.message.select.grama.niladari=ග්‍රාම නිලධාරී වසම තෝරන්න
+application.message.select.type=වර්ගය තෝරන්න
+
+application.message.empty.name=අයදුම්කරුගේ නම ඇතුලත් කරන්න
+application.message.empty.nic=අයදුම්කරුගේ ජාතික හැඳුනුම්පත් ඇතුළු කරන්න
+application.message.empty.address=ලිපිනය ඇතුලත් කරන්න
+application.message.empty.tpnomber=දුරකථන අංකය ඇතුලත් කරන්න
+applicatoin.message.empty.mobile=ජංගම දුරකථන අංකය ඇතුලත් කරන්න
+applicatoin.message.empty.fax=ෆැක්ස් අංකය ඇතුලත් කරන්න
+application.message.empty.owner.organisation.name=හිමිකරුගේ / සංවිධාන නම ඇතුලත් කරන්න
+application.message.empty.owner.organisation.address=හිමිකරුගේ / සංවිධාන ලිපිනය ඇතුලත් කරන්න
+application.message.empty.owner.organisation.nic=අයිතිකරුගේ ජාතික හැදුනුම්පතේ හෝ ව්යාපාරයේ ලියාපදිංචි අංකය ඇතුලත් කරන්න
+application.message.empty.owner.organisation.reg.no=හිමිකරුගේ / සංවිධාන ලියාපදිංචි අංකය ඇතුලත් කරන්න
+application.message.empty.proposed.use.of.land=ඉඩෙම් යෝජිත භාවිතය හිස් විය නොහැක  
+application.message.empty.address.site=කරුණාකර ස්ථානයේ ලිපිනය අතුලත්  කරන්න  
+application.message.empty.asset.no=වරිපනම් අංකයක් ඇතුලත් කරන්න
+application.message.empty.deed.no=ඔප්පුව අංකය ඇතුලත් කරන්න
+application.message.empty.lot.no=කැබලි අංකය ඇතුලත් කරන්න
+application.message.empty.district=දිස්ත්‍රිකය තෝරන්න
+application.message.empty.district.secretariat=ප්රාදේශීය ලේකම් කොට්ඨාශය තෝරන්න
+application.message.empty.local.authority=පළාත් පාලන ආයතනය තෝරන්න
+application.message.empty.grama.niladari=ග්‍රාම නිලධාරී වසම තෝරන්න
+application.message.empty.survey.plan.no=මිනුම් සැලැස්මේ අංකය අතුලත් කරන්න 
+application.message.empty.survey.plan.date=මිනුම් සැලැස්මේ දිනය අතුලත් කරන්න 
+application.message.empty.route.details=මාර්ගය විස්තර ඇතුලත් කරන්න
+application.message.empty.access.root.file=උඩුගත කිරීමට උඩුගත බොත්තම භාවිතා කරන්න.
+application.message.empty.applied.date=අයදුම් කල දිනය ඇතුලත් කරන්න
+application.message.empty.all.req.document.submitted=Please select all required document submitted
+application.message.empty.select.approve.user=කරුණාකර අනුමත කරන පරිශිලකයාව තෝරන්න.
+
+application.message.empty.institute=ආයතනය ඇතුලත් කරන්න
+application.message.empty.requested.by=කරුණාකර ඉල්ලුම් කරන ලද පුද්ගලයා අතුලට් කරන්න 
+application.message.empty.designation=තනතුර ඇතුලත් කරන්න
+application.message.empty.address=ලිපිනය ඇතුලත් කරන්න
+application.message.empty.app.received.date=කරුණාකර අයදුම්පත ලැබුණු දිනය තෝරන්න
+application.message.empty.description=විස්තරය ඇතුලත් කරන්න
+application.message.empty.type=කරුණාකර වර්ගය තෝරන්න
+application.message.empty.landslide.occured.date=කරුණාකර නායයාම සිදුවූ දිනය තෝරන්න
+
+
+application.message.empty.date=කරුණාකර දිනය තෝරන්න
+application.message.empty.name=නම ඇතුලත් කරන්න
+application.message.empty.designation_Area=තනතුර හෝ ප්‍රදේශය ඇතුලත් කරන්න
+
+application.message.empty.cost.name=කරුණාකර පිරිවැය අයිතමයේ  නම තෝරන්න
+application.message.empty.cost.amount=කරුණාකර පිරිවැය අයිතමයේ මුදල තෝරන්න.
+application.message.empty.cost.add.cost.items=පිරිවැය භාණ්ඩ එකක් හෝ ඊට වැඩි ගණනක් එක්කරන්න 
+
+application.message.empty.file.upload=කරුණාකර උඩුගත කිරීමට පෙර ගොනුවක් තෝරා
+application.message.file.size.is.large=ගොනු විශාලත්වය උඩුගත කිරීමට ඉතා විශාලය 
+
+application.message.incorrect.amount.paid=නිවැරදි ගෙවුම් මුදල ඇතුලත් කරන්න
+application.message.zero.balance.payment=කිසිදු ශේෂ ගෙවීම නොමැත 
+application.message.empty.paid.date=කරුණාකර ගෙවුම් දිනය තෝරන්න
+application.message.empty.no.of.installment=වාරික අංකය ඇතුලත් කරන්න
+application.message.empty.amount.paid=ගෙවන ලද මුදල ඇතුලත් කරන්න
+
+#-------------------------end messages----------------------------------------#
+
+#-------------------------buttons----------------------------------------#
+application.form.btn.save=සුරකින්න
+application.form.btn.print=මුද්රණය
+application.form.btn.reset=නැවත සකසන්න
+application.form.btn.upload=උඩුගත කරන්න
+application.form.btn.delete=මකන්න 
+application.form.btn.addMore=තව එකතු කරන්න
+application.form.btn.cancel=අවලංගු කරන්න
+application.form.btn.add=එක් කරන්න
+application.form.btn.search=සොයන්න
+#-------------------------End buttons----------------------------------------#
+
+#------------------------End Application-------------------------
+
+
+#---------------- Payment Acknowledgement--------------------------------#
+paymentAcknowledgement.main.button.label=ගෙවීම් ලැබුණු බව
+
+
+#---------------- Payment Information--------------------------------#
+
+application.form.label.paymentInformation=ගෙවීමේ තොරතුරු
+application.form.label.totApprovedCost=මුළු අනුමත පිරිවැය
+application.form.label.paymentMethod=ගෙවීමේ ක්‍රමය 
+application.form.label.paidStatus=ගෙවීමේ තත්ත්වය
+application.form.lable.paidDate=ගෙවුම් දිනය
+application.form.lable.invoiceNo=ඉන්වොයිසිය අංකය
+application.form.lable.chequeNo=චෙක්පත් අංකය  
+application.form.lable.bankRefNo=බැංකු අනු අංකය 
+
+application.form.label.noofInstallments=වාරික ගණන
+application.form.lable.amountPaid=ගෙවන ලද මුදල
+application.form.lable.balancePayment=ඉතිරි මුදල 
+
+
+
+#-------------------------Investigation----------------------------------#
+#-------------------------Headings---------------------------------------#
+investigation.head=විමර්ශන
+#-------------------------End Headings---------------------------------------#
+
+#------------------------Labels----------------------------------------#
+investigation.form.table.affectedPerson=බලපෑම එල්ල වූ පුද්ගලයා
+investigation.form.table.incident=සිද්ධිය
+investigation.form.table.gramaNiladari=ග්‍රාම නිලධාරී
+investigation.form.table.Address=ලිපිනය
+investigation.form.label.village=ගම / ස්ථානය
+investigation.form.label.locationABMP=ABMP සිතියම මත ස්ථානය අංකය
+investigation.form.label.investigationDate=විමර්ශන දිනය
+investigation.form.label.incidentDateTime=දිනය හා සිදුවීම සිදුවූ වෙලාව 
+investigation.form.label.incidentTime=සිදුවීම සිදුවූ වෙලාව 
+investigation.form.label.informedDate=දැනුම් දුන් දිනය
+investigation.form.label.typeOfHazzard=උවදුරු වර්ගය
+investigation.form.typeOfHazzard.slopeFailure=බෑවුම්
+investigation.form.typeOfHazzard.cuttingFailure=කැපීම අසමත් වීම
+investigation.form.label.rainGauge=වැසි මාපකය
+investigation.message.select.rainGauge=වැසි මාපකය තෝරන්න
+investigation.form.label.rainGaugeNo=වැසි මාපකය අංකය
+investigation.form.label.rainGaugeDistance=වැසි මාපකය සිට දුර
+investigation.form.label.typeOfLandslide=නායයාම් වර්ගය
+investigation.form.typeOfLandslide.rockFall=ගල් පෙරලීම් 
+investigation.form.typeOfLandslide.debrisFlow=සුන්බුන් ප්රවාහ
+investigation.form.label.sizeLandslide=නායයාම් තරම
+investigation.form.label.landslideHeight=උස (m)
+investigation.form.label.landslideWidth=පළල (m)
+investigation.form.label.landslideLength=දිග (m)
+investigation.form.label.landslideArea=ප්‍රදේශය (m)
+investigation.form.label.commentHazzard=ඇතිවීමේ අදහස්
+investigation.form.label.levelofHazzard=උවදුරු පෙළ
+investigation.form.hazardLevel.high=අදික 
+investigation.form.hazardLevel.moderate=මධ්යස්ථ
+investigation.form.hazardLevel.low=අඩු
+investigation.form.label.qualitativeRisk=ගුණාත්මක අවධානම
+investigation.form.label.elementRisk=අවදානමේ ස්වභාවය 
+investigation.form.header.affected.noofFamiliesaffect=පීඩාවට පත් වූ පවුල් සංඛ්යාව
+investigation.form.header.affected.noofFamiliesRelocate=නැවත පදිංචි පවුල් සංඛ්යාව
+investigation.form.header.affected.noofInjured=තුවාලවූ සංඛ්යාව
+investigation.form.header.affected.noofDeaths=මියගිය සංඛ්යාව
+investigation.form.header.affected.noofMissing=නැතිවු සංඛ්යාව
+investigation.form.label.peopleAffected=පීඩාවට පත් ජනතාව
+investigation.form.label.impact=නිවාස / වාසස්ථානය මත ඇති කරන බලපෑම :(LI ඉල්ලීම සඳහා පමණි )
+investigation.form.header.impact.destroyedHouses=මුළුමනින්ම විනාශ වූ නිවාස සංඛ්යාව
+investigation.form.header.impact.partialydestroyedHouses=අර්ධ වශයෙන් විනාශ වූ නිවාස සංඛ්යාව
+investigation.form.header.impact.riskHouses=අවදානමක් නිවාස සංඛ්යාව 
+investigation.form.label.damages=අනෙකුත් ගොඩනැගිලි / ව්යුහය හානි :(LI ඉල්ලීම සඳහා පමණි )
+investigation.form.label.typeofStructure=ගොඩනැගිල්ලක් හෝ ව්යුහයක් වර්ගය
+investigation.form.label.historyofHazzard=උවදුරු ඉතිහාසය
+investigation.form.label.mechanismofHazzard=Mechanism of Hazard
+investigation.form.label.geologicalObservation=භූ විද්යා හා අනෙකුත් නිරීක්ෂණ
+investigation.form.label.conclusion=නිගමනය
+investigation.form.label.immediateRecommendations=කෙටි කාලින  නිර්දේශ 
+investigation.form.label.longTermRecommendations =දීර්ග කාලින නිර්දේශ 
+investigation.form.label.remarks=සටහන්
+investigation.form.label.sketchDiagram=කටු සටහනක් රූප සටහන
+investigation.form.label.sketchDiagramIncident=සිද්ධිය අැතුලත් රූප සටහන
+investigation.form.header.attachment.no=අංකය
+investigation.form.header.attachment.name=නම
+investigation.form.header.attachment.attachments=ඇමුණුම්
+investigation.form.header.attachment.document=ලේඛන
+investigation.form.label.crosssectionsincident =සිද්ධිය හරස්කඩ
+investigation.form.label.photographs=ඡායාරූප
+investigation.form.label.locationMap=ස්ථානය සිතියම
+investigation.form.header.surveyorInformation =මිනින්දෝරු තොරතුරු
+investigation.form.label.surveyName =සමීක්ෂණය නම
+investigation.form.label.qualification=සුදුසුකම්
+investigation.form.label.regNo=ලියාපදිංචි අංකය
+investigation.form.label.investigators=විමර්ශකයන්
+investigation.message.select.investigators=විමර්ශකයා තෝරන්න
+investigation.form.label.actualActiontaken=සැබෑ කියාමාර්ගය
+investigation.form.label.typeBuildingStructure =ගොඩනැගිල්ලක් හෝ ව්යුහයක් වර්ගය
+investigation.message.select.buildingStructure=ගොඩනැගිල්ල ව්යුහය තෝරන්න
+investigation.form.label.noofBuildingsAffected =පීඩාවට පත් ගොඩනැගිලි අංක
+investigation.form.table.header.typeBuildingStructure=ගොඩනැගිල්ල වර්ග
+investigation.form.table.header.no=අංක
+investigation.form.header.damagesUtilty=උපයෝගීතා රේඛා හානි:(LI ඉල්ලීම සඳහා පමණි )
+investigation.form.label.typeofUtility=උපයෝගීතා වර්ගය
+investigation.message.select.selectUtility= උපයෝගීතා තෝරන්න
+investigation.form.label.affectedlengthinmeter=බලපෑම එල්ල වූ දිග මීටර් වලින්  (දළ වශයෙන්)
+investigation.form.table.header.utilityType=උපයෝගීතා වර්ගය
+investigation.form.table.header.length=දිග
+investigation.form.header.roadCanal=පාර සහ ඇළ මාර්ග හානි :(LI ඉල්ලීම සඳහා පමණි )
+investigation.form.label.typeofRoadCanal=මාර්ග / ඇල වර්ගය
+investigation.message.select.selectRoadCanal=මාර්ග / ඇල තෝරන්න
+investigation.form.table.header.type=වර්ගය
+investigation.form.header.plantationCrop=වතු / බෝග වර්ග හානි :(LI ඉල්ලීම සඳහා පමණි )
+investigation.form.label.typeofPlantationCrops=වතු / බෝග වර්ග
+investigation.message.select.selectPlantationCrop=වතු බෝග තෝරන්න
+investigation.form.label.affectedlengthinSqmeter=බලපෑම එල්ල වූ   ප්‍රදේශය වර්ග මීටර් වලින් (දළ වශයෙන්) වලින් 
+investigation.form.table.header.area=ප්‍රදේශය
+investigation.form.label.status=තත්ත්වය
+investigation.message.select.status=තත්ත්වය තෝරන්න
+investigation.form.table.header.affetcedPersons=හානියට පත් පුද්ගලයන්
+investigation.form.table.lable.name=නම
+investigation.form.attachment.lable.description=විස්තර
+
+investigation.form.table.group=කණ්ඩායම
+investigation.message.select.hazard=කරුණාකර අවදානමක් තෝරන්න
+investigation.message.select.landslide=කරුණාකර නායයාම තෝරන්න
+investigation.message.empty.langtitude=අක්ෂාංශ ඇතුලත් කරන්න
+investigation.message.empty.longtitude=දේශාංශ ඇතුලත් කරන්න
+investigation.message.empty.locationNoABMP=ABMP සිතියම මත ස්ථානය අංකය ඇතුලත් කරන්න
+investigation.message.empty.investigatedDate=පරීක්ෂණ දිනය තෝරන්න
+investigation.message.empty.incidentDate=කරුණාකර සිදුවීම දිනය තෝරන්න 
+investigation.message.empty.informedDate=කරුණාකර දෙනුම්දුන් දිනය තෝරන්න 
+investigation.message.empty.hazardType=කරුණාකර උපද්රව වර්ගය තෝරන්න 
+investigation.message.empty.raingauge=කරුණාකර වැසි මාපකය තෝරන්න 
+investigation.message.empty.landslideType=කරුණාකර, නායයෑම් වර්ගය තෝරන්න 
+investigation.message.empty.height=කරුණාකර උස ඇතුලත් කරන්න
+investigation.message.empty.length=කරුණාකර දිග ඇතුලත් කරන්න
+investigation.message.empty.width=කරුණාකර පළල ඇතුලත් කරන්න
+investigation.message.empty.area=කරුණාකර ප්‍රදේශය ඇතුලත් කරන්න
+investigation.message.empty.plzSelect=කරුණාකර තෝරන්න
+investigation.message.table.currentSelected=දැනට තෝරා කණ්ඩායම
+
+investigation.form.table.group=කණ්ඩායම
+
+
+attachments.frome.label.name=නම
+attachments.frome.label.document=ලේඛන
+attachments.frome.label.no=අංකය
+attachments.frome.label.attachments=ඇමුණුම්
+
+paymentAcknowledgment.form.heading.acknowledgement.of.the.payment=ගෙවීම් ලැබීමේ විස්තර 
+paymentAcknowledgment.form.heading.only.for.li=LI සදහා පමණි 
+paymentAcknowledgment.form.lable.date=දිනය
+paymentAcknowledgment.form.lable.status=තත්ත්වය
+paymentAcknowledgment.form.lable.accept=පිළිගන්න
+paymentAcknowledgment.form.lable.reject=ප්රතික්ෂේප
+paymentAcknowledgment.form.lable.na=NA
+paymentAcknowledgment.form.lable.name=නම
+
+paymentAcknowledgment.form.lable.designation.area=තනතුර / ප්රාදේශීය
+
+
+
+paymentAcknowledgment.form.lable.designation.area=තනතුර / ප්රාදේශීය
+
+clearanceIssue.form.lable.heading.clearance.issue=නිශ්කාෂණ නිකුත්
+clearanceIssue.form.lable.nbro.ref.no=NBRO අයදුම්පත්  අංකය 
+clearanceIssue.form.lable.client.ref.no=සේවාලාභියාගේ අංකය 
+clearanceIssue.form.lable.date=දිනය
+clearanceIssue.form.lable.expiry.date=කල්පිරෙන දිනය
+clearanceIssue.form.lable.land.clearance.status =ඉඩම් නිදහස් කර තත්ත්වය
+clearanceIssue.form.lable.title=ශීර්ෂය
+clearanceIssue.form.addressing.person.details =පුත්ගලයගේ විස්තර  (නම / තනතුර / ලිපිනය)  :
+clearanceIssue.form.introduction=හැදින්වීම
+clearanceIssue.form.objective=අරමුණ
+clearanceIssue.form.objective.background=අරමුණ / පසුබිම
+clearanceIssue.form.location.and.accessibility = ස්ථානය හා  ප්‍රවේශ වීම :
+clearanceIssue.form.observations = නිරීක්ෂණ 
+clearanceIssue.form.analysis.discussion=විශ්ලේෂණය සහ සාකච්ඡා
+clearanceIssue.form.conclusions=නිගමන
+clearanceIssue.form.recommendations=නිර්දේශ 
+clearanceIssue.form.basic.conditions=මූලික කොන්දේසි
+clearanceIssue.form.special.conditions=විශේෂ කොන්දේසි
+clearanceIssue.form.officers.information=නිලධාරීන් තොරතුරු
+clearanceIssue.form.investigate.by=පරික්ෂා කරන ලදේ 
+clearanceIssue.form.officer.name=නිලධාරියාගේ නම
+clearanceIssue.form.designation=තනතුර
+clearanceIssue.form.name=නම
+clearanceIssue.form.report.prepared.by=වාර්තාව සකසන ලදේ 
+clearanceIssue.form.certify.by=සහතික ලදේ 
+clearanceIssue.form.officer.name =නිලධාරියාගේ නම
+clearanceIssue.form.groups=කණ්ඩායම්
+clearanceIssue.form.affected.Persons=හානියට පත් පුද්ගලයන්
+clearanceIssue.form.long.term.recommendations=දීර්ග කාලින නිර්දේශ 
+clearanceIssue.form.immediate.recommendations=කෙටි කාලින  නිර්දේශ 
+clearanceIssue.form.anyother=වෙනත්
+clearanceIssue.form.special.note=විශේෂ සටහන
+clearanceIssue.form.certify=සහතික
+clearanceIssue.form.certify.reports.and.certificate=මුද්‍රණය සහ  වාර්තා වසහතික කිරීම 
+
+clearanceIssue.form.error.add.certify.user=කරුණාකර සහතික කරනලද නිලදාරිය තෝරන්න .
+clearanceIssue.form.error.add.report.prepared.by=කරුණාකර එක වාර්තාව සකසන ලද  නිලදාරියෙක් හෝ ඊට වැඩි  නිලදාරීන්  තෝරන්න .
+clearanceIssue.form.error.add.officer.name=කරුණාකර එක විමර්ශනය නිලදාරියෙක් හෝ ඊට වැඩි විමර්ශනය නිලදාරීන්  තෝරන්න .
+
+clearanceIssue.form.btn.print.certificate=සහතිකය මුද්‍රණය
+clearanceIssue.form.btn.print.report=වාර්තාව මුද්‍රණය
+
+
+
+#-------------------------Google Map----------------------------------#
+#-------------------------Headings---------------------------------------#
+google.map.head=Map
+#-------------------------End Headings---------------------------------------#
+
+#-------------------------Add Custom Reports----------------------------------#
+#-------------------------Headings---------------------------------------#
+add.custom.report.head=වාර්තාව එකතු කරන්න
+custom.file.name.label=ගොනුවේ නම
+#-------------------------End Headings---------------------------------------#
+
+advance.search.application.lable.advance.search=ගැඹුරින් සෙවීම
+advance.search.application.lable.application.ref.no=අයදුම්පත්  අංකය 
+advance.search.application.lable.application.name=අයදුම්පත් නම
+advance.search.application.lable.hazard.level=උපද්රව පෙළ
+advance.search.application.lable.gps.co=ජී.පී.එස් ඛණ්ඩාංක
+advance.search.application.lable.advance.status=තත්ත්වය
+advance.search.application.lable.direct.to.application=අයදුම්පත වෙත යොමුවීම 
+
+advance.search.application.lable.application.type=අයදුම්පත් වර්ගය
+advance.search.application.lable.submitted.date=ඉදිරිපත් දිනය
+advance.search.application.lable.submitted.date.from=සිට
+advance.search.application.lable.submitted.date.to=දක්වා
+advance.search.application.lable.application.owner.nic=අයිතිකරුගේ ජාතික හැඳුනුම්පත්
+advance.search.application.lable.application.payment.status=ගෙවීම් තත්ත්වය
+advance.search.application.lable.application.institute.ref.no=ආයතනයේ විමර්ශන අංකය  
+
+advance.search.application.deopdown.select=තෝරන්න
+advance.search.application.deopdown.fully.paid=සම්පූර්ණයෙන් ගෙවනලද
+advance.search.application.deopdown.not.paid=ගෙවා  නොමැති 
+advance.search.application.deopdown.installments=වාරික 
+
+
+ 
+costestimation.application.heading.cost.items=පිරිවැය අයිතම් 
+costestimation.application.lable.include.government.tax=රජයේ බදු ඇතුළත් කරන්න
+costestimation.application.lable.cost.Item.name=පිරිවැය අයිතමයේ  නම
+costestimation.application.lable.amount= පිරිවැය අයිතමයේ මුදල 
+costestimation.application.lable.total.estimated.cost=මුළු ඇස්තමේන්තුගත පිරිවැය
+costestimation.application.lable.total.approved.cost=මුළු අනුමත පිරිවැය
+costestimation.application.lable.approved.by=අනුමත කරන පරිශිලකයා
+costestimation.application.lable.date=දිනය
+costestimation.application.lable.addressing.person.details=පුත්ගලයගේ විස්තර  (නම / තනතුර / ලිපිනය)
+costestimation.application.lable.title=මාතෘකාව
+costestimation.application.lable.payment.details=ගෙවීම් තොරතුරු

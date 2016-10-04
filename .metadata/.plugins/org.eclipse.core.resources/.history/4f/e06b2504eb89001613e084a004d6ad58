@@ -1,0 +1,19 @@
+/**
+ * 
+ */
+package lk.nbro.lsmis.service;
+
+import java.util.List;
+
+import lk.nbro.lsmis.model.District;
+
+/**
+ * @author dhiripitiy001
+ *
+ */
+
+
+public interface DistrictService {
+	public List<District> findAllDestrict();
+	public District findDistrict(long districtId);
+}

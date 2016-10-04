@@ -1,0 +1,30 @@
+#-------------for developer --------------------- 
+#jdbc.url = jdbc:mysql://localhost:3306/nbrodb?useUnicode=yes&characterEncoding=UTF-8
+#jdbc.username =root
+#jdbc.password =root
+
+
+#-------------for testing ---------------------
+jdbc.url = jdbc:mysql://10.161.121.9:3306/student?useUnicode=yes&characterEncoding=UTF-8
+jdbc.username =root
+jdbc.password =all@123
+#-------------for client site testing ---------------------
+#jdbc.url = jdbc:mysql://localhost:3306/nbrodb?useUnicode=yes&characterEncoding=UTF-8
+#jdbc.username =nbro_user
+#jdbc.password =nbro_user
+
+#-------------for developer report db--------------------- 
+#database.access.url = jdbc:mysql://localhost/nbrodb?useUnicode=yes&characterEncoding=UTF-8
+# jdbc.username =root
+#jdbc.password =root
+#-------------for testing report db-----------------------
+database.access.url = jdbc:mysql://10.161.121.9:3306/student?user=root&password=all@123 
+
+#-------------for client site report db--------------------- 
+#database.access.url = jdbc:mysql://localhost/nbrodb?user=nbro_user&password=nbro_user
+
+jdbc.driverClassName = com.mysql.jdbc.Driver
+hibernate.dialect = org.hibernate.dialect.MySQLDialect
+hibernate.show_sql = false
+hibernate.format_sql = false
+hibernate.hbm2ddl.auto=update

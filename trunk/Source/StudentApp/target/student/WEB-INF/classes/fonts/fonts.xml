@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<fontFamily name="Times New Roman">
+		<normal><![CDATA[fonts/TIMES.TTF]]></normal>
+		<bold><![CDATA[fonts/TIMESBD.TTF]]></bold>
+		<italic><![CDATA[fonts/TIMESI.TTF]]></italic>
+		<boldItalic><![CDATA[fonts/TIMESBI.TTF]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+
+	<fontFamily name="Serif">
+		<normal><![CDATA[fonts/TIMES.TTF]]></normal>
+		<bold><![CDATA[fonts/TIMESBD.TTF]]></bold>
+		<italic><![CDATA[fonts/TIMESI.TTF]]></italic>
+		<boldItalic><![CDATA[fonts/TIMESBI.TTF]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+
+	<fontFamily name="SansSerif">
+		<normal><![CDATA[fonts/SansSerifRegular.ttf]]></normal>
+		<bold><![CDATA[fonts/SansSerifBold.ttf]]></bold>
+		<italic><![CDATA[fonts/SansSerifItalic.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/SansSerifBoldItalic.ttf]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+
+	<fontFamily name="Arial">
+		<normal><![CDATA[fonts/arial.ttf]]></normal>
+		<bold><![CDATA[fonts/arialbd.ttf]]></bold>
+		<italic><![CDATA[fonts/ariali.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/ARIALBI.TTF]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+
+	<fontFamily name="Br-Ridhma.">
+		<normal><![CDATA[fonts/brridhma.ttf]]></normal>
+		<bold><![CDATA[fonts/brridhma.ttf]]></bold>
+		<italic><![CDATA[fonts/brridhma.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/brridhma.ttf]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+
+	<fontFamily name="Kalaham">
+		<normal><![CDATA[fonts/kalaham.ttf]]></normal>
+		<bold><![CDATA[fonts/kalaham.ttf]]></bold>
+		<italic><![CDATA[fonts/kalaham.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/kalaham.ttf]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+
+	<fontFamily name="Bamini">
+		<normal><![CDATA[fonts/Bamini.TTF]]></normal>
+		<bold><![CDATA[fonts/Bamini.TTF]]></bold>
+		<italic><![CDATA[fonts/Bamini.TTF]]></italic>
+		<boldItalic><![CDATA[fonts/Bamini.TTF]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	
+	<fontFamily name="FMBindumathi">
+		<normal><![CDATA[fonts/FMBINDUMATHI.TTF]]></normal>
+		<bold><![CDATA[fonts/FMBINDUMATHI.TTF]]></bold>
+		<italic><![CDATA[fonts/FMBINDUMATHI.TTF]]></italic>
+		<boldItalic><![CDATA[fonts/FMBINDUMATHI.TTF]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	
+	<fontFamily name="iskpota">
+		<normal><![CDATA[fonts/iskpota.ttf]]></normal>
+		<bold><![CDATA[fonts/iskpotab.ttf]]></bold>
+		<italic><![CDATA[fonts/iskpota.ttf]]></italic>
+		<boldItalic><![CDATA[fonts/iskpota.ttf]]></boldItalic>
+		<pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+		
+</fontFamilies>

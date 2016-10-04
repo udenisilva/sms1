@@ -1,0 +1,15 @@
+package lk.nbro.lsmis.service;
+
+import java.util.List;
+
+import com.lk.std.constant.OLSIMSEnumConstant.UseOfLandType;
+
+import lk.nbro.lsmis.model.UseOfLand;
+
+public interface UseOfLandService {
+
+	public UseOfLand findByUseOfLandType(UseOfLandType useOfLandType);
+	
+	public List<UseOfLand> getUseOfLandListByApplicationType(String applicationType);
+	
+}

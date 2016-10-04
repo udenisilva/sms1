@@ -1,0 +1,9 @@
+package lk.nbro.lsmis.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import lk.nbro.lsmis.model.UtilityLineTypes;
+
+public interface UtilityLineTypesRepository extends CrudRepository<UtilityLineTypes, Long> {
+
+}

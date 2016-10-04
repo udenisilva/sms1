@@ -1,0 +1,34 @@
+package lk.nbro.lsmis.service;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lk.std.constant.OLSIMSEnumConstant.UseOfLandType;
+
+import lk.nbro.lsmis.dao.UseOfLandRepository;
+import lk.nbro.lsmis.model.UseOfLand;
+
+@Service
+@Transactional
+public class UseOfLandServiceImpl implements UseOfLandService {
+
+  @Autowired
+  UseOfLandRepository useOfLandRepository;
+
+  @Override
+  public UseOfLand findByUseOfLandType(UseOfLandType useOfLandType) {
+    return useOfLandRepository.findByUseOfLandType(useOfLandType);
+  }
+
+  @Override
+  public List<UseOfLand> getUseOfLandListByApplicationType(String applicationType) {
+    return useOfLandRepository.findByApplicationType(applicationType);
+  }
+
+
+
+}
