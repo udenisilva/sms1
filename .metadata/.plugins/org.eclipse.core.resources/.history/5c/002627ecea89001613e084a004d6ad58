@@ -1,9 +1,0 @@
-package lk.nbro.lsmis.dao;
-
-import org.springframework.data.repository.CrudRepository;
-
-import lk.nbro.lsmis.model.ActionLogger;
-
-public interface ActionLoggerRepository extends CrudRepository<ActionLogger, Long> {
-
-}

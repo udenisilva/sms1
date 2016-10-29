@@ -22,7 +22,6 @@ com\lk\std\service\DistrictServiceImpl.class
 com\lk\std\constant\OLSIMSEnumConstant$PaymentAcknoledgeStatus.class
 com\lk\std\controller\AdminController.class
 com\lk\std\util\LoginFailureHandler.class
-com\lk\std\service\UseOfLandService.class
 com\lk\std\util\DesEncrypter.class
 com\lk\std\constant\OLSIMSEnumConstant$UseOfLandType.class
 com\lk\std\service\ActionLoggerService.class
@@ -45,19 +44,18 @@ com\lk\std\constant\OLSIMSEnumConstant$PaymentStatus.class
 com\lk\std\util\EncryptionUtil.class
 com\lk\std\constant\OLSIMSEnumConstant$LandslideType.class
 com\lk\std\model\UtilityLineTypes.class
+com\lk\std\controller\ClassScheduleController.class
 com\lk\std\service\ActionLoggerServiceImpl.class
 com\lk\std\util\ReportFileUtil.class
 com\lk\std\util\RandomStringGenerator.class
 com\lk\std\constant\OLSIMSEnumConstant$AppealStatus.class
 com\lk\std\dao\GramaNiladhariDivisionRepository.class
 com\lk\std\util\CommonUtil.class
-com\lk\std\dao\UseOfLandRepository.class
 com\lk\std\util\CreateDoxToPdf.class
 com\lk\std\dao\SystemUserRepository.class
 com\lk\std\service\SequenceNumberServiceImpl.class
 com\lk\std\util\DateUtil.class
 com\lk\std\service\LocalAuthorityService.class
-com\lk\std\model\UseOfLand.class
 com\lk\std\service\CustomUserDetailsServiceImpl.class
 com\lk\std\service\DistrictSecretariatService.class
 com\lk\std\constant\GeneralEnumConstants$DistrictType.class
@@ -89,4 +87,3 @@ com\lk\std\constant\OLSIMSEnumConstant$ClearanceStatus.class
 com\lk\std\model\DistrictSecretariat.class
 com\lk\std\service\SystemUserService.class
 com\lk\std\constant\OLSIMSEnumConstant$RenewalType.class
-com\lk\std\service\UseOfLandServiceImpl.class

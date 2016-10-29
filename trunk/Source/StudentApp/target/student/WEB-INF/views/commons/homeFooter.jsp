@@ -19,7 +19,7 @@
 		<div>
 			<p class="pull-right">
 				 <spring:message code="site.copyright" />.</a>| <span class="lead"> <i
-					class="fa fa-area-chart"></i> NBRO
+					class="fa fa-area-chart"></i> STUDENT
 				</span>
 			</p>
 			</div>

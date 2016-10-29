@@ -14,6 +14,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="D:\Danushka\student\trunk\Source\StudentApp"/>
 			<item value="D:\Projects\eclipse\ICBT\trunk\Source\StudentApp"/>
 			<item value="D:\Projects\eclipse\ICBT\trunk"/>
 		</list>

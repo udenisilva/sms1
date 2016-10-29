@@ -1,9 +1,0 @@
-package lk.nbro.lsmis.service;
-
-import java.util.List;
-
-import lk.nbro.lsmis.model.UtilityLineTypes;
-
-public interface UtilityLineTypesService {
-	public List<UtilityLineTypes> getAllUtilityLines();
-}

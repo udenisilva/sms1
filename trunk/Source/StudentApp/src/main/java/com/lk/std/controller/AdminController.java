@@ -10,8 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.lk.std.util.Session;
 
-@Controller
-@RequestMapping
+@Controller 
 public class AdminController {
 
   @RequestMapping(value = "/adminHome", method = RequestMethod.GET)

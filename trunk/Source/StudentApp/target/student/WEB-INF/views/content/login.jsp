@@ -25,9 +25,9 @@
 				<br />
 				<div>
 					<h1>
-						<i class="fa fa-area-chart" style="font-size: 26px;"></i> NBRO
+						<i class="fa fa-area-chart" style="font-size: 26px;"></i> STUDENT
 					</h1>
-					Copyright © 2016 National Building Research Organisation.<a>
+					Copyright © 2016 STUDENT Organisation.<a>
 						All Rights Reserved.</a>
 
 				</div>

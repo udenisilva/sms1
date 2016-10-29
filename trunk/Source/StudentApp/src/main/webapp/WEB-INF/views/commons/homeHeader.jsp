@@ -22,20 +22,29 @@
 				
 				<ul class="nav side-menu">
 					<li><a href="/olsims/"><i class="fa fa-home"></i> <spring:message code="lable.dashboard.home" /></a></li>
-					<li><a href="#"><i class="fa fa-edit"></i><span class="fa fa-chevron-down"></span></a>
+					<!-- 	<li><a href="#"><i class="fa fa-edit"></i><span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
-							<li><a href="#"><spring:message code="lable.dashboard.lab.form" /></a></li>
-						 
+							<li><a href="#"><spring:message code="lable.dashboard.lab.form" /></a></li>						 
 						</ul>
 					</li>
 					 
-					<li><a href="#"><i class="fa fa-refresh"></i><span class="fa fa-chevron-down"></span></a>
+				  <li><a href="#"><i class="fa fa-refresh"></i><span class="fa fa-chevron-down"></span></a>
 						<ul class="nav child_menu" style="display: none">
 							<li><a href="#?id=${param['id']}"> </a></li>
 							 
 						</ul>
-					</li> 					
-					<li><a href="#"><i class="fa fa-list"></i><spring:message code="lable.dashboard.map" /></a></li>
+					</li>-->
+					  <li><a   href="setupschool.htm">Setup School</a></li>
+				      <li><a   href="studentprofile.htm">Student Profile</a></li>  
+				      <li><a   href="parentdetails.htm">Parent Details</a></li>    
+				      <li><a  href="studentpayment.htm">Student Payment</a></li>
+				      <li><a   href="studentattendance.htm">Student Attendance</a></li>
+				      <li><a   href="staffprofile.htm">Staff Profile</a></li>
+				      <li><a   href="classschedule.htm">Class Schedule</a></li>
+				      <li><a  href="subjectdetails.htm">Subject Details</a></li>
+				      <li><a   href="results.htm">Results</a></li>
+				      <li><a   href="message.htm">Message</a></li>    					
+				<!--<li><a href="#"><i class="fa fa-list"></i><spring:message code="lable.dashboard.map" /></a></li> -->
 				</ul>
 			</div>
 		</div>
