@@ -32,215 +32,57 @@ public class OLSIMSEnumConstant {
     }
   }
 
-  public enum PlantationCropType {
-    TEA(1), RUBBER(2);
+  public enum Gender {
+	   NONE(0), MALE(1), FEMALE(2);
 
-    private int code;
+	    private int code;
 
-    private PlantationCropType(int code) {
-      this.code = code;
-    }
+	    private Gender(int code) {
+	      this.code = code;
+	    }
 
-    public int getCode() {
-      return code;
-    }
+	    public int getCode() {
+	      return code;
+	    }
 
-    private static final Map<Integer, PlantationCropType> LOOKUP = new HashMap<Integer, PlantationCropType>();
+	    private static final Map<Integer, Gender> LOOKUP = new HashMap<Integer, Gender>();
 
-    static {
-      for (PlantationCropType plantationCropType : EnumSet.allOf(PlantationCropType.class)) {
-        LOOKUP.put(plantationCropType.getCode(), plantationCropType);
-      }
-    }
+	    static {
+	      for (Gender gender : EnumSet.allOf(Gender.class)) {
+	        LOOKUP.put(gender.getCode(), gender);
+	      }
+	    }
 
-    public static PlantationCropType fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
+	    public static Gender fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
+ 
+  public enum ActiveStatus {
+	   NONE(0), ACTIVE(1),INACTIVE(2), TERMINATED(3);
 
-  public enum RoadCanalType {
-    MAJOR_ROAD(1), RAILWAY(2);
+	    private int code;
 
-    private int code;
+	    private ActiveStatus(int code) {
+	      this.code = code;
+	    }
 
-    private RoadCanalType(int code) {
-      this.code = code;
-    }
+	    public int getCode() {
+	      return code;
+	    }
 
-    public int getCode() {
-      return code;
-    }
+	    private static final Map<Integer, ActiveStatus> LOOKUP = new HashMap<Integer, ActiveStatus>();
 
-    private static final Map<Integer, RoadCanalType> LOOKUP = new HashMap<Integer, RoadCanalType>();
+	    static {
+	      for (ActiveStatus status : EnumSet.allOf(ActiveStatus.class)) {
+	        LOOKUP.put(status.getCode(), status);
+	      }
+	    }
 
-    static {
-      for (RoadCanalType roadCanalType : EnumSet.allOf(RoadCanalType.class)) {
-        LOOKUP.put(roadCanalType.getCode(), roadCanalType);
-      }
-    }
-
-    public static RoadCanalType fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
-  public enum BuildingStructureType {
-    SCHOOL(1), HOSPITAL(2);
-
-    private int code;
-
-    private BuildingStructureType(int code) {
-      this.code = code;
-    }
-
-    public int getCode() {
-      return code;
-    }
-
-    private static final Map<Integer, BuildingStructureType> LOOKUP = new HashMap<Integer, BuildingStructureType>();
-
-    static {
-      for (BuildingStructureType buildingStructureType : EnumSet.allOf(BuildingStructureType.class)) {
-        LOOKUP.put(buildingStructureType.getCode(), buildingStructureType);
-      }
-    }
-
-    public static BuildingStructureType fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
-  public enum InvestigationStatus {
-    NONE(0), RE_VISIT(1), APPROVE(2), REJECT(3), MITIGATION(4);
-
-    private int code;
-
-    private InvestigationStatus(int code) {
-      this.code = code;
-    }
-
-    public int getCode() {
-      return code;
-    }
-
-    private static final Map<Integer, InvestigationStatus> LOOKUP = new HashMap<Integer, InvestigationStatus>();
-
-    static {
-      for (InvestigationStatus investigationStatus : EnumSet.allOf(InvestigationStatus.class)) {
-        LOOKUP.put(investigationStatus.getCode(), investigationStatus);
-      }
-    }
-
-    public static InvestigationStatus fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
-
-  public enum HazardType {
-    SLOPE_FAILURE(1), CUTTING_FAILURE(2);
-
-    private int code;
-
-    private HazardType(int code) {
-      this.code = code;
-    }
-
-    public int getCode() {
-      return code;
-    }
-
-    private static final Map<Integer, HazardType> LOOKUP = new HashMap<Integer, HazardType>();
-
-    static {
-      for (HazardType hazardType : EnumSet.allOf(HazardType.class)) {
-        LOOKUP.put(hazardType.getCode(), hazardType);
-      }
-    }
-
-    public static HazardType fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
-  public enum LandslideType {
-    ROCK_FALL(1), DEBRIS_FLOW(2);
-
-    private int code;
-
-    private LandslideType(int code) {
-      this.code = code;
-    }
-
-    public int getCode() {
-      return code;
-    }
-
-    private static final Map<Integer, LandslideType> LOOKUP = new HashMap<Integer, LandslideType>();
-
-    static {
-      for (LandslideType landslideType : EnumSet.allOf(LandslideType.class)) {
-        LOOKUP.put(landslideType.getCode(), landslideType);
-      }
-    }
-
-    public static LandslideType fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
-  public enum PaymentAcknoledgeStatus {
-    NONE(0), ACCEPT(1), REJECT(2), NA(3);
-
-    private int code;
-
-    private PaymentAcknoledgeStatus(int code) {
-      this.code = code;
-    }
-
-    public int getCode() {
-      return code;
-    }
-
-    private static final Map<Integer, PaymentAcknoledgeStatus> LOOKUP = new HashMap<Integer, PaymentAcknoledgeStatus>();
-
-    static {
-      for (PaymentAcknoledgeStatus paymentAcknoledgeStatus : EnumSet.allOf(PaymentAcknoledgeStatus.class)) {
-        LOOKUP.put(paymentAcknoledgeStatus.getCode(), paymentAcknoledgeStatus);
-      }
-    }
-
-    public static PaymentAcknoledgeStatus fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
-  public enum CostItemName {
-    NONE(0), TRANSPORT(1), OTHER(2);
-
-    private int code;
-
-    private CostItemName(int code) {
-      this.code = code;
-    }
-
-    public int getCode() {
-      return code;
-    }
-
-    private static final Map<Integer, CostItemName> LOOKUP = new HashMap<Integer, CostItemName>();
-
-    static {
-      for (CostItemName costItemName : EnumSet.allOf(CostItemName.class)) {
-        LOOKUP.put(costItemName.getCode(), costItemName);
-      }
-    }
-
-    public static CostItemName fromCode(int code) {
-      return LOOKUP.get(code);
-    }
-  }
-
+	    public static ActiveStatus fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
 
   public enum PaymentStatus {
     NONE(0), FULL_PAYMENT(1), NOT_PAID(2), TREASUARY_GRANT(3), INSTALLMENTS(4), LOCAL_AUTHORITY(5);
@@ -302,149 +144,6 @@ public class OLSIMSEnumConstant {
 
     RESIDENTIAL, INSTITUTIONAL, COMMERCIAL, INDUSTRIAL;
   }
-
-  // for LI request
-  public enum IncidentType {
-    NONE(0), POTENTIAL_LANDSLIDE(1), OCCURED(2), OTHER(3);
-
-    private int type;
-
-    private IncidentType(int type) {
-      this.type = type;
-    }
-
-    public int getType() {
-      return type;
-    }
-
-    private static final Map<Integer, IncidentType> LOOKUP = new HashMap<Integer, IncidentType>();
-
-    static {
-      for (IncidentType typeStatus : EnumSet.allOf(IncidentType.class)) {
-        LOOKUP.put(typeStatus.getType(), typeStatus);
-      }
-    }
-
-    public static IncidentType fromType(int type) {
-      return LOOKUP.get(type);
-    }
-
-    public static Map<Integer, IncidentType> getIncidentTypes() {
-      return LOOKUP;
-    }
-  }
-
-
-  public enum RenewalType {
-    NONE(0), RENEWAL(1), MODIFICATION(2), APPEAL(3), COFC(4);
-
-    private int type;
-
-    private RenewalType(int type) {
-      this.type = type;
-    }
-
-    public int geTtype() {
-      return type;
-    }
-
-    private static final Map<Integer, RenewalType> LOOKUP = new HashMap<Integer, RenewalType>();
-
-    static {
-      for (RenewalType renewalType : EnumSet.allOf(RenewalType.class)) {
-        LOOKUP.put(renewalType.geTtype(), renewalType);
-      }
-    }
-
-    public static RenewalType fromType(String type) {
-      return LOOKUP.get(type);
-    }
-
-  }
-
-
-  public enum AppealStatus {
-    NONE(0), NA(1), APPROVE(2), REJECT(3);
-
-    private int type;
-
-    private AppealStatus(int type) {
-      this.type = type;
-    }
-
-    public int geTtype() {
-      return type;
-    }
-
-    private static final Map<Integer, AppealStatus> LOOKUP = new HashMap<Integer, AppealStatus>();
-
-    static {
-      for (AppealStatus appealStatus : EnumSet.allOf(AppealStatus.class)) {
-        LOOKUP.put(appealStatus.geTtype(), appealStatus);
-      }
-    }
-
-    public static AppealStatus fromType(String type) {
-      return LOOKUP.get(type);
-    }
-
-  }
-
-  public enum CofCStatus {
-    NONE(0), NA(1), APPROVE(2), REJECT(3);
-
-    private int type;
-
-    private CofCStatus(int type) {
-      this.type = type;
-    }
-
-    public int geTtype() {
-      return type;
-    }
-
-    private static final Map<Integer, CofCStatus> LOOKUP = new HashMap<Integer, CofCStatus>();
-
-    static {
-      for (CofCStatus cofc : EnumSet.allOf(CofCStatus.class)) {
-        LOOKUP.put(cofc.geTtype(), cofc);
-      }
-    }
-
-    public static CofCStatus fromType(String type) {
-      return LOOKUP.get(type);
-    }
-
-  }
-
-
-  public enum ClearanceStatus {
-    NONE(0), APPROVE(1), REJECT(2);
-
-    private int type;
-
-    private ClearanceStatus(int type) {
-      this.type = type;
-    }
-
-    public int geTtype() {
-      return type;
-    }
-
-    private static final Map<Integer, ClearanceStatus> LOOKUP = new HashMap<Integer, ClearanceStatus>();
-
-    static {
-      for (ClearanceStatus clearanceStatus : EnumSet.allOf(ClearanceStatus.class)) {
-        LOOKUP.put(clearanceStatus.geTtype(), clearanceStatus);
-      }
-    }
-
-    public static ClearanceStatus fromType(String type) {
-      return LOOKUP.get(type);
-    }
-
-  }
-
 
   /* @formatter:off */
   public enum Action {

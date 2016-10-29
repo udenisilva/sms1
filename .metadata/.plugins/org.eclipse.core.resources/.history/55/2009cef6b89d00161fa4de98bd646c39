@@ -1,0 +1,136 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+import com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus;
+import com.lk.std.constant.OLSIMSEnumConstant.Gender;
+import com.sun.star.bridge.oleautomation.Date;
+
+@Entity(name = "student")
+@Table(name = "student")
+public class Student implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "student_id", nullable = false)
+	private long id;
+	
+	@Column(name = "student_code", nullable = false)
+	private String code;
+	
+	@Column(name = "student_name", nullable = false)
+	private String name;
+	
+	@Column(name = "student_gender", nullable = false)
+	private Gender gender;
+	
+	@Column(name = "student_joinDate", nullable = false)
+	private Date joinDate;
+	
+	@Column(name = "student_leftDate", nullable = true)
+	private Date leftDate;
+	
+	@Column(name = "student_status", nullable = false)
+	private ActiveStatus status;
+	
+	@JoinColumn(name="branch",nullable = false)
+	private Branch branch;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+	public Student() {
+		super();		 
+	}
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Gender getGender() {
+		return gender;
+	}
+
+	public void setGender(Gender gender) {
+		this.gender = gender;
+	}
+
+	public Date getJoinDate() {
+		return joinDate;
+	}
+
+	public void setJoinDate(Date joinDate) {
+		this.joinDate = joinDate;
+	}
+
+	public Date getLeftDate() {
+		return leftDate;
+	}
+
+	public void setLeftDate(Date leftDate) {
+		this.leftDate = leftDate;
+	}
+
+	public ActiveStatus getStatus() {
+		return status;
+	}
+
+	public void setStatus(ActiveStatus status) {
+		this.status = status;
+	}
+
+	public int getVersionId() {
+		return versionId;
+	}
+
+	public void setVersionId(int versionId) {
+		this.versionId = versionId;
+	}
+
+	public Branch getBranch() {
+		return branch;
+	}
+
+	public void setBranch(Branch branch) {
+		this.branch = branch;
+	}
+	
+	
+	
+}
