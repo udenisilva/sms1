@@ -2,6 +2,7 @@ package com.lk.std.model;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -11,6 +12,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -62,6 +64,18 @@ public class Student implements Serializable {
 	@ManyToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "guardians_id", nullable = true)
 	private Guardians guardians;
+	
+	@OneToMany(mappedBy="student") 
+	private List<Marks> marks;
+	
+	@OneToMany(mappedBy="student") 
+	private List<ClassSchedule> classSchedules;
+	
+	@OneToMany(mappedBy="student") 
+	private List<Payments> payments;
+	
+	@OneToMany(mappedBy="student") 
+	private List<Attendance> attendances;
 	
 	@Version
 	@Column(name = "version_id")
@@ -157,6 +171,38 @@ public class Student implements Serializable {
 
 	public void setGuardians(Guardians guardians) {
 		this.guardians = guardians;
+	}
+
+	public List<Marks> getMarks() {
+		return marks;
+	}
+
+	public void setMarks(List<Marks> marks) {
+		this.marks = marks;
+	}
+
+	public List<ClassSchedule> getClassSchedules() {
+		return classSchedules;
+	}
+
+	public void setClassSchedules(List<ClassSchedule> classSchedules) {
+		this.classSchedules = classSchedules;
+	}
+
+	public List<Payments> getPayments() {
+		return payments;
+	}
+
+	public void setPayments(List<Payments> payments) {
+		this.payments = payments;
+	}
+
+	public List<Attendance> getAttendances() {
+		return attendances;
+	}
+
+	public void setAttendances(List<Attendance> attendances) {
+		this.attendances = attendances;
 	}
 
  

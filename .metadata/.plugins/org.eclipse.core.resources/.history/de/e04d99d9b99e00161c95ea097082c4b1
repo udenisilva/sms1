@@ -1,0 +1,33 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus;
+
+@Entity(name = "marks")
+@Table(name = "marks")
+public class Marks implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private long id;
+	
+	private int academicyear;
+	
+	private Subject subject;
+	
+	private Grade grade;
+	
+	private ExaminationType examinationType;
+	
+	private ActiveStatus status;
+	
+	
+
+}

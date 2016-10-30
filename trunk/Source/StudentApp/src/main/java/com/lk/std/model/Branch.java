@@ -153,7 +153,6 @@ public class Branch implements Serializable {
 		this.staff = staff;
 	}
 
- 
-	
+ 	
 
 }

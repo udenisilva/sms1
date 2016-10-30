@@ -1,6 +1,7 @@
 package com.lk.std.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -10,6 +11,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -36,6 +38,18 @@ public class Grade implements Serializable {
 
 	@OneToOne(mappedBy = "grade", optional = true)
 	private Admission admission;
+	
+	@OneToMany(mappedBy="grade") 
+	private List<Marks> marks;
+	
+	@OneToMany(mappedBy="grade") 
+	private List<ClassSchedule> classSchedules;
+	
+	@OneToMany(mappedBy="grade") 
+	private List<Messages> messages;
+	
+	@OneToMany(mappedBy="grade") 
+	private List<Attendance> attendances;
 	
 	@Version
 	@Column(name = "version_id")
@@ -76,5 +90,46 @@ public class Grade implements Serializable {
 	public void setVersionId(int versionId) {
 		this.versionId = versionId;
 	}
+
+	public Admission getAdmission() {
+		return admission;
+	}
+
+	public void setAdmission(Admission admission) {
+		this.admission = admission;
+	}
+
+	public List<Marks> getMarks() {
+		return marks;
+	}
+
+	public void setMarks(List<Marks> marks) {
+		this.marks = marks;
+	}
+
+	public List<ClassSchedule> getClassSchedules() {
+		return classSchedules;
+	}
+
+	public void setClassSchedules(List<ClassSchedule> classSchedules) {
+		this.classSchedules = classSchedules;
+	}
+
+	public List<Messages> getMessages() {
+		return messages;
+	}
+
+	public void setMessages(List<Messages> messages) {
+		this.messages = messages;
+	}
+
+	public List<Attendance> getAttendances() {
+		return attendances;
+	}
+
+	public void setAttendances(List<Attendance> attendances) {
+		this.attendances = attendances;
+	}
+	
 
 }

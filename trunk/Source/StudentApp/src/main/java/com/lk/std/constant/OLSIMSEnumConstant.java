@@ -58,6 +58,32 @@ public class OLSIMSEnumConstant {
 	    }
 	  }
   
+  public enum MessagesCatagory {
+	   NONE(0), MALE(1), FEMALE(2);
+
+	    private int code;
+
+	    private MessagesCatagory(int code) {
+	      this.code = code;
+	    }
+
+	    public int getCode() {
+	      return code;
+	    }
+
+	    private static final Map<Integer, MessagesCatagory> LOOKUP = new HashMap<Integer, MessagesCatagory>();
+
+	    static {
+	      for (MessagesCatagory messagesCatagory : EnumSet.allOf(MessagesCatagory.class)) {
+	        LOOKUP.put(messagesCatagory.getCode(), messagesCatagory);
+	      }
+	    }
+
+	    public static MessagesCatagory fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
+  
   public enum Title {
 	   NONE(0), Mr(1), Ms(2);
 

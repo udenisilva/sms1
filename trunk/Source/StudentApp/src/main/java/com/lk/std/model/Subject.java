@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -39,8 +40,10 @@ public class Subject implements Serializable {
 
 	@Column(name = "subject_subject", nullable = false)
 	private String subject;
-	// onr to one
-
+	
+	@OneToMany(mappedBy="subject") 
+	private List<Marks> marks;
+	
 	@OneToOne
 	@JoinColumn(name="subject",nullable = false) 
 	private Branch branch;
@@ -102,6 +105,14 @@ public class Subject implements Serializable {
 
 	public void setGrade(List<Grade> grade) {
 		this.grade = grade;
+	}
+
+	public List<Marks> getMarks() {
+		return marks;
+	}
+
+	public void setMarks(List<Marks> marks) {
+		this.marks = marks;
 	}
 
 	

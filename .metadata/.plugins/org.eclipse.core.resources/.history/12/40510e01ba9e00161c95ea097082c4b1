@@ -1,0 +1,58 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+import com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus;
+
+@Entity(name = "marks")
+@Table(name = "marks")
+public class Marks implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "marks_id", nullable = false)
+	private long id;
+	
+	@Column(name = "marks_academicyear")
+	private int academicyear;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "branch_id", nullable = true)
+	private Student student;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "branch_id", nullable = true)
+	private Subject subject;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "branch_id", nullable = true)
+	private Grade grade;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "id", nullable = true)
+	private ExaminationType examinationType;
+	
+	@Column(name = "marks_status")
+	private ActiveStatus status;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+}
