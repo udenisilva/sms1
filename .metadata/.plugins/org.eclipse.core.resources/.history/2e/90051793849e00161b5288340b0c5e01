@@ -1,0 +1,93 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+@Entity(name = "subject")
+@Table(name = "subject")
+public class Subject implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "subject_id", nullable = false)
+	private long id;
+	
+	@Column(name = "subject_code", nullable = false)
+	private String code;
+	
+	@Column(name = "subject_subject", nullable = false)
+	private String subject;
+	//onr to one
+	
+	@OneToOne
+	@Column(name = "subject_branch", nullable = false)
+	private Branch branch;
+	
+//    @ManyToMany 
+//	private List<Grade> grade;
+	
+//  @ManyToMany 
+//	private List<Staff> staff;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
+	}
+
+	public String getSubject() {
+		return subject;
+	}
+
+	public void setSubject(String subject) {
+		this.subject = subject;
+	}
+
+	public Branch getBranch() {
+		return branch;
+	}
+
+	public void setBranch(Branch branch) {
+		this.branch = branch;
+	}
+
+	public int getVersionId() {
+		return versionId;
+	}
+
+	public void setVersionId(int versionId) {
+		this.versionId = versionId;
+	}
+	
+	
+}

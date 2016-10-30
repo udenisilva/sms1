@@ -1,0 +1,34 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+@Entity(name = "designation")
+@Table(name = "designation")
+public class Designation implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "designation_id", nullable = false) 
+	private long id;
+	
+	@Column(name = "designation", nullable = false) 
+	private String designation;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+}

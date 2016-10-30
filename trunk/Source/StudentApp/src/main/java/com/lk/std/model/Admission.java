@@ -1,0 +1,94 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+import com.lk.std.constant.OLSIMSEnumConstant.House;
+
+@Entity(name = "admission")
+@Table(name = "admission")
+public class Admission implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "admission_id", nullable = false)
+	private long id;
+	
+	@OneToOne
+	@JoinColumn(name="admission",nullable = false)
+	private Grade grade;
+	 
+	@Column(name = "admission_house", nullable = false)
+	private House house;
+	
+	@Column(name = "admission_paidDate", nullable = false)
+	private Date paidDate;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public Grade getGrade() {
+		return grade;
+	}
+
+	public void setGrade(Grade grade) {
+		this.grade = grade;
+	}
+
+	public House getHouse() {
+		return house;
+	}
+
+	public void setHouse(House house) {
+		this.house = house;
+	}
+
+	public Date getPaidDate() {
+		return paidDate;
+	}
+
+	public void setPaidDate(Date paidDate) {
+		this.paidDate = paidDate;
+	}
+
+	public int getVersionId() {
+		return versionId;
+	}
+
+	public void setVersionId(int versionId) {
+		this.versionId = versionId;
+	}
+
+	@Override
+	public String toString() {
+		return "Admission [id=" + id + ", grade=" + grade + ", house=" + house + ", paidDate=" + paidDate
+				+ ", versionId=" + versionId + "]";
+	}
+
+	
+	
+}

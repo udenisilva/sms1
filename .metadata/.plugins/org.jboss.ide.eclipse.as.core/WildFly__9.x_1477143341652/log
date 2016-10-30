@@ -614,3 +614,169 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2016-10-30 12:11:26.704
 !MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 14:18:26.761
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 14:18:27.991
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 14:18:42.230
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 14:18:42.568
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 14:19:02.596
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2016-10-30 14:20:42.158
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-10-30 14:20:42.999
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 14:21:13.003
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 14:21:14.192
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 14:21:26.078
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 14:21:26.207
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 14:21:46.402
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298246 2016-10-30 15:34:16.619
+!MESSAGE Unable to delete module
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\css. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\css\icheck. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\css\icheck. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\fonts. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\fonts. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\js. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\js. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\META-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\META-INF\maven. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\META-INF\maven\com.lk.std. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\META-INF\maven\com.lk.std. May be locked by another process.
+!SUBENTRY 2 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\classes. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\classes\com. May be locked by another process.
+!SUBENTRY 5 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\classes\com\lk. May be locked by another process.
+!SUBENTRY 6 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\classes\com\lk\std. May be locked by another process.
+!SUBENTRY 7 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.620
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\classes\com\lk\std. May be locked by another process.
+!SUBENTRY 3 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.621
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\views. May be locked by another process.
+!SUBENTRY 4 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 15:34:16.621
+!MESSAGE Could not delete C:\wildfly-9.0.2.Final\standalone\deployments\student.war\WEB-INF\views. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 15:34:58.877
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 15:36:20.997
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 15:36:32.217
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 15:36:32.502
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 15:39:38.291
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 15:39:40.830
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 15:39:48.589
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2016-10-30 15:40:16.480
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-10-30 15:40:17.211
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 15:41:04.507
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 15:41:05.633
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 15:41:14.683
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 15:41:14.717
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 15:41:34.745
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2016-10-30 15:45:04.070
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-10-30 15:45:04.523
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 15:45:53.065
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 15:45:54.201
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 15:46:06.844
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 15:46:06.908
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 15:46:26.963
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2016-10-30 15:48:53.195
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-10-30 15:48:53.833
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 15:49:26.212
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 15:49:27.298
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 15:49:39.744
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 15:49:39.783
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 15:49:59.814
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.

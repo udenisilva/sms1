@@ -1,0 +1,88 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+import java.util.Date;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
+
+import com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus;
+import com.lk.std.constant.OLSIMSEnumConstant.Gender;
+import com.lk.std.constant.OLSIMSEnumConstant.House;
+import com.lk.std.constant.OLSIMSEnumConstant.Title;
+
+@Entity(name = "staff")
+@Table(name = "staff")
+public class Staff implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private long id;
+	
+	private Title title;
+	
+	private String name;
+	
+	private String address;
+	
+	private Branch branch;
+	
+	private Designation designation;
+	
+	private String nic;
+	
+	private int tel;
+	
+	private int mobile;
+	
+	private Gender gender;
+	
+	private Date bday;
+	
+	private String email;
+	
+	private String qulifications;
+	
+	private String experience;
+	
+	private House house;
+	
+	private Date jdate;
+	
+	private Date ldate;
+	
+	private ActiveStatus status;
+	
+	private String remarks;
+	
+	
+	@ManyToMany(fetch = FetchType.EAGER)
+	@JoinTable(name = "staff_subject", joinColumns = @JoinColumn(name = "staff_id"), inverseJoinColumns = @JoinColumn(name = "subject_id"))
+	@Cascade(org.hibernate.annotations.CascadeType.ALL)
+	@Fetch(value = FetchMode.SUBSELECT)
+	private List<Subject> subjects;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+	
+	
+	
+	
+	
+	
+}

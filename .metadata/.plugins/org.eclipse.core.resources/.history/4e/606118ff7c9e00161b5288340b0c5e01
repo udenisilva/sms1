@@ -1,0 +1,43 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+import java.util.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+import com.lk.std.constant.OLSIMSEnumConstant.House;
+
+@Entity(name = "admission")
+@Table(name = "admission")
+public class Admission implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "admission_id", nullable = false)
+	private long id;
+	
+	@Column(name = "admission_admissiongrade", nullable = false)
+	private Grade grade;
+	
+	@Column(name = "admission_paidDate", nullable = false)
+	private House house;
+	
+	@Column(name = "admission_paidDate", nullable = false)
+	private Date paidDate;
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+}

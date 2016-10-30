@@ -57,6 +57,58 @@ public class OLSIMSEnumConstant {
 	      return LOOKUP.get(code);
 	    }
 	  }
+  
+  public enum Title {
+	   NONE(0), Mr(1), Ms(2);
+
+	    private int code;
+
+	    private Title(int code) {
+	      this.code = code;
+	    }
+
+	    public int getCode() {
+	      return code;
+	    }
+
+	    private static final Map<Integer, Title> LOOKUP = new HashMap<Integer, Title>();
+
+	    static {
+	      for (Title title : EnumSet.allOf(Title.class)) {
+	        LOOKUP.put(title.getCode(), title);
+	      }
+	    }
+
+	    public static Title fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
+  
+  public enum House {
+	   NONE(0), A(1), B(2);
+
+	    private int code;
+
+	    private House(int code) {
+	      this.code = code;
+	    }
+
+	    public int getCode() {
+	      return code;
+	    }
+
+	    private static final Map<Integer, House> LOOKUP = new HashMap<Integer, House>();
+
+	    static {
+	      for (House house : EnumSet.allOf(House.class)) {
+	        LOOKUP.put(house.getCode(), house);
+	      }
+	    }
+
+	    public static House fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
  
   public enum ActiveStatus {
 	   NONE(0), ACTIVE(1),INACTIVE(2), TERMINATED(3);
