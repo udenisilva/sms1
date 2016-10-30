@@ -45,6 +45,7 @@ D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\model\Utili
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\model\Student.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\util\DesEncrypter.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\service\UtilityLineTypesServiceImpl.java
+D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\model\Guardians.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\service\DistrictSecretariatServiceImpl.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\controller\ClassScheduleController.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\model\Branch.java
@@ -68,5 +69,6 @@ D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\service\Loc
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\util\EncryptionUtil.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\constant\GeneralEnumConstants.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\util\CommonUtil.java
+D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\model\Parents.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\controller\CommonController.java
 D:\Danushka\student\trunk\Source\StudentApp\src\main\java\com\lk\std\util\LoginSuccessHandler.java

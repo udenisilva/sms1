@@ -1,0 +1,168 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+@Entity(name = "guardians")
+@Table(name = "guardians")
+public class Guardians implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "guardians_id", nullable = false)
+	private long id;
+
+	@Column(name = "guardians_name", nullable = false)
+	private String name;
+	
+	@Column(name = "guardians_occupation", nullable = false)
+	private String occupation;
+	
+	@Column(name = "guardians_nationaity", nullable = false)
+	private String nationaity;
+	
+	@Column(name = "guardians_nic", nullable = false)
+	private String nic;
+	
+	@Column(name = "guardians_company", nullable = false)
+	private String company;
+	
+	@Column(name = "guardians_phone", nullable = false)
+	private int phone;
+	
+	@Column(name = "guardians_mobile", nullable = false)
+	private int mobile;
+	
+	@Column(name = "guardians_address", nullable = false)
+	private String address;
+	
+	@Column(name = "guardians_email", nullable = false)
+	private String email;
+	
+	@OneToMany(mappedBy="guardians") 
+	private List<Student> student;
+		
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getOccupation() {
+		return occupation;
+	}
+
+	public void setOccupation(String occupation) {
+		this.occupation = occupation;
+	}
+
+	public String getNationaity() {
+		return nationaity;
+	}
+
+	public void setNationaity(String nationaity) {
+		this.nationaity = nationaity;
+	}
+
+	public String getNic() {
+		return nic;
+	}
+
+	public void setNic(String nic) {
+		this.nic = nic;
+	}
+
+	public String getCompany() {
+		return company;
+	}
+
+	public void setCompany(String company) {
+		this.company = company;
+	}
+
+	public int getPhone() {
+		return phone;
+	}
+
+	public void setPhone(int phone) {
+		this.phone = phone;
+	}
+
+	public int getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(int mobile) {
+		this.mobile = mobile;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public List<Student> getStudent() {
+		return student;
+	}
+
+	public void setStudent(List<Student> student) {
+		this.student = student;
+	}
+
+	public int getVersionId() {
+		return versionId;
+	}
+
+	public void setVersionId(int versionId) {
+		this.versionId = versionId;
+	}
+
+	@Override
+	public String toString() {
+		return "Guardians [id=" + id + ", name=" + name + ", occupation=" + occupation + ", nationaity=" + nationaity
+				+ ", nic=" + nic + ", company=" + company + ", phone=" + phone + ", mobile=" + mobile + ", address="
+				+ address + ", email=" + email + ", student=" + student + ", versionId=" + versionId + "]";
+	}
+
+	
+}

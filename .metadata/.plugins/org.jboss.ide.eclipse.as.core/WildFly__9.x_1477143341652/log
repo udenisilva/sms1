@@ -386,3 +386,231 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-29 23:48:06.739
 !MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 11:36:02.208
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 11:36:04.634
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16842784 2016-10-30 11:43:32.818
+!MESSAGE 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-10-30 11:43:39.054
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2016-10-30 11:43:48.809
+!MESSAGE Incremental publish failed for module student
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\CommonController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\HomeController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\LoginController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\MessageController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\ParentDetailsController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\ResultsController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\SetupSchoolControlller.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\StaffProfileController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\StudentAttendanceController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\StudentPaymentController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\StudentProfileController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\SubjectDetailsController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\controller\UserController.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\ActionLoggerRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\DistrictRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\DistrictSecretariatRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\GramaNiladhariDivisionRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\LocalAuthorityRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.809
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\SequenceNumberRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\SystemUserRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\dao\UtilityLineTypesRepository.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\ActionLogger.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\Branch.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\District.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\DistrictSecretariat.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\Grade.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\GramaNiladhariDivision.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\Guardians.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\LocalAuthority.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\Parents.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\SequenceNumber.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\Student.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\SystemUser.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\UserRole.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\UtilityLine.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.810
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\model\UtilityLineTypes.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\ActionLoggerService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\ActionLoggerServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\CustomUserDetailsServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\DistrictSecretariatService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\DistrictSecretariatServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\DistrictService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\DistrictServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\GramaNiladhariDivisionService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\GramaNiladhariDivisionServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\LocalAuthorityService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\LocalAuthorityServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\SequenceNumberService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\SequenceNumberServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\SystemUserService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\SystemUserServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\UtilityLineTypesService.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\service\UtilityLineTypesServiceImpl.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\CommonUtil.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\CreateDoxToPdf.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\DateUtil.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\DesEncrypter.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\EncryptionUtil.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\FileDownloadManager.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\FileUploadManager.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\LanguageUtil.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.813
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\LoginFailureHandler.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\LoginSuccessHandler.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\RandomStringGenerator.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\ReportFileExportUtil.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\ReportFileUtil.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\Session$Keys.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\Session.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\com\lk\std\util\UploadBean.class
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2016-10-30 11:43:48.814
+!MESSAGE Error reading file D:\Danushka\student\trunk\Source\StudentApp\target\classes\application.properties
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 11:43:50.169
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 11:44:10.327
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 11:45:25.828
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 11:45:26.930
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842784 2016-10-30 11:48:44.395
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-10-30 11:48:45.687
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2016-10-30 11:48:45.810
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 11:48:45.840
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 11:49:05.878
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 11:51:05.970
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 11:51:07.217
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842784 2016-10-30 11:53:20.481
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-10-30 11:53:21.722
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 11:53:21.785
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 11:53:41.824
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-10-30 11:55:19.059
+!MESSAGE The server "WildFly  9.x " requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-10-30 11:55:21.217
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-10-30 11:55:31.980
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 11:55:32.052
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 11:55:52.103
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-10-30 11:59:01.505
+!MESSAGE Module student on WildFly  9.x  not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-10-30 11:59:21.562
+!MESSAGE Module student on WildFly  9.x  still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2016-10-30 12:11:25.079
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2016-10-30 12:11:26.704
+!MESSAGE Server Shutdown Succeeded

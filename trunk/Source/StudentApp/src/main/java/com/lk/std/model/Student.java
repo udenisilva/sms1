@@ -3,12 +3,14 @@ package com.lk.std.model;
 import java.io.Serializable;
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -52,6 +54,14 @@ public class Student implements Serializable {
 	@OneToOne
 	@JoinColumn(name="branch",nullable = false)
 	private Branch branch;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "parent_id", nullable = true)
+	private Parents parents;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "guardians_id", nullable = true)
+	private Guardians guardians;
 	
 	@Version
 	@Column(name = "version_id")
@@ -131,6 +141,22 @@ public class Student implements Serializable {
 
 	public void setBranch(Branch branch) {
 		this.branch = branch;
+	}
+
+	public Parents getParents() {
+		return parents;
+	}
+
+	public void setParents(Parents parents) {
+		this.parents = parents;
+	}
+
+	public Guardians getGuardians() {
+		return guardians;
+	}
+
+	public void setGuardians(Guardians guardians) {
+		this.guardians = guardians;
 	}
 
  

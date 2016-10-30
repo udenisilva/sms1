@@ -6,6 +6,7 @@ com\lk\std\model\Grade.class
 com\lk\std\service\GramaNiladhariDivisionService.class
 com\lk\std\service\GramaNiladhariDivisionServiceImpl.class
 com\lk\std\service\DistrictService.class
+com\lk\std\model\Guardians.class
 com\lk\std\dao\LocalAuthorityRepository.class
 com\lk\std\dao\UtilityLineTypesRepository.class
 com\lk\std\service\LocalAuthorityServiceImpl.class
@@ -60,6 +61,7 @@ com\lk\std\controller\StudentAttendanceController.class
 com\lk\std\service\CustomUserDetailsServiceImpl.class
 com\lk\std\service\DistrictSecretariatService.class
 com\lk\std\constant\GeneralEnumConstants$DistrictType.class
+com\lk\std\model\Parents.class
 com\lk\std\model\SequenceNumber.class
 com\lk\std\model\Branch.class
 com\lk\std\controller\StaffProfileController.class

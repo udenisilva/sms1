@@ -1,0 +1,65 @@
+package com.lk.std.model;
+
+import java.io.Serializable;
+import java.util.List;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Version;
+
+@Entity(name = "guardians")
+@Table(name = "guardians")
+public class Guardians implements Serializable{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "parent_id", nullable = false)
+	private long id;
+
+	@Column(name = "parent_fname", nullable = false)
+	private String fname;
+	
+	@Column(name = "parent_foccupation", nullable = false)
+	private String foccupation;
+	
+	@Column(name = "parent_fnationaity", nullable = false)
+	private String fnationaity;
+	
+	@Column(name = "parent_fnic", nullable = false)
+	private String fnic;
+	
+	@Column(name = "parent_fcompany", nullable = false)
+	private String fcompany;
+	
+	@Column(name = "parent_fphone", nullable = false)
+	private int fphone;
+	
+	@Column(name = "parent_fmobile", nullable = false)
+	private int fmobile;
+	
+	@Column(name = "parent_faddress", nullable = false)
+	private String faddress;
+	
+	@Column(name = "parent_femail", nullable = false)
+	private String femail;
+	
+	@OneToMany(mappedBy="parets") 
+	private List<Student> student;
+	
+	
+	@Version
+	@Column(name = "version_id")
+	private int versionId;
+
+}
