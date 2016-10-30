@@ -24,7 +24,7 @@
 
 	<context:property-placeholder location="classpath:hibernate.properties" />
 
-    <jpa:repositories base-package="lk.nbro.lsmis.dao"/>
+    <jpa:repositories base-package="com.lk.std.dao"/>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="${jdbc.driverClassName}"/>
@@ -43,7 +43,7 @@
         <property name="dataSource" ref="dataSource"/>
         <property name="jpaVendorAdapter" ref="jpaVendorAdapter"/>
         <!-- spring based scanning for entity classes-->
-        <property name="packagesToScan" value="lk.nbro.lsmis.model"/>
+        <property name="packagesToScan" value="com.lk.std.model"/>
     </bean>
 
     <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager"/>

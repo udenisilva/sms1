@@ -21,14 +21,14 @@ import org.artofsolving.jodconverter.office.OfficeManager;
 
 public class CreateDoxToPdf {
 
-  private static final String PROP_FILE_NAME = "olsims_application";
+  private static final String PROP_FILE_NAME = "application";
 
   public static String createDocument(String fileName, String fileType) {
     OfficeManager officeManager = null;
     try {
       System.out.println("---- Convert started ----");
       officeManager = new DefaultOfficeManagerConfiguration()
-          .setOfficeHome(new File(CommonUtil.getValueFromFile(PROP_FILE_NAME, "nbro.libreOffice.location")))
+          .setOfficeHome(new File(CommonUtil.getValueFromFile(PROP_FILE_NAME, "libreOffice.location")))
           .buildOfficeManager();
       officeManager.start();
 
@@ -61,7 +61,7 @@ public class CreateDoxToPdf {
   private static void createPDF(OfficeDocumentConverter converter, String fileName) {
     try {
       System.out.println("---- Converting 1----");
-      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "nbro.olsims.file.export.url");
+      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "file.export.url");
       System.out.println(filePath + fileName + ".docx");
       converter.convert(new File(filePath + fileName + ".docx"), new File(filePath + fileName + ".PDF"));
     } catch (Throwable e) {
@@ -72,7 +72,7 @@ public class CreateDoxToPdf {
   private static void createHTML(OfficeDocumentConverter converter, String fileName) {
     try {
       System.out.println("---- Converting 1----");
-      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "nbro.olsims.file.export.url");
+      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "file.export.url");
       System.out.println(filePath + fileName + ".docx");
       converter.convert(new File(filePath + fileName + ".docx"), new File(filePath + fileName + ".pdf"));
     } catch (Throwable e) {
@@ -83,7 +83,7 @@ public class CreateDoxToPdf {
   private static void createPDFFromOdt(OfficeDocumentConverter converter, String fileName) {
     try {
       System.out.println("---- Converting 2 ----");
-      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "nbro.olsims.file.export.url");
+      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "file.export.url");
       converter.convert(new File(filePath + fileName + ".odt"), new File(filePath + fileName + ".pdf"));
     } catch (Throwable e) {
       e.printStackTrace();
@@ -92,7 +92,7 @@ public class CreateDoxToPdf {
 
   public static void ConvertToPDF(String docPath, String pdfPath) {
     try {
-      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "nbro.olsims.file.export.url");
+      final String filePath = CommonUtil.getValueFromFile(PROP_FILE_NAME, "file.export.url");
       docPath = filePath + docPath + ".docx";
       pdfPath = filePath + pdfPath + ".pdf";
       InputStream doc = new FileInputStream(new File(docPath));
