@@ -51,10 +51,6 @@ public class Grade implements Serializable {
 	@OneToMany(mappedBy="grade") 
 	private List<Attendance> attendances;
 	
-	@OneToOne
-	@JoinColumn(name="grade_staff",nullable = false) 
-	private Staff staff; 
-	
 	@Version
 	@Column(name = "version_id")
 	private int versionId;
@@ -133,14 +129,6 @@ public class Grade implements Serializable {
 
 	public void setAttendances(List<Attendance> attendances) {
 		this.attendances = attendances;
-	}
-
-	public Staff getStaff() {
-		return staff;
-	}
-
-	public void setStaff(Staff staff) {
-		this.staff = staff;
 	}
 	
 

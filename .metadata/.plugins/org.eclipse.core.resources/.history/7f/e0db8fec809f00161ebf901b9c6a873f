@@ -278,15 +278,14 @@ public class Staff implements Serializable {
 		this.versionId = versionId;
 	}
 
-	public Grade getGrade() {
-		return grade;
+	@Override
+	public String toString() {
+		return "Staff [id=" + id + ", title=" + title + ", name=" + name + ", address=" + address + ", branch=" + branch
+				+ ", designation=" + designation + ", nic=" + nic + ", tel=" + tel + ", mobile=" + mobile + ", gender="
+				+ gender + ", bday=" + bday + ", email=" + email + ", qulifications=" + qulifications + ", experience="
+				+ experience + ", house=" + house + ", jdate=" + jdate + ", ldate=" + ldate + ", status=" + status
+				+ ", remarks=" + remarks + ", subjects=" + subjects + ", versionId=" + versionId + "]";
 	}
-
-	public void setGrade(Grade grade) {
-		this.grade = grade;
-	}
-
-
 
 	
 	

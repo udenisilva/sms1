@@ -134,14 +134,6 @@ public class Grade implements Serializable {
 	public void setAttendances(List<Attendance> attendances) {
 		this.attendances = attendances;
 	}
-
-	public Staff getStaff() {
-		return staff;
-	}
-
-	public void setStaff(Staff staff) {
-		this.staff = staff;
-	}
 	
 
 }
