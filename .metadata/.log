@@ -2995,3 +2995,20 @@ Caused by: java.io.IOException: Invalid response
 
 !ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-14 23:38:01.542
 !MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.eclipse.egit.core 4 0 2016-12-14 23:42:28.212
+!MESSAGE An exception occurred during push on URI https://dan992_h@bitbucket.org/icbt1/student.git: https://dan992_h@bitbucket.org/icbt1/student.git: not authorized
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://dan992_h@bitbucket.org/icbt1/student.git: not authorized
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:169)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI.execute(PushOperationUI.java:167)
+	at org.eclipse.egit.ui.internal.push.PushOperationUI$1.run(PushOperationUI.java:229)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://dan992_h@bitbucket.org/icbt1/student.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:491)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:379)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:155)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1250)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:158)
+	... 4 more
