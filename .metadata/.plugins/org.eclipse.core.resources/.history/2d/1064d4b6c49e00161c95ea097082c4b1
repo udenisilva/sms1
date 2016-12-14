@@ -1,7 +1,0 @@
-package com.lk.std.model;
-
-import java.io.Serializable;
-
-public class Attendance implements Serializable {
-
-}

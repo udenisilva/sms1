@@ -1,0 +1,8 @@
+package com.lk.std.dao;
+ 
+
+import com.lk.std.model.DistrictSecretariat;
+
+public interface GradeRepositiry extends CrudRepository<Grade, Long> {
+
+}

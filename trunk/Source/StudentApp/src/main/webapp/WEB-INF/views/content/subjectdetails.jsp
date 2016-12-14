@@ -63,7 +63,7 @@
 	         </span>
 	     </div>
 	     <p></p>	     
-	     <div align="left">
+	     <!-- <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Code</span>
 	     	 <input class="form-control" maxlength="3" width="20px" style="width:100px"  type="text" id="szSubCode" name="szSubCode" />	         
 	     </div>
@@ -71,7 +71,7 @@
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Name</span>
 	     	 <input class="form-control" maxlength="200" width="20px" style="width:360px"  type="text" id="szSubName" name="szSubName" />	         
-	     </div>
+	     </div> -->
 
 	     <p></p>	     
 	     <div align="left">

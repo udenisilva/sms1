@@ -1,23 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="com.lk.std.constant.OLSIMSEnumConstant.Gender"/>
-<fullyQualifiedTypeName name="com.sun.star.bridge.oleautomation.Date"/>
-<fullyQualifiedTypeName name="com.lk.std.constant.OLSIMSEnumConstant.Action"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToOne"/>
-<fullyQualifiedTypeName name="com.lk.std.model.Branch"/>
-<fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
-<fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="com.lk.std.model.Staff"/>
-<fullyQualifiedTypeName name="com.lk.std.model.Subject"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="com.lk.std.model.ExaminationType"/>
-<fullyQualifiedTypeName name="com.lk.std.model.Marks"/>
-<fullyQualifiedTypeName name="com.lk.std.constant.OLSIMSEnumConstant.PaymentType"/>
-<fullyQualifiedTypeName name="com.lk.std.constant.OLSIMSEnumConstant.MessagesCatagory"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
-<fullyQualifiedTypeName name="com.lk.std.model.Grade"/>
-<fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="com.lk.std.model.Student"/>
-<fullyQualifiedTypeName name="com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus"/>
-</qualifiedTypeNameHistroy>
+<qualifiedTypeNameHistroy/>

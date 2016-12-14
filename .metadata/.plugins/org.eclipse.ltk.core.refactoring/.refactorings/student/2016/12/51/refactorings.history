@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.lk.std.dao.GradeRepositiry&apos; to &apos;GradeRepository&apos;&#x0D;&#x0A;- Original project: &apos;student&apos;&#x0D;&#x0A;- Original element: &apos;com.lk.std.dao.GradeRepositiry&apos;&#x0D;&#x0A;- Renamed element: &apos;com.lk.std.dao.GradeRepository&apos;&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;GradeRepositiry&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java&lt;com.lk.std.dao{GradeRepositiry.java[GradeRepositiry" matchStrategy="1" name="GradeRepository" qualified="false" references="false" similarDeclarations="false" stamp="1481650059332" textual="false" version="1.0"/>
+</session>

@@ -142,6 +142,13 @@ public class Grade implements Serializable {
 	public void setStaff(Staff staff) {
 		this.staff = staff;
 	}
+
+	@Override
+	public String toString() {
+		return "Grade [id=" + id + ", grade=" + grade + ", branch=" + branch + ", admission=" + admission + ", marks="
+				+ marks + ", classSchedules=" + classSchedules + ", messages=" + messages + ", attendances="
+				+ attendances + ", staff=" + staff + ", versionId=" + versionId + "]";
+	}
 	
 
 }

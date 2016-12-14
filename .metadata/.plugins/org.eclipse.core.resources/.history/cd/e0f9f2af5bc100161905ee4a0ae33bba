@@ -1,0 +1,20 @@
+package com.lk.std.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.lk.std.dao.GradeRepository;
+import com.lk.std.model.Grade;
+
+public class GradeServiceImp implements GradeService{
+
+	@Autowired
+	GradeRepository gradeRepository;
+	
+	@Override
+	public List<Grade> findAll() {		
+		return (List<Grade>) gradeRepository.findAll();
+	}
+
+}
