@@ -21,4 +21,9 @@ public class StaffServiceImp implements StaffService{
 	public List<Staff> findAll() {		 
 		return (List<Staff>) staffRepository.findAll();
 	}
+
+	@Override
+	public Staff save(Staff stafff) {		 
+		return staffRepository.save(stafff);
+	}
 }

@@ -22,4 +22,9 @@ public class GradeServiceImp implements GradeService{
 		return (List<Grade>) gradeRepository.findAll();
 	}
 
+	@Override
+	public Grade save(Grade grade) {		 
+		return gradeRepository.save(grade);
+	}
+
 }

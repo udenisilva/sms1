@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -13,6 +14,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -49,12 +51,12 @@ public class Staff implements Serializable {
 	@Column(name = "staff_address", nullable = false)
 	private String address;
 	
-	@OneToOne
-	@JoinColumn(name="staff_branch",nullable = false) 
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "branch_id", nullable = false)
 	private Branch branch;
-	
-	@OneToOne
-	@JoinColumn(name="staff_designation",nullable = false) 
+
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "designation_id", nullable = false)
 	private Designation designation;
 	
 	@Column(name = "staff_nic", nullable = false)
@@ -103,7 +105,8 @@ public class Staff implements Serializable {
 	@Fetch(value = FetchMode.SUBSELECT)
 	private List<Subject> subjects;
 	
-	@OneToOne(mappedBy = "staff", optional = true)
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "grade_id", nullable = true)
 	private Grade grade;
 	
 	@Version
@@ -142,6 +145,7 @@ public class Staff implements Serializable {
 		this.address = address;
 	}
 
+ 
 	public Branch getBranch() {
 		return branch;
 	}

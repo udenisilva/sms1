@@ -7,4 +7,6 @@ import com.lk.std.model.Grade;
 public interface GradeService {
 
 	public List<Grade> findAll();
+	
+	public Grade save(Grade grade);
 }

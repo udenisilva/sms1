@@ -1,0 +1,9 @@
+package com.lk.std.dao;
+
+import com.lk.std.model.Student;
+
+public interface StudentRepository {
+
+	void save(Student student);
+
+}

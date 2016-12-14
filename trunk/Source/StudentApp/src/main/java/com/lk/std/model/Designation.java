@@ -1,12 +1,14 @@
 package com.lk.std.model;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
@@ -31,8 +33,8 @@ public class Designation implements Serializable {
 	@Column(name = "description", nullable = false)
 	private String description;
 
-	@OneToOne(mappedBy="designation",optional=true)
-	private Staff staff;
+	@OneToMany(mappedBy="designation") 
+	private List<Staff> staff;
 	
 	@Version
 	@Column(name = "version_id")
@@ -70,20 +72,15 @@ public class Designation implements Serializable {
 		this.versionId = versionId;
 	}
 
-	public Staff getStaff() {
+	public List<Staff> getStaff() {
 		return staff;
 	}
 
-	public void setStaff(Staff staff) {
+	public void setStaff(List<Staff> staff) {
 		this.staff = staff;
 	}
 
-	@Override
-	public String toString() {
-		return "Designation [id=" + id + ", designation=" + designation + ", description=" + description + ", staff="
-				+ staff + ", versionId=" + versionId + "]";
-	}
-
+ 
 	
 	
 }

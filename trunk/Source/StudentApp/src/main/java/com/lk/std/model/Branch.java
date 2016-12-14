@@ -54,8 +54,8 @@ public class Branch implements Serializable {
 	@OneToMany(mappedBy="branch") 
 	private List<Grade> grade;
 	
-	@OneToOne(mappedBy="branch",optional=true)
-	private Staff staff;
+	@OneToMany(mappedBy="grade")
+	private List<Staff> staff;
 	
 	@Version
 	@Column(name = "version_id")
@@ -145,14 +145,14 @@ public class Branch implements Serializable {
 		this.subject = subject;
 	}
 
-	public Staff getStaff() {
+	public List<Staff> getStaff() {
 		return staff;
 	}
 
-	public void setStaff(Staff staff) {
+	public void setStaff(List<Staff> staff) {
 		this.staff = staff;
 	}
 
- 	
+ 
 
 }
