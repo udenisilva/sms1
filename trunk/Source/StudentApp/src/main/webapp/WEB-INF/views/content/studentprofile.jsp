@@ -81,7 +81,7 @@
 	         </span>
 	     </div>	
 	     <p></p>     
-	     <div align="left">
+	    <!--  <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Class</span>
 	         <span>
 	            <div class="dropdown">
@@ -92,7 +92,7 @@
 			  </div>  
 	         </span>
 	     </div>	
-	     <p></p>	     
+	     <p></p>	 -->     
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Joined Date</span>
 	         <span>

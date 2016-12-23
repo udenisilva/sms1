@@ -19,6 +19,11 @@ public class StudentServiceImp implements StudentService{
 	public Student save(Student student) {		 
 		 return studentRepository.save(student); 
 	}
+
+	@Override
+	public Student findById(long stdId) { 
+		return studentRepository.findById(stdId);
+	}
 	
  
 }

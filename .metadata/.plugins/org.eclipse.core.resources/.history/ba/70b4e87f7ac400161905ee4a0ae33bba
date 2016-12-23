@@ -1,0 +1,9 @@
+package com.lk.std.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.lk.std.model.Subject;
+
+public interface SubjectRepository extends CrudRepository<Subject,Long>{
+
+}

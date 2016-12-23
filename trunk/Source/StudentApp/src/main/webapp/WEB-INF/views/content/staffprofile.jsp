@@ -25,14 +25,14 @@
 			<div class="x_content">
 				<br />
 				
-   <form action=".htm" modelAttribute="" method="post" >
+   <form action=".htm" modelAttribute="staff" method="post" >
     <h3 >Setup Staff Details</h3>
         <div style="float:center; width: 500px; height: 700px; margin-top: 20px">
         
         <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Staff ID</span>	         
 	         <span>
-	             <input class="form-control" maxlength="20" style="width:200px"  type="text" id="szStfID" name="szStfID" />
+	             <input class="form-control" maxlength="20" style="width:200px"  type="text" id="id" name="id" />
 	         </span>
 	     </div>
 	     <p></p>      
@@ -40,13 +40,11 @@
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Title</span>	         
 	         <span>
 	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Title
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">	
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mr.</a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Miss.</a></li>	
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mrs.</a></li>
-			    </ul>
+			    <select class="btn btn-default dropdown-toggle" id="title" name="title" >Title
+			    <option value="">Mr.</a></option>
+			    <option value="">Miss.</option>	
+			    <option value="">other</option>
+			    </select>
 			  </div>     
 	         </span>
 	     </div>
@@ -54,47 +52,44 @@
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Name</span>
 	         <span>
-	             <input class="form-control" maxlength="250" width="300px" style="width:360px"  type="text" id="szStfName" name="szStfName" />
+	             <input class="form-control" maxlength="250" width="300px" style="width:360px"  type="text" id="name" name="name" />
 	         </span>
 	     </div>
 	     <p></p>   
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Address</span>
-	     	 <textarea class="form-control" rows="5" style="width:220px" id="Address"></textarea>	         
+	     	 <textarea class="form-control" rows="5" style="width:220px" id="address" name="address"></textarea>	         
 	     </div>
 	     <p></p>	 
 	     <div align="left" class="Branch">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Branch</span>
 	         <span>
 	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Branch
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
+			    <select class="btn btn-default dropdown-toggle" type="button" id="branch" name="Branch">
+			     <option value="">B12</option>
+			    </select>
 			  </div>  
 	         </span>
 	     </div>
 	     <p></p>
-	     <div align="left" class="Division">
+	    <!-- <div align="left" class="Division">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Division</span>
 	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Division
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
+	           <div class="dropdown">
+			    <select class="btn btn-default dropdown-toggle" type="button" id="branch" name="Branch">
+			     <option value="">B12</option>
+			    </select>
 			  </div>  
 	         </span>
 	     </div>
-	     <p></p>
+	     <p></p>-->
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Designation</span>
 	         <span>
 	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Designation
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
+			    <select class="btn btn-default dropdown-toggle" id="designation" name="designation">
+			     <option value="">D12</option>
+			    </select>
 			  </div>  
 	         </span>
 	     </div>	
@@ -102,53 +97,51 @@
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >NIC</span>
 	         <span>
-	             <input class="form-control" maxlength="12" width="100px" style="width:100px"  type="text" id="szStfNIC" name="szStfNIC" />
+	             <input class="form-control" maxlength="12" width="100px" style="width:100px"  type="text" id="nic" name="nic" />
 	         </span>
 	     </div>
 	     <p></p>
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Home</span>
 	         <span>
-	             <input class="form-control" maxlength="10" width="100px" style="width:100px"  type="number" id="szStfHoNo" name="szStfHoNo" />
+	             <input class="form-control" maxlength="10" width="100px" style="width:100px"  type="number" id="tel" name="tel" />
 	         </span>
 	     </div>
 	     <p></p>   
 	     <div align="left"">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Mobile Number</span>
 	         <span>
-	             <input class="form-control" maxlength="10" width="100px" style="width:100px"  type="number" id="dStfMobNo" name="dStfMobNo" />
+	             <input class="form-control" maxlength="10" width="100px" style="width:100px"  type="number" id="mobile" name="mobile" />
 	         </span>
 	     </div>
 	     <p></p>      
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Email</span>
 	         <span>
-	             <input class="input_feild" maxlength="50" width="100px" style="width:360px"  type="email" id="szEmail" name="szTelN0" />
+	             <input class="input_feild" maxlength="50" width="100px" style="width:360px"  type="email" id="email" name="email" />
 	         </span>
 	     </div>
 	     <p></p>  
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Joined Date</span>
 	         <span>
-	           <input class="form-control" maxlength="10" width="300px" style="width:100px"  type="date" id="dtStuJoin" name="dtStuJoin" />
+	           <input class="form-control" maxlength="10" width="300px" style="width:100px"  type="date" id="jdate" name="jdate" />
 	         </span>
 	     </div>
 	     <p></p>	     
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Left Date</span>
-	     	 <input class="form-control" maxlength="10" width="20px" style="width:100px"  type="date" id="dtStuLeft" name="dtStuLeft" />	         
+	     	 <input class="form-control" maxlength="10" width="20px" style="width:100px"  type="date" id="ldate" name="ldate" />	         
 	     </div>
 	     <p></p>	     
 	     <div align="left" class="StaffProfile">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Status</span>
 	         <span>
-	            <div class="Status">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Status
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Active</a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Terminate</a></li>
-			    </ul>
+	            <div class="left">
+			    <select class="btn btn-default dropdown-toggle" id="status" name="status" >			 
+			    <option value="">Active</option>
+			    <option value="">Terminate</option>
+			    </select>
 			  </div>  
 	         </span>
 	     </div>

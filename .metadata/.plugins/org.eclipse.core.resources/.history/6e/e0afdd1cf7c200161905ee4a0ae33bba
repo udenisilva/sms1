@@ -1,0 +1,6 @@
+package com.lk.std.service;
+
+public interface DesignationService {
+
+	public List<Designation> findAll();
+}

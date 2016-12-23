@@ -1,0 +1,49 @@
+package com.lk.std.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.lk.std.model.Branch;
+import com.lk.std.model.Parents;
+import com.lk.std.service.ParentsService;
+import com.lk.std.service.StudentService;
+
+@Controller
+@RequestMapping
+public class ParentDetailsController {
+
+	@Autowired
+	ParentsService parentService;
+	
+	@Autowired
+	StudentService studentService;
+	
+	  @RequestMapping(value = "/parentdetails", method = RequestMethod.GET)
+	  public ModelAndView getHomePage(HttpServletRequest request) {
+	    ModelMap modelMap = new ModelMap(); 
+	    long studentId = 0;
+			Parents parent = null;
+			try {
+				if (!StringUtils.isBlank(request.getParameter("student_id"))) {
+					studentId = Long.parseLong(request.getParameter("student_id").trim());
+				}
+				if (studentId > 0) {
+					parent =  parentService.findByStudent(studentService.findById(studentId));
+				} else {
+					parent = new Parents();
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			
+			modelMap.addAttribute("branch", branchService.findAll());
+	    return new ModelAndView("parentdetails", modelMap);
+	  }
+}

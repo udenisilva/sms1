@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "title": "JBoss Tools",
-  "timestamp": 1481645224957,
+  "timestamp": 1482053415559,
   "ttl": 0,
   "helpUrl": "https://aer.ctrlflow.com/redhat/help",
   "feedbackUrl": "http://ctrlflow.com/automated-error-reporting",
@@ -46,7 +46,7 @@
     "tern.*"
   ],
   "requiredPackages": [
-    "com.ctrlflow.*",
+    "com.ctrlflow.aer.*",
     "com.jboss.*",
     "org.drools.*",
     "org.fusesource.*",
@@ -63,5 +63,5 @@
     ":java.net.*:",
     ":org.eclipse.core.runtime.OperationCanceledException:"
   ],
-  "problemsZipLastDownloadTimestamp": 1481645526736
+  "problemsZipLastDownloadTimestamp": 1482053720065
 }

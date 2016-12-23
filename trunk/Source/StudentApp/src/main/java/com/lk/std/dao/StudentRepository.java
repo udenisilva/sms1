@@ -6,4 +6,6 @@ import com.lk.std.model.Student;
 
 public interface StudentRepository extends CrudRepository<Student,Long> {
 
+	public Student findById(long stdId);
+
 }

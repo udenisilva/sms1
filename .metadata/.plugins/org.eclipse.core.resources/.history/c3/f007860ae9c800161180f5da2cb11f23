@@ -1,0 +1,10 @@
+package com.lk.std.service;
+
+import com.lk.std.model.Payments;
+
+public interface PaymentsService {
+
+	public Payments findById(Long id);
+	
+	public List<Payments> findByStudent(Student student);
+}

@@ -130,6 +130,24 @@ function getUserDesignation(selectFieldId,displayFieldId){
 	});
 }
 
+function getUserDesignation(selectFieldId,displayFieldId){
+	var userID = $("#"+selectFieldId).val();	
+	$.ajax({
+	  type: "GET",
+	  contentType: "application/json",
+      dataType: "text",
+	  url: "getGradeSubject.do",
+	  data: {"gradeId":userID},
+	  success: function(data){
+		  // alert(data);
+		  $("#"+displayFieldId).val(data);
+	  },
+	  error: function(data){
+	  	alert("error");
+	  }
+	});
+}
+
 /* ----------------------------------------- upload files ajax ------------------------------------------------- */
 
 //function for check the upload is supported for using browser

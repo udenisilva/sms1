@@ -1,0 +1,20 @@
+package com.lk.std.service;
+
+import com.lk.std.model.Parents;
+import com.lk.std.model.Student;
+
+public class ParentsServiceImp implements ParentsService {
+
+	@Override
+	public Parents findByStudent(Student student) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Parents save(Parents parents) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,47 @@
+package com.lk.std.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.lk.std.model.Branch;
+import com.lk.std.model.Payments;
+import com.lk.std.service.ParentsService;
+import com.lk.std.service.PaymentsService;
+
+@Controller
+@RequestMapping
+public class StudentPaymentController {
+	
+	@Autowired
+	PaymentsService paymentsService;
+
+	  @RequestMapping(value = "/studentpayment", method = RequestMethod.GET)
+	  public ModelAndView getHomePage(HttpServletRequest request) {
+	    ModelMap modelMap = new ModelMap();  
+	    long paymentId = 0;
+		Payments payment = null;
+		try {
+			if (!StringUtils.isBlank(request.getParameter("branchid"))) {
+				paymentId = Long.parseLong(request.getParameter("branchid").trim());
+			}
+			if (paymentId > 0) {
+				payment =  paymentsService.findById(paymentId);
+			} else {
+				payment = new Payments();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		
+		modelMap.addAttribute("branch", branchService.findAll());
+	 
+	    return new ModelAndView("studentpayment", modelMap);
+	  }
+}

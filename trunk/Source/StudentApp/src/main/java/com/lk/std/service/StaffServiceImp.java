@@ -26,4 +26,9 @@ public class StaffServiceImp implements StaffService{
 	public Staff save(Staff stafff) {		 
 		return staffRepository.save(stafff);
 	}
+
+	@Override
+	public Staff findById(long id) {		
+		return staffRepository.findById(id);
+	}
 }

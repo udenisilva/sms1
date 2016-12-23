@@ -22,4 +22,9 @@ public class SubjectServiceImp implements SubjectService {
 		return (List<Subject>) subjectRepository.findAll();
 	}
 
+	@Override
+	public List<Subject> findByGrade(Long gradeId) {
+		return subjectRepository.findByGrade(gradeId);
+	}
+
 }
