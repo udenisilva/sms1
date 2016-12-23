@@ -390,3 +390,147 @@
 
 !ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 09:24:22.830
 !MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 16:47:47.894
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 16:48:17.138
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 16:48:18.222
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 16:48:22.346
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 16:48:22.515
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 16:48:42.525
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 16:50:07.485
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 16:50:22.346
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 16:50:23.412
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 16:50:26.987
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 16:50:27.084
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 16:50:47.088
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 19:44:18.174
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 19:44:45.890
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 19:44:46.939
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 19:44:50.358
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 19:44:50.397
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 19:45:10.412
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 19:52:14.138
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 19:52:36.000
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 19:52:37.058
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 19:52:40.475
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 19:52:40.533
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 19:53:00.607
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 19:57:29.277
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 19:57:53.217
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 19:57:54.267
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 19:57:57.494
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 19:57:57.586
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 19:58:17.686
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 20:01:57.936
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 20:02:14.408
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 20:02:15.444
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 20:02:19.122
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 20:02:19.256
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 20:02:39.312
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 20:03:39.601
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 20:03:59.087
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 20:04:00.143
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 20:04:03.670
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 20:04:03.888
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 20:04:24.003
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-23 20:05:25.473
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-23 20:05:55.497
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2016-12-23 20:05:56.549
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2016-12-23 20:05:59.768
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 0 2016-12-23 20:05:59.853
+!MESSAGE Module student on WildFly 10.x not yet fully deployed. Waiting...
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2016-12-23 20:06:19.894
+!MESSAGE Module student on WildFly 10.x still not ready to be shown in browser. Aborting delay.

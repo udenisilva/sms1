@@ -41,6 +41,7 @@ public class SetupSchoolControlller {
 			}
 			if (branchId > 0) {
 				branch =  branchService.findById(branchId);
+				System.out.println(branchId+"");
 			} else {
 				branch = new Branch();
 			}
@@ -48,7 +49,8 @@ public class SetupSchoolControlller {
 			// TODO: handle exception
 		}
 		
-		modelMap.addAttribute("branch", branchService.findAll());
+//		modelMap.addAttribute("branch", branchService.findAll());
+		modelMap.addAttribute("branch", branch);
 	    return new ModelAndView("setupschool", modelMap);
 	  }
 	  
@@ -60,8 +62,10 @@ public class SetupSchoolControlller {
 			Action action = null;
 
 			try {
-				if (!StringUtils.isBlank(request.getParameter("branch_id"))) {
+				if (!StringUtils.isBlank(request.getParameter("id"))) {
+					Long id =new Long(request.getParameter("id"));
 					action = Action.USER_UPDATED;
+					branch.setId(id);
 				} else {
 					action = Action.USER_CREATED;
 				}
@@ -76,10 +80,10 @@ public class SetupSchoolControlller {
 				// set action logger
 				actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), savebranch.getId(),
 						Session.getLoggedUserId());
-				return "redirect:studentprofile.htm?stdId=" + savebranch.getId() + "&" + ApplicationConstants.MESSAGE + "="
+				return "redirect:setupschool.htm?branchid=" + savebranch.getId() + "&" + ApplicationConstants.MESSAGE + "="
 						+ ApplicationConstants.SUCCESS;
 			} else {
-				return "redirect:studentprofile.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
+				return "redirect:setupschool.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
 			}
 		}
 }

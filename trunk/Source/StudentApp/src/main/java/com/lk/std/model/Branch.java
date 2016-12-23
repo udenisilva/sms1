@@ -32,6 +32,9 @@ public class Branch implements Serializable {
 
 	@Column(name = "branch_code", nullable = false)
 	private String code;
+	
+	@Column(name = "branch_name", nullable = false)
+	private String name;
 
 	@Column(name = "branch_address", nullable = false)
 	private String address;
@@ -151,6 +154,14 @@ public class Branch implements Serializable {
 
 	public void setStaff(List<Staff> staff) {
 		this.staff = staff;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
  
