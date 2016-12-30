@@ -29,7 +29,7 @@ public class Parents implements Serializable {
 	@Column(name = "parent_fname", nullable = false)
 	private String fname;
 	
-	@Column(name = "parent_foccupation", nullable = false)
+	@Column(name = "parent_foccupation", nullable = true)
 	private String foccupation;
 	
 	@Column(name = "parent_fnationaity", nullable = false)
@@ -38,7 +38,7 @@ public class Parents implements Serializable {
 	@Column(name = "parent_fnic", nullable = false)
 	private String fnic;
 	
-	@Column(name = "parent_fcompany", nullable = false)
+	@Column(name = "parent_fcompany", nullable = true)
 	private String fcompany;
 	
 	@Column(name = "parent_fphone", nullable = false)
@@ -56,7 +56,7 @@ public class Parents implements Serializable {
 	@Column(name = "parent_mname", nullable = false)
 	private String mname;
 	
-	@Column(name = "parent_moccupation", nullable = false)
+	@Column(name = "parent_moccupation", nullable = true)
 	private String moccupation;
 	
 	@Column(name = "parent_mnationaity", nullable = false)
@@ -65,7 +65,7 @@ public class Parents implements Serializable {
 	@Column(name = "parent_mnic", nullable = false)
 	private String mnic;
 	
-	@Column(name = "parent_mcompany", nullable = false)
+	@Column(name = "parent_mcompany", nullable = true)
 	private String mcompany;
 	
 	@Column(name = "parent_mphone", nullable = false)

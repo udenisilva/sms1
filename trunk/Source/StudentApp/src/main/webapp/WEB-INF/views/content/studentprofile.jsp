@@ -25,18 +25,20 @@
 			<div class="x_content">
 				<br />
 				
-   <form action=".htm" modelAttribute="" method="post" >
+   <form action="createStudent.htm" modelAttribute="student" method="post" >
     <h3>Setup Student Details</h3>
+    <input class="form-control" type="hidden" id="id" name="id" value="${student.id}" hidden="true" />
         <div style="float:center; width: 500px; margin-top: 20px">
       
 	      <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Branch</span>	         
 	         <span>
 	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width: 100">Branch
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">			     								      
-			    </ul>
+			    <select class="btn btn-default dropdown-toggle" id="branch" name="branch.id" style="width: 100">
+			    <c:forEach items="${branchs}" var="branch">
+			    <option value="${branch.id}">${branch.code}</option> 
+			    </c:forEach>
+			    </select>
 			  </div>     
 	         </span>
 	     </div>
@@ -44,14 +46,14 @@
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Student ID</span>	         
 	         <span>
-	             <input class="form-control" maxlength="20" style="width:200px"  type="text" id="szStuID" name="szStuID" />
+	             <input class="form-control" maxlength="20" style="width:200px"  type="text" id="code" name="code" value="${student.code}" />
 	         </span>
 	     </div>
 	     <p></p>	     
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Student Name</span>
 	         <span>
-	             <input class="form-control" maxlength="250" style="width:360px"  type="text" id="szStuName" name="szStuName" />
+	             <input class="form-control" maxlength="250" style="width:360px"  type="text" id="name" name="name" value="${student.name}" />
 	         </span>
 	     </div>
 	     <p></p>   
@@ -59,62 +61,36 @@
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Gender</span>
 	         <span>
 	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width: 100">Gender
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Male</a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Female</a></li>
-			    </ul>
+			    <select class="btn btn-default dropdown-toggle"   id="gender" name="gender"  style="width: 100">  
+			    <c:forEach items="${genders}" var="gender">
+			     <option value="${gender}">${gender}</option> 
+			    </c:forEach>
+			    </select>
 			  </div>  
 	         </span>
 	     </div>
-	     <p></p>
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Grade</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width: 100">Grade
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
-			  </div>  
-	         </span>
-	     </div>	
-	     <p></p>     
-	    <!--  <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Class</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100">Class
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
-			  </div>  
-	         </span>
-	     </div>	
-	     <p></p>	 -->     
+	     <p></p>  
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Joined Date</span>
 	         <span>
-	           <input class="form-control" maxlength="10" style="width:100px"  type="date" id="dtStuJoin" name="dtStuJoin" />
+	           <input class="form-control"  type="text" id="joinDate" name="joinDate" value="${student.joinDate}" style="width:80%"/>
 	         </span>
 	     </div>
 	     <p></p>	     
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Left Date</span>
-	     	 <input class="form-control" maxlength="10" style="width:100px"  type="date" id="dtStuLeft" name="dtStuLeft" />	         
+	     	 <input class="form-control"   type="text" id="leftDate" name="leftDate" value="${student.leftDate}" style="width:180%"/>	         
 	     </div>
 	     <p></p>	     
 	     <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Status</span>
 	         <span>
 	            <div class="Status">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100">Status
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Active</a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Terminate</a></li>
-			    </ul>
+			    <select class="btn btn-default dropdown-toggle" name="status" id="status"  style="width:100">
+			   <c:forEach items="${status}" var="statu">
+			     <option value="${statu}">${statu}</option> 
+			    </c:forEach>
+			    </select>
 			  </div>  
 	         </span>
 	     </div>
@@ -122,7 +98,7 @@
 	     <div align="left">
              <span style="float:left;width:100;" >&nbsp;</span>
              <span>
-                 <button type="button" class="btn btn-default">Insert</button>
+                 <button type="submit" class="btn btn-default">Insert</button>
                 </span>
              <span style="float:left;width:100px;" >&nbsp;</span>
              <span>

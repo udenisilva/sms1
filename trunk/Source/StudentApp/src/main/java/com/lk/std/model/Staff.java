@@ -68,22 +68,22 @@ public class Staff implements Serializable {
 	@Column(name = "staff_mobile", nullable = false)
 	private int mobile;
 	
-	@Column(name = "staff_gender", nullable = false)
+	@Column(name = "staff_gender", nullable = true)
 	private Gender gender;
 	
-	@Column(name = "staff_bday", nullable = false)
+	@Column(name = "staff_bday", nullable = true)
 	private Date bday;
 	
 	@Column(name = "staff_email", nullable = false)
 	private String email;
 	
-	@Column(name = "staff_qulifications", nullable = false)
+	@Column(name = "staff_qulifications", nullable = true)
 	private String qulifications;
 	
-	@Column(name = "staff_experience", nullable = false)
+	@Column(name = "staff_experience", nullable = true)
 	private String experience;
 	
-	@Column(name = "staff_house", nullable = false)
+	@Column(name = "staff_house", nullable = true)
 	private House house;
 	
 	@Column(name = "staff_jdate", nullable = false)

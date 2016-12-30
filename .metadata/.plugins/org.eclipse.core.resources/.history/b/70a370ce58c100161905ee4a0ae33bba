@@ -1,8 +1,0 @@
-package com.lk.std.dao;
- 
-
-import com.lk.std.model.Grade;
-
-public interface GradeRepositiry extends CrudRepository<Grade, Long> {
-
-}

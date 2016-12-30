@@ -16,6 +16,7 @@ import com.lk.std.constant.ApplicationConstants;
 import com.lk.std.constant.OLSIMSEnumConstant.Action;
 import com.lk.std.model.Branch;
 import com.lk.std.model.Parents;
+import com.lk.std.model.Student;
 import com.lk.std.service.ActionLoggerService;
 import com.lk.std.service.ParentsService;
 import com.lk.std.service.StudentService;
@@ -42,9 +43,12 @@ public class ParentDetailsController {
 			try {
 				if (!StringUtils.isBlank(request.getParameter("student_id"))) {
 					studentId = Long.parseLong(request.getParameter("student_id").trim());
+					
+					System.out.println("------------error occured");
 				}
 				if (studentId > 0) {
-					parent =  parentService.findByStudent(studentService.findById(studentId));
+					parent =  parentService.findByStudent(studentService.findById(studentId)).get(0);
+					modelMap.addAttribute("student_id", studentId);
 				} else {
 					parent = new Parents();
 				}
@@ -74,16 +78,20 @@ public class ParentDetailsController {
 				System.out.println("------------ Exception occured");
 			}
 
-			Parents saveParents = parentService.save(parent);
+			Parents saveParents = parentService.save(parent); 
+			Student student= studentService.findById(Long.parseLong(request.getParameter("student").trim()));
+			student.setParents(saveParents);
+			studentService.save(student);
+			
 
 			if (saveParents != null) {
 				// set action logger
 				actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), saveParents.getId(),
 						Session.getLoggedUserId());
-				return "redirect:studentprofile.htm?stdId=" + saveParents.getId() + "&" + ApplicationConstants.MESSAGE + "="
+				return "redirect:parentdetails.htm?student_id=" + saveParents.getId() + "&" + ApplicationConstants.MESSAGE + "="
 						+ ApplicationConstants.SUCCESS;
 			} else {
-				return "redirect:studentprofile.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
+				return "redirect:parentdetails.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
 			}
 		}
 }

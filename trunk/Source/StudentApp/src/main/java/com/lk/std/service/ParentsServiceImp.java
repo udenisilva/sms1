@@ -1,5 +1,7 @@
 package com.lk.std.service;
 
+import java.util.List;
+
 import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,13 +20,18 @@ public class ParentsServiceImp implements ParentsService {
 	 
 	
 	@Override
-	public Parents findByStudent(Student student) { 
+	public List<Parents> findByStudent(Student student) { 
 		return parentsRepository.findByStudent(student);
 	}
 
 	@Override
 	public Parents save(Parents parents) {		 
 		return parentsRepository.save(parents);
+	}
+ 
+	@Override
+	public Parents findById(Long id) {		 
+		return parentsRepository.findById(id);
 	}
 
 }

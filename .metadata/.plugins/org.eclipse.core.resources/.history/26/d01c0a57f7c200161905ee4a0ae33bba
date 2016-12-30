@@ -1,6 +1,0 @@
-package com.lk.std.service;
-
-public interface BranchService {
-
-	public List<Branch> findAll();
-}

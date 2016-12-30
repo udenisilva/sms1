@@ -1,5 +1,7 @@
 package com.lk.std.controller;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import javax.servlet.http.HttpServletRequest;
@@ -44,9 +46,12 @@ public class StaffProfileController {
 	@RequestMapping(value = "/staffprofile", method = RequestMethod.GET)
 	public ModelAndView getStaffPage(HttpServletRequest request) {
 		ModelMap modelMap = new ModelMap();
-		modelMap.addAttribute("branch", branchService.findAll());
-		modelMap.addAttribute("designation", designationService.findAll());
-		modelMap.addAttribute("titile", OLSIMSEnumConstant.Title.values());
+		modelMap.addAttribute("branchs", branchService.findAll());
+		for(int i=1; i<branchService.findAll().size();i++){			
+			System.out.println(branchService.findAll().get(i).getCode());
+		}
+		modelMap.addAttribute("designations", designationService.findAll());
+		modelMap.addAttribute("titles", OLSIMSEnumConstant.Title.values());
 		modelMap.addAttribute("status", OLSIMSEnumConstant.ActiveStatus.values());
 
 		long staffId = 0;
@@ -60,14 +65,13 @@ public class StaffProfileController {
 			} else {
 				staff = new Staff();
 			}
-		} catch (Exception e) {
-			// TODO: handle exception
+		} catch (Exception e) { 
 		}
 		modelMap.addAttribute("staff", staff);
 		return new ModelAndView("staffprofile", modelMap);
 	}
 
-	@RequestMapping(value = "/createStaff", method = RequestMethod.GET)
+	@RequestMapping(value = "/createStaff", method = RequestMethod.POST)
 	public String StaffPager(HttpServletRequest request, @ModelAttribute("staff") Staff staff, BindingResult errors) {
 		if (errors.hasErrors()) {
 			System.out.println("------------error occured");
@@ -87,6 +91,31 @@ public class StaffProfileController {
 		} catch (Exception e) {
 			System.out.println("------------ Exception occured");
 		}
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+
+		if (!StringUtils.isBlank(request.getParameter("jdate"))) {
+			try {
+				Date startDate;
+				startDate = df.parse(request.getParameter("jdate"));
+				String newDateString = df.format(startDate);
+				System.out.println(newDateString);
+				staff.setJdate(startDate); 
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		if (!StringUtils.isBlank(request.getParameter("ldate"))) {
+			try {
+				Date endDate;
+				endDate = df.parse(request.getParameter("ldate"));
+				String newDateString = df.format(endDate);
+				System.out.println(newDateString); 
+				staff.setLdate(endDate);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
 
 		Staff saveStaff = staffService.save(staff);
 
@@ -94,7 +123,7 @@ public class StaffProfileController {
 			// set action logger
 			actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), saveStaff.getId(),
 					Session.getLoggedUserId());
-			return "redirect:staffprofile.htm?userId=" + saveStaff.getId() + "&" + ApplicationConstants.MESSAGE + "="
+			return "redirect:staffprofile.htm?staffId=" + saveStaff.getId() + "&" + ApplicationConstants.MESSAGE + "="
 					+ ApplicationConstants.SUCCESS;
 		} else {
 			return "redirect:staffprofiler.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;

@@ -12,7 +12,7 @@ public interface ParentsRepository extends CrudRepository<Parents,Long>{
 	
 	public Parents findById(Long id);
 	
-	public Parents findByStudent(Student student);
+	public List<Parents> findByStudent(Student student);
 	
 	public List<Student> findStudentById(Long id);
 

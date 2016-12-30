@@ -1,5 +1,9 @@
 package com.lk.std.controller;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang3.StringUtils;
@@ -29,13 +33,13 @@ public class StudentProfileController {
 
 	@Autowired
 	BranchService branchService;
-	
+
 	@Autowired
 	GradeService gradeService;
-	
+
 	@Autowired
 	StudentService studentService;
-	
+
 	@Autowired
 	private ActionLoggerService actionloggerService;
 
@@ -49,31 +53,35 @@ public class StudentProfileController {
 				stdId = Long.parseLong(request.getParameter("stdId").trim());
 			}
 			if (stdId > 0) {
-				student =  studentService.findById(stdId);
+				student = studentService.findById(stdId);
 			} else {
 				student = new Student();
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		
-		modelMap.addAttribute("branch", branchService.findAll());
-		modelMap.addAttribute("gender", OLSIMSEnumConstant.Gender.values());
+
+		modelMap.addAttribute("branchs", branchService.findAll());
+		for (int i = 1; i < branchService.findAll().size(); i++) {
+			System.out.println(branchService.findAll().get(i).getCode());
+		}
+		modelMap.addAttribute("genders", OLSIMSEnumConstant.Gender.values());
 		modelMap.addAttribute("grade", gradeService.findAll());
+		modelMap.addAttribute("student", student);
 		modelMap.addAttribute("status", OLSIMSEnumConstant.ActiveStatus.values());
 
 		return new ModelAndView("studentprofile", modelMap);
 	}
-	
+
 	@RequestMapping(value = "/createStudent", method = RequestMethod.POST)
 	public String StaffPager(HttpServletRequest request, @ModelAttribute("student") Student std, BindingResult errors) {
 		if (errors.hasErrors()) {
 			System.out.println("------------error occured");
 		}
 		Action action = null;
-
+		System.out.println("" + std.getCode());
 		try {
-			if (!StringUtils.isBlank(request.getParameter("std_id"))) {
+			if (!StringUtils.isBlank(request.getParameter("id"))) {
 				action = Action.USER_UPDATED;
 			} else {
 				action = Action.USER_CREATED;
@@ -82,6 +90,37 @@ public class StudentProfileController {
 		} catch (Exception e) {
 			System.out.println("------------ Exception occured");
 		}
+
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+
+		if (!StringUtils.isBlank(request.getParameter("joinDate"))) {
+			try {
+				Date startDate;
+				startDate = df.parse(request.getParameter("joinDate"));
+				String newDateString = df.format(startDate);
+				System.out.println(newDateString);
+				std.setJoinDate(startDate);
+				std.setJoinDate(startDate);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		if (!StringUtils.isBlank(request.getParameter("leftDate"))) {
+			try {
+				Date endDate;
+				endDate = df.parse(request.getParameter("leftDate"));
+				String newDateString = df.format(endDate);
+				System.out.println(newDateString);
+				std.setJoinDate(endDate);
+				std.setLeftDate(endDate);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+		// System.out.println(request.getParameter("joinDate"));
+		// System.out.println(""+std.toString());
 
 		Student saveStd = studentService.save(std);
 

@@ -1,0 +1,236 @@
+package com.lk.std.controller;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.commons.lang3.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
+
+import com.lk.std.constant.ApplicationConstants;
+import com.lk.std.constant.OLSIMSEnumConstant.Action;
+import com.lk.std.model.Branch;
+import com.lk.std.model.Parents;
+import com.lk.std.service.ActionLoggerService;
+import com.lk.std.service.ParentsService;
+import com.lk.std.service.StudentService;
+import com.lk.std.util.Session;
+
+@Controller
+@RequestMapping
+public class ParentDetailsController {
+
+	@Autowired
+	ParentsService parentService;
+	
+	@Autowired
+	StudentService studentService;
+	
+	@Autowired
+	ActionLoggerService actionloggerService;
+	
+	  @RequestMapping(value = "/parentdetails", method = RequestMethod.GET)
+	  public ModelAndView getHomePage(HttpServletRequest request) {
+	    ModelMap modelMap = new ModelMap(); 
+	    long studentId = 0;
+			List<Parents> parent = new List<Parents>() {
+				
+				@Override
+				public <T> T[] toArray(T[] a) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public Object[] toArray() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public List<Parents> subList(int fromIndex, int toIndex) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public int size() {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+				
+				@Override
+				public Parents set(int index, Parents element) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean retainAll(Collection<?> c) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public boolean removeAll(Collection<?> c) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public Parents remove(int index) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean remove(Object o) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public ListIterator<Parents> listIterator(int index) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public ListIterator<Parents> listIterator() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public int lastIndexOf(Object o) {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+				
+				@Override
+				public Iterator<Parents> iterator() {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean isEmpty() {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public int indexOf(Object o) {
+					// TODO Auto-generated method stub
+					return 0;
+				}
+				
+				@Override
+				public Parents get(int index) {
+					// TODO Auto-generated method stub
+					return null;
+				}
+				
+				@Override
+				public boolean containsAll(Collection<?> c) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public boolean contains(Object o) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public void clear() {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public boolean addAll(int index, Collection<? extends Parents> c) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public boolean addAll(Collection<? extends Parents> c) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+				
+				@Override
+				public void add(int index, Parents element) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public boolean add(Parents e) {
+					// TODO Auto-generated method stub
+					return false;
+				}
+			};
+			try {
+				if (!StringUtils.isBlank(request.getParameter("student_id"))) {
+					studentId = Long.parseLong(request.getParameter("student_id").trim());
+					
+//					System.out.println(request.getParameter("student_id").trim());
+				}
+				if (studentId > 0) {
+//					System.out.println(studentId);
+					parent =  parentService.findByStudent(studentService.findById(studentId));
+				} else {
+					parent = new Parents();
+				}
+			} catch (Exception e) {
+				// TODO: handle exception
+			}
+			
+			modelMap.addAttribute("parent", parent.get(0));
+	    return new ModelAndView("parentdetails", modelMap);
+	  }
+	  
+	  @RequestMapping(value = "/createParents", method = RequestMethod.POST)
+		public String StaffPager(HttpServletRequest request, @ModelAttribute("parents") Parents parent, BindingResult errors) {
+			if (errors.hasErrors()) {
+				System.out.println("------------error occured");
+			}
+			Action action = null;
+
+			try {
+				if (!StringUtils.isBlank(request.getParameter("parent_id"))) {
+					action = Action.USER_UPDATED;
+				} else {
+					action = Action.USER_CREATED;
+				}
+
+			} catch (Exception e) {
+				System.out.println("------------ Exception occured");
+			}
+
+			Parents saveParents = parentService.save(parent);
+
+			if (saveParents != null) {
+				// set action logger
+				actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), saveParents.getId(),
+						Session.getLoggedUserId());
+				return "redirect:parentdetails.htm?student_id=" + saveParents.getId() + "&" + ApplicationConstants.MESSAGE + "="
+						+ ApplicationConstants.SUCCESS;
+			} else {
+				return "redirect:parentdetails.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
+			}
+		}
+}

@@ -7,4 +7,6 @@ public interface StudentService {
 	public Student save(Student student);
 
 	public  Student findById(long stdId);
+	
+
 }

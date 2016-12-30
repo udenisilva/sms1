@@ -48,8 +48,9 @@ public class Branch implements Serializable {
 	@Column(name = "branch_email", nullable = false)
 	private String email;
 		
-	@OneToOne(mappedBy="branch",optional=true)
-	private Student student;
+	 
+	@OneToMany(mappedBy="branch") 
+	private List<Student> student;
 	
 	@OneToOne(mappedBy="branch",optional=true)
 	private Subject subject;
@@ -123,12 +124,13 @@ public class Branch implements Serializable {
 	public void setVersionId(int versionId) {
 		this.versionId = versionId;
 	}
+	 
 
-	public Student getStudent() {
+	public List<Student> getStudent() {
 		return student;
 	}
 
-	public void setStudent(Student student) {
+	public void setStudent(List<Student> student) {
 		this.student = student;
 	}
 
