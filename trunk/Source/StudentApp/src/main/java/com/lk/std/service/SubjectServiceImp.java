@@ -26,5 +26,21 @@ public class SubjectServiceImp implements SubjectService {
 	public List<Subject> findByGrade(Long gradeId) {
 		return subjectRepository.findByGrade(gradeId);
 	}
+	
+
+	@Override
+	public Subject saveSubjectDetails(Subject subject) {
+		return subjectRepository.save(subject);
+	}
+
+	@Override
+	public List<Subject> getSubjectDetails(int code) {
+		return null;
+	}
+
+	@Override
+	public Subject findById(long id) {
+		return subjectRepository.findOne(id);
+	}
 
 }

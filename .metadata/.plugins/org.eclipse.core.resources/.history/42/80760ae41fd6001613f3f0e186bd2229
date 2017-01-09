@@ -1,0 +1,6 @@
+package com.lk.std.dto;
+
+public class AttendanceDto {
+
+	public Attendance attendance;
+}

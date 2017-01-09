@@ -77,6 +77,10 @@ public class Student implements Serializable {
 	@OneToMany(mappedBy="student") 
 	private List<Attendance> attendances;
 	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name = "grade_id", nullable = true)
+	private Grade grade;
+	
 	@Version
 	@Column(name = "version_id")
 	private int versionId;
@@ -205,13 +209,15 @@ public class Student implements Serializable {
 		this.attendances = attendances;
 	}
 
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", code=" + code + ", name=" + name + ", gender=" + gender + ", joinDate="
-				+ joinDate + ", leftDate=" + leftDate + ", status=" + status + ", branch=" + branch + ", parents="
-				+ parents + ", guardians=" + guardians + ", marks=" + marks + ", classSchedules=" + classSchedules
-				+ ", payments=" + payments + ", attendances=" + attendances + ", versionId=" + versionId + "]";
+	public Grade getGrade() {
+		return grade;
 	}
+
+	public void setGrade(Grade grade) {
+		this.grade = grade;
+	}
+
+ 
 
  
 	

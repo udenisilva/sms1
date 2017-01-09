@@ -1,0 +1,12 @@
+package com.lk.std.dto;
+
+import java.util.Date;
+
+import com.lk.std.model.Attendance;
+
+public class AttendanceDto {
+
+	public Date date;
+	
+	public Attendance attendance;
+}

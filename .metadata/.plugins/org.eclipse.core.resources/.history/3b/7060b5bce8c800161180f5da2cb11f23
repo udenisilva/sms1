@@ -1,5 +1,0 @@
-package com.lk.std.dao;
-
-public interface PaymentsRepository {
-
-}

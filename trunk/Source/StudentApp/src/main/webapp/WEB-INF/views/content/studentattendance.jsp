@@ -1,14 +1,13 @@
-  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
+
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
 <div class="page-title">
 	<div class="title_left">
-		<h2>
-			Student Attendance
-		</h2>
+		<h2>Student Attendance</h2>
 	</div>
 </div>
 
@@ -24,34 +23,64 @@
 			</div>
 			<div class="x_content">
 				<br />
-				
-   <form action=".htm" modelAttribute="" method="post" > 
-        <div style="float:center; width: 650px;margin-top: 20px">
-             <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Grade</span>	         
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"  style="width:100px">Grade
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 1</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 2</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 3</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 4</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 5</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 6</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 7</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 8</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 9</a></li>	
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 10</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 11</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 12</a></li>								      
-			    </ul>
-			  </div>     
-	         </span>
-	     </div>
-	     <p></p>	     
-	     <div align="left">
+
+				<form action="addattendance.htm" modelAttribute="attendancea"
+					method="post">
+					<div style="float: center; width: 650px; margin-top: 20px">
+
+						<div align="left" class="Branch">
+							<span
+								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Branch</span>
+							<span>
+								<div class="dropdown">
+									<select class="btn btn-default dropdown-toggle" id="branch"
+										onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+										name="branch.id" style="width: 100">
+										<option value="">----Select----</option>
+										<c:forEach items="${branchs}" var="branch">
+											<c:choose>
+												<c:when test="${branch.id == branchId}">
+													<option value="studentattendance.htm?branchId=${branch.id}"
+														selected="selected">${branch.code}</option>
+												</c:when>
+												<c:otherwise>
+													<option value="studentattendance.htm?branchId=${branch.id}">${branch.code}</option>
+												</c:otherwise>
+											</c:choose>
+										</c:forEach>
+									</select>
+								</div>
+							</span>
+						</div>
+						<div align="left">
+							<span
+								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Grade</span>
+							<span>
+								<div class="dropdown">
+									<select class="btn btn-default dropdown-toggle" id="grade"
+										name="grade.id"
+										onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
+										style="width: 100">
+										<option value="">----Select----</option>
+
+										<c:forEach items="${grades}" var="grade">
+											<c:choose>
+												<c:when test="${grade.id == gradeId}">
+												<option
+														value="studentattendance.htm?branchId=${branchId}&gradeId=${grade.id}" selected="selected">${grade.grade}</option>
+												</c:when>
+												<c:otherwise>
+													<option
+														value="studentattendance.htm?branchId=${branchId}&gradeId=${grade.id}">${grade.grade}</option>
+												</c:otherwise>
+											</c:choose>
+										</c:forEach>
+									</select>
+								</div>
+							</span>
+						</div>
+						<p></p>
+						<!--    <div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Class</span>
 	         <span>
 	            <div class="dropdown">
@@ -61,45 +90,68 @@
 			    </ul>
 			  </div>  
 	         </span>
-	     </div>
-	     <p></p>
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Date</span>
-	         <span>
-	           <input class="form-control" maxlength="10" width="300px" style="width:100px"  type="date" id="dtMessage" name="dtMessage" />
-	         </span>
-	     </div>
-	     <P></P>
-	     <table id="myTable1" class="table table-striped table-bordered" cellspacing="0" width="100%">
-                    <thead>
-                        <tr>
-                            <th>Student ID</th>
-                            <th>Student Name</th>
-                            <th>Present / Absent</th>
-                            <th>Remarks</th>
-                        </tr>
-                    </thead>
-                </table>
-	     <P></P>
-	     
-	   </div>    
-	   <P></P>  
-	    <div align="left">
-             <span style="float:left;width:100;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Insert</button>
-                </span>
-             <span style="float:left;width:100px;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Reset</button>
-             </span>
-         </div> 
-   
+	     </div> -->
+						<p></p>
+						<div align="left">
+							<span
+								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Date</span>
+							<span> <input class="form-control" maxlength="10"
+								width="300px" style="width: 100px" type="date" id="date"
+								name="date" />
+							</span>
+						</div>
+						<P></P>
+						<table id="myTable1" class="table table-striped table-bordered"
+							cellspacing="0" width="100%">
+							<thead>
+								<tr>
+									<th>Student ID</th>
+									<th>Student Name</th>
+									<th>Present / Absent</th>
 
-</form>
-</div>
-</div>
-</div>
+									<th>Remarks</th>
+								</tr>
+							</thead>
+							<tbody>
+								<c:forEach items="${students}" var="student">
+									<tr>
+										<td>${student.code}<input class="form-control"
+											type="hidden" id="studentId" name="attendance[0].student.id"
+											value="${student.id}" style="width: 180%" />
+										</td>
+										<td>${student.name}</td>
+										<td>
+											<div class="Status">
+												<select class="btn btn-default dropdown-toggle"
+													name="attendance[0].status" id="status" style="width: 100">
+													<c:forEach items="${status}" var="statu">
+														<option value="${statu}">${statu}</option>
+													</c:forEach>
+												</select>
+											</div>
+										</td>
+										<td>Remarks</td>
+									</tr>
+								</c:forEach>
+							</tbody>
+						</table>
+						<P></P>
+
+					</div>
+					<P></P>
+					<div align="left">
+						<span style="float: left; width: 100;">&nbsp;</span> <span>
+							<button type="submit" class="btn btn-default">Insert</button>
+						</span> <span style="float: left; width: 100px;">&nbsp;</span> <span>
+							<button type="button" class="btn btn-default">Reset</button>
+						</span>
+					</div>
+
+
+				</form>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>

@@ -1,0 +1,22 @@
+package com.lk.std.dto;
+
+import java.util.Date;
+
+import com.lk.std.model.Attendance;
+
+public class AttendanceDto {
+
+	public Date date;
+	
+	public Attendance attendance;
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+	
+}

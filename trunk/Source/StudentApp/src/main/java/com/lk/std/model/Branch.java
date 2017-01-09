@@ -52,8 +52,8 @@ public class Branch implements Serializable {
 	@OneToMany(mappedBy="branch") 
 	private List<Student> student;
 	
-	@OneToOne(mappedBy="branch",optional=true)
-	private Subject subject;
+	@OneToMany(mappedBy="branch")
+	private List<Subject> subject;
 
 	@OneToMany(mappedBy="branch") 
 	private List<Grade> grade;
@@ -142,11 +142,11 @@ public class Branch implements Serializable {
 		this.grade = grade;
 	}
 
-	public Subject getSubject() {
+	public List<Subject> getSubject() {
 		return subject;
 	}
 
-	public void setSubject(Subject subject) {
+	public void setSubject(List<Subject> subject) {
 		this.subject = subject;
 	}
 

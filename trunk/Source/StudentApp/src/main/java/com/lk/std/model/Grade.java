@@ -54,6 +54,9 @@ public class Grade implements Serializable {
 	@OneToMany(mappedBy="grade")
 	private List<Staff> staff; 
 	
+	@OneToMany(mappedBy="grade")
+	private List<Student> student; 
+	
 	@Version
 	@Column(name = "version_id")
 	private int versionId;
@@ -144,12 +147,15 @@ public class Grade implements Serializable {
 		this.staff = staff;
 	}
 
-	@Override
-	public String toString() {
-		return "Grade [id=" + id + ", grade=" + grade + ", branch=" + branch + ", admission=" + admission + ", marks="
-				+ marks + ", classSchedules=" + classSchedules + ", messages=" + messages + ", attendances="
-				+ attendances + ", staff=" + staff + ", versionId=" + versionId + "]";
+	public List<Student> getStudent() {
+		return student;
 	}
+
+	public void setStudent(List<Student> student) {
+		this.student = student;
+	}
+
+ 
 	
 
 }

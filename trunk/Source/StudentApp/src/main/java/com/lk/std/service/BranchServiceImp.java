@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.lk.std.dao.BranchRepository;
 import com.lk.std.model.Branch;
+import com.lk.std.model.Grade;
 
 @Service
 @Transactional
@@ -30,6 +31,11 @@ public class BranchServiceImp implements BranchService{
 	@Override
 	public Branch findById(Long id) { 
 		return branchRepository.findById(id);
+	}
+
+	@Override
+	public List<Grade> findGradeById(long branchId) { 
+		return branchRepository.findGradeById(branchId);
 	}
 
 }

@@ -1,8 +1,0 @@
-package com.lk.std.dao;
-
-import org.springframework.data.repository.CrudRepository;
- 
-
-public interface ParentsRepository extends CrudRepository<Parents,Long>{
-
-}

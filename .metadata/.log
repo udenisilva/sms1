@@ -1,4 +1,4 @@
-!SESSION 2016-12-30 08:05:31.729 -----------------------------------------------
+!SESSION 2017-01-09 10:57:16.402 -----------------------------------------------
 eclipse.buildId=4.6.1.M20160907-1200
 java.version=1.8.0_111
 java.vendor=Oracle Corporation
@@ -7,128 +7,9 @@ Framework arguments:  -product org.eclipse.epp.package.jee.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
 
 This is a continuation of log file E:\eclipse\student\.metadata\.bak_0.log
-Created Time: 2016-12-30 08:54:03.407
-
-!ENTRY org.jboss.tools.vpe.preview.core 4 0 2016-12-30 08:54:03.410
-!MESSAGE Visual Page Editor has experimental support for Windows 64-bit.
-Follow the link below to get details on how to install. Until then you can click on the Source tab to hide this error/info message.
-!STACK 0
-org.jboss.tools.vpe.xulrunner.XulRunnerBundleNotFoundException: Bundle org.mozilla.xulrunner.win32.win32.x86_64 is not found.
-	at org.jboss.tools.vpe.xulrunner.browser.XulRunnerBrowser.getXulRunnerPath(XulRunnerBrowser.java:238)
-	at org.jboss.tools.vpe.xulrunner.browser.XulRunnerBrowser.<init>(XulRunnerBrowser.java:122)
-	at org.jboss.tools.vpe.xulrunner.editor.XulRunnerEditor.<init>(XulRunnerEditor.java:128)
-	at org.jboss.tools.vpe.editor.mozilla.XulRunnerEditor2.<init>(XulRunnerEditor2.java:23)
-	at org.jboss.tools.vpe.editor.mozilla.MozillaEditor.createPartControl(MozillaEditor.java:599)
-	at org.jboss.tools.vpe.editor.VpeEditorPart.createVisualEditor(VpeEditorPart.java:813)
-	at org.jboss.tools.jst.web.ui.internal.editor.jspeditor.JSPMultiPageEditor.pageChange(JSPMultiPageEditor.java:283)
-	at org.eclipse.ui.part.MultiPageEditorPart.setActivePage(MultiPageEditorPart.java:1102)
-	at org.jboss.tools.jst.web.ui.internal.editor.jspeditor.JSPMultiPageEditor.createPages(JSPMultiPageEditor.java:511)
-	at org.eclipse.ui.part.MultiPageEditorPart.createPartControl(MultiPageEditorPart.java:363)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.createPartControl(CompatibilityPart.java:150)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor.createPartControl(CompatibilityEditor.java:99)
-	at org.eclipse.ui.internal.e4.compatibility.CompatibilityPart.create(CompatibilityPart.java:340)
-	at sun.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:966)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:931)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:151)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:375)
-	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:294)
-	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:162)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:105)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:74)
-	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:56)
-	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:129)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:975)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:651)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:757)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.access$0(PartRenderingEngine.java:728)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:722)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:706)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl$1.handleEvent(PartServiceImpl.java:104)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
-	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
-	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
-	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4813)
-	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
-	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
-	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
-	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
-	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
-	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
-	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
-	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
-	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
-	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
-	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
-	at org.eclipse.e4.ui.model.application.ui.impl.ElementContainerImpl.setSelectedElement(ElementContainerImpl.java:173)
-	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.showElementInWindow(ModelServiceImpl.java:617)
-	at org.eclipse.e4.ui.internal.workbench.ModelServiceImpl.bringToTop(ModelServiceImpl.java:581)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.delegateBringToTop(PartServiceImpl.java:770)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.bringToTop(PartServiceImpl.java:401)
-	at org.eclipse.e4.ui.internal.workbench.PartServiceImpl.showPart(PartServiceImpl.java:1214)
-	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:3261)
-	at org.eclipse.ui.internal.WorkbenchPage.access$25(WorkbenchPage.java:3176)
-	at org.eclipse.ui.internal.WorkbenchPage$10.run(WorkbenchPage.java:3158)
-	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3153)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3117)
-	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:3107)
-	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:563)
-	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:518)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:360)
-	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:167)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:256)
-	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:221)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:271)
-	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:249)
-	at org.eclipse.jdt.internal.ui.navigator.OpenAndExpand.run(OpenAndExpand.java:50)
-	at org.eclipse.ui.actions.RetargetAction.run(RetargetAction.java:225)
-	at org.eclipse.ui.navigator.CommonNavigatorManager$2.open(CommonNavigatorManager.java:191)
-	at org.eclipse.ui.OpenAndLinkWithEditorHelper$InternalListener.open(OpenAndLinkWithEditorHelper.java:46)
-	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:855)
-	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
-	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:50)
-	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:173)
-	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:852)
-	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1169)
-	at org.eclipse.ui.navigator.CommonViewer.handleOpen(CommonViewer.java:451)
-	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:278)
-	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:272)
-	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:313)
-	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
-	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4410)
-	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1079)
-	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4228)
-	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3816)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
-	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
-	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
-	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
-	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
-	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
-	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
-	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
-	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
-	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
-	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
-	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+Created Time: 2017-01-09 11:06:24.987
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:54:17.348
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:24.991
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -143,7 +24,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:54:24.238
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:25.064
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -158,7 +39,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:54:26.186
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:25.585
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -173,7 +54,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:54:31.120
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:25.722
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -188,7 +69,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:54:55.593
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:26.586
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -203,7 +84,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:54:56.244
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:26.643
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -218,7 +99,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:00.851
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:26.693
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -233,7 +114,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:13.376
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:29.789
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -248,7 +129,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:13.550
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:29.973
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -263,7 +144,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:13.731
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:30.028
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -278,7 +159,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:17.913
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:30.088
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -293,7 +174,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:19.604
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:30.174
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -308,7 +189,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:20.384
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:30.230
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -323,7 +204,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:20.559
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:42.978
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -338,7 +219,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:34.571
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:06:43.034
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -353,7 +234,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:43.197
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:00.936
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -368,7 +249,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:51.172
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:01.004
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -383,7 +264,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:51.372
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:02.274
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -398,7 +279,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:51.588
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:02.354
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -413,7 +294,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:51.769
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:09.040
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -428,7 +309,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:51.949
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:10.768
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -443,7 +324,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:52.156
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:10.989
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -458,7 +339,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:52.454
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:11.045
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -473,7 +354,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:55:52.634
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:11.104
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -488,7 +369,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:56:35.061
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:13.083
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -503,7 +384,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:56:44.967
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:13.379
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -518,7 +399,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:11.863
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:13.425
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -533,7 +414,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:12.040
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:54.335
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -548,7 +429,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:12.269
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:07:56.927
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -563,7 +444,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:12.461
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:00.053
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -578,7 +459,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:12.645
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:09.582
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -593,7 +474,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:12.826
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:19.368
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -608,7 +489,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:13.009
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:20.707
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -623,7 +504,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:13.182
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:20.802
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -638,7 +519,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:15.567
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:20.882
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -653,7 +534,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:57:43.572
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:08:20.961
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -668,622 +549,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:07.513
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:13.157
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:17.263
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:18.075
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:18.283
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:20.433
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:20.632
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:21.047
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:21.254
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:23.242
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:23.437
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:23.986
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:24.190
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:24.394
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:24.608
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:28.273
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:36.380
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:36.588
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:36.793
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:36.996
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:38.557
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:38.779
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:42.287
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:58:42.500
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:00.220
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:00.419
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:00.636
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:00.853
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:01.055
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:01.260
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:01.461
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:04.441
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:12.370
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:19.338
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:21.225
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:21.441
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:21.709
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:24.582
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:24.781
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:25.251
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 08:59:32.245
-!MESSAGE TernError: No type found at the given position.
-!STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
-	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
-
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 08:59:36.716
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:08:29.049
 !MESSAGE Unable to retrieve a list of remote deployment scanners
 !STACK 0
 org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
@@ -1344,10 +610,10 @@ Caused by: java.io.IOException: Invalid response
 	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
 	... 32 more
 
-!ENTRY org.eclipse.wst.server.core 4 0 2016-12-30 08:59:36.787
+!ENTRY org.eclipse.wst.server.core 4 0 2017-01-09 11:08:29.160
 !MESSAGE Server WildFly 10.x failed to stop.
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 08:59:39.866
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:08:32.974
 !MESSAGE Unable to retrieve a list of remote deployment scanners
 !STACK 0
 org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
@@ -1408,7 +674,7 @@ Caused by: java.io.IOException: Invalid response
 	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
 	... 32 more
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 08:59:39.933
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:08:33.069
 !MESSAGE Unable to retrieve a list of remote deployment scanners
 !STACK 0
 org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
@@ -1473,25 +739,25 @@ Caused by: java.io.IOException: Invalid response
 	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
 	... 36 more
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2016-12-30 08:59:39.964
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2017-01-09 11:08:33.097
 !MESSAGE The server was shutdown forcefully. All processes were terminated.
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 08:59:44.603
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:08:37.364
 !MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 08:59:44.641
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:08:37.429
 !MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 08:59:55.513
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:08:53.563
 !MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 09:00:08.046
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:09:08.098
 !MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
 
-!ENTRY org.jboss.ide.eclipse.as.core 4 0 2016-12-30 09:00:08.059
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:09:08.113
 !MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:23.545
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:10:51.595
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -1506,7 +772,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:23.782
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:10:51.778
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -1521,7 +787,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:32.730
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:11:17.147
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -1536,7 +802,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:32.970
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:11:26.749
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -1551,7 +817,7 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:33.207
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:11:26.813
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -1566,7 +832,631 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:33.436
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:11:30.610
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-01-09 11:11:30.723
+!MESSAGE Server WildFly 10.x failed to stop.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:11:34.277
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:11:34.352
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ManagementShutdownController.forceStop(ManagementShutdownController.java:63)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stopImpl(LocalLegacyShutdownController.java:120)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:66)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 24 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 26 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 36 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2017-01-09 11:11:34.375
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:11:38.953
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:11:38.976
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:11:50.757
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:12:04.815
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:12:04.828
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:13:59.189
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-01-09 11:13:59.273
+!MESSAGE Server WildFly 10.x failed to stop.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:03.355
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:03.427
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ManagementShutdownController.forceStop(ManagementShutdownController.java:63)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stopImpl(LocalLegacyShutdownController.java:120)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:66)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 24 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 26 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 36 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2017-01-09 11:14:03.452
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:07.441
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:07.507
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:19.925
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:33.252
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:14:33.264
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:25.153
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.eclipse.wst.server.core 4 0 2017-01-09 11:18:25.230
+!MESSAGE Server WildFly 10.x failed to stop.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:29.726
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:29.796
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ManagementShutdownController.forceStop(ManagementShutdownController.java:63)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stopImpl(LocalLegacyShutdownController.java:120)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:66)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 24 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 26 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 36 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2017-01-09 11:18:29.818
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:33.181
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:33.195
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:45.302
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:58.273
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:18:58.334
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY tern.eclipse.ide.core 4 0 2017-01-09 11:21:41.503
 !MESSAGE TernError: No type found at the given position.
 !STACK 0
 tern.TernException: TernError: No type found at the given position.
@@ -1581,32 +1471,210 @@ Caused by: tern.TernException: TernError: No type found at the given position.
 	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
 	... 2 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:33.672
-!MESSAGE TernError: No type found at the given position.
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:21:45.435
+!MESSAGE Unable to retrieve a list of remote deployment scanners
 !STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
 
-!ENTRY tern.eclipse.ide.core 4 0 2016-12-30 09:01:48.436
-!MESSAGE TernError: No type found at the given position.
+!ENTRY org.eclipse.wst.server.core 4 0 2017-01-09 11:21:45.513
+!MESSAGE Server WildFly 10.x failed to stop.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:21:50.379
+!MESSAGE Unable to retrieve a list of remote deployment scanners
 !STACK 0
-tern.TernException: TernError: No type found at the given position.
-	at tern.server.DefaultResponseHandler.getData(DefaultResponseHandler.java:45)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:43)
-	at tern.eclipse.ide.internal.core.resources.IDETernServerAsyncReqProcessor.run(IDETernServerAsyncReqProcessor.java:104)
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
-Caused by: tern.TernException: TernError: No type found at the given position.
-	at tern.server.nodejs.NodejsTernHelper.makeRequest(NodejsTernHelper.java:86)
-	at tern.server.nodejs.NodejsTernServer.makeRequest(NodejsTernServer.java:163)
-	at tern.server.nodejs.NodejsTernServer.request(NodejsTernServer.java:127)
-	at tern.server.protocol.TernResultsProcessorsFactory.makeRequestAndProcess(TernResultsProcessorsFactory.java:42)
-	... 2 more
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 20 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 22 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 32 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:21:50.468
+!MESSAGE Unable to retrieve a list of remote deployment scanners
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:361)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9ManagerService.execute(Wildfly9ManagerService.java:171)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.execute(JBoss7ManagerServiceProxy.java:87)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:294)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility$1.execute(AS7DeploymentScannerUtility.java:1)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerUtil.executeWithService(JBoss7ManagerUtil.java:136)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.executeWithResult(AS7DeploymentScannerUtility.java:292)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScanners(AS7DeploymentScannerUtility.java:163)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.AS7DeploymentScannerUtility.getDeploymentScannersFromServer(AS7DeploymentScannerUtility.java:252)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServer(LocalJBoss7DeploymentScannerAdditions.java:173)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.loadScannersFromServerSafely(LocalJBoss7DeploymentScannerAdditions.java:135)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.LocalJBoss7DeploymentScannerAdditions.ensureScannersRemoved(LocalJBoss7DeploymentScannerAdditions.java:150)
+	at org.jboss.ide.eclipse.as.core.server.internal.AbstractDeploymentScannerAdditions.removeAddedDeploymentScanners(AbstractDeploymentScannerAdditions.java:82)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.removeScanners(LocalLegacyShutdownController.java:75)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:58)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.ManagementShutdownController.forceStop(ManagementShutdownController.java:63)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stopImpl(LocalLegacyShutdownController.java:120)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:66)
+	at org.jboss.tools.as.core.server.controllable.subsystems.internal.LocalLegacyShutdownController.stop(LocalLegacyShutdownController.java:53)
+	at org.jboss.ide.eclipse.as.wtp.core.server.behavior.ControllableServerBehavior.stop(ControllableServerBehavior.java:255)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl2(Server.java:3688)
+	at org.eclipse.wst.server.core.internal.Server.stopImpl(Server.java:3645)
+	at org.eclipse.wst.server.core.internal.Server$StopJob.run(Server.java:403)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.IOException: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:149)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:75)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly9.Wildfly9Manager.execute(Wildfly9Manager.java:350)
+	... 24 more
+Caused by: java.net.ConnectException: WFLYPRT0053: Could not connect to http-remoting://localhost:9990. The connection failed
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:122)
+	at org.jboss.as.protocol.ProtocolConnectionManager$EstablishingConnection.connect(ProtocolConnectionManager.java:257)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:71)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:212)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:146)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:65)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:147)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:122)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:263)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:168)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:147)
+	... 26 more
+Caused by: java.io.IOException: Invalid response
+	at org.xnio.http.HttpUpgradeParser.parseVersion(HttpUpgradeParser.java:157)
+	at org.xnio.http.HttpUpgradeParser.parse(HttpUpgradeParser.java:55)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:419)
+	at org.xnio.http.HttpUpgrade$HttpUpgradeState$UpgradeResultListener.handleEvent(HttpUpgrade.java:400)
+	at org.xnio.ChannelListeners.invokeChannelListener(ChannelListeners.java:92)
+	at org.xnio.conduits.ReadReadyHandler$ChannelListenerHandler.readReady(ReadReadyHandler.java:66)
+	at org.xnio.nio.NioSocketConduit.handleReady(NioSocketConduit.java:88)
+	at org.xnio.nio.WorkerThread.run(WorkerThread.java:559)
+	at ...asynchronous invocation...(Unknown Source)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:294)
+	at org.jboss.remoting3.EndpointImpl.doConnect(EndpointImpl.java:275)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:379)
+	at org.jboss.remoting3.EndpointImpl.connect(EndpointImpl.java:367)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connect(ProtocolConnectionUtils.java:83)
+	at org.jboss.as.protocol.ProtocolConnectionUtils.connectSync(ProtocolConnectionUtils.java:114)
+	... 36 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 16973826 2017-01-09 11:21:50.499
+!MESSAGE The server was shutdown forcefully. All processes were terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:21:53.551
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:21:53.605
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:22:06.370
+!MESSAGE The server "WildFly 10.x" requires a JDK to run properly. The VM used to launch this server is not recognized as a valid JDK. C:\Program Files\Java\jre1.8.0_111 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:22:19.635
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 0 2017-01-09 11:22:19.673
+!MESSAGE Unable to retrieve a list of remote deployment scanners for server WildFly 10.x

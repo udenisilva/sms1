@@ -1,7 +1,0 @@
-package com.lk.std.dao;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface PaymentsRepository extends CrudRepository<Payments,Long>{
-
-}

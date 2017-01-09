@@ -9,6 +9,12 @@
 		<put-attribute name="title" value="Template" />
 		<put-attribute name="body" value="" />
 	</definition>
+	
+	<!-- Register User Page-->
+    <definition name="subject" extends="home.common">
+        <put-attribute name="title" value="New Subject" />
+        <put-attribute name="body" value="/WEB-INF/views/content/subject.jsp" />        
+    </definition> 
 
 	<!-- Definition for Home Page -->
 	<definition name="home.common" template="/WEB-INF/views/layouts/homeLayout.jsp">

@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lk.std.dao.GradeRepository;
+import com.lk.std.model.Branch;
 import com.lk.std.model.Grade;
+import com.lk.std.model.Student;
 
 @Service
 @Transactional
@@ -25,6 +27,21 @@ public class GradeServiceImp implements GradeService{
 	@Override
 	public Grade save(Grade grade) {		 
 		return gradeRepository.save(grade);
+	}
+
+	@Override
+	public Grade findById(long gradeId) {		
+		return gradeRepository.findById(gradeId);
+	}
+
+	@Override
+	public List<Student> findStudentById(long gradeID) {		
+		return gradeRepository.findStudentById(gradeID) ;
+	}
+
+	@Override
+	public List<Grade> findByBranch(Branch branch) { 
+		return gradeRepository.findByBranch(branch);
 	}
 
 }
