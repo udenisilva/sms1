@@ -23,34 +23,38 @@ public class Marks implements Serializable {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name = "marks_id", nullable = false)
 	private long id;
-	
+
 	@Column(name = "marks_academicyear")
 	private int academicyear;
-	
+
 	@ManyToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "student_id", nullable = true)
 	private Student student;
-	
+
 	@ManyToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "subject_id", nullable = true)
 	private Subject subject;
-	
+
 	@ManyToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "grade_id", nullable = true)
 	private Grade grade;
-	
-	@ManyToOne(cascade = CascadeType.DETACH)
-	@JoinColumn(name = "examinationtype_id", nullable = true)
-	private ExaminationType examinationType;
-	
+
+//	@ManyToOne(cascade = CascadeType.DETACH)
+//	@JoinColumn(name = "examinationtype_id", nullable = true)
+	@Column(name = "examinationtype_type")
+	private String examinationType;
+
 	@Column(name = "marks_status")
 	private ActiveStatus status;
-	
+
+	@Column(name = "marks_results")
+	private Double results;
+
 	@Version
 	@Column(name = "version_id")
 	private int versionId;
@@ -95,11 +99,12 @@ public class Marks implements Serializable {
 		this.grade = grade;
 	}
 
-	public ExaminationType getExaminationType() {
+
+	public String getExaminationType() {
 		return examinationType;
 	}
 
-	public void setExaminationType(ExaminationType examinationType) {
+	public void setExaminationType(String examinationType) {
 		this.examinationType = examinationType;
 	}
 
@@ -111,6 +116,14 @@ public class Marks implements Serializable {
 		this.status = status;
 	}
 
+	public Double getResults() {
+		return results;
+	}
+
+	public void setResults(Double results) {
+		this.results = results;
+	}
+
 	public int getVersionId() {
 		return versionId;
 	}
@@ -118,7 +131,5 @@ public class Marks implements Serializable {
 	public void setVersionId(int versionId) {
 		this.versionId = versionId;
 	}
-	
-	
 
 }

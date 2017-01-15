@@ -4,6 +4,9 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
+<%@ include file="../commons/commonjs.jsp"%>
+
+
 <div class="page-title">
 	<div class="title_left">
 		<h2>
@@ -23,64 +26,191 @@
 				<div class="clearfix"></div>
 			</div>
 			<div class="x_content">
+			
+			<div class="form-group">
+				<c:if test="${result=='NOT_Exists'}">
+					<label class="label label-warning"> Student Is Not Exists ,Please try Again </label>
+				</c:if>
+				
+				<c:if test="${result=='Exists'}">
+				<label class="label label-success">Student Is  Exists</label>
+				</c:if>
+			</div>
+			
+			<div class="form-group">
+				<c:if test="${result=='added'}">
+					<label class="label label-success"> Add New Student Payment Successfully </label>
+				</c:if>
+				
+				<c:if test="${result=='failed'}">
+				<label class="label label-failed"> Failed New Payment Details</label>
+				</c:if>
+			</div>
+			
+			<div class="form-group">
+				<c:if test="${result=='removed'}">
+					<label class="label label-success"> Student Payment Removed </label>
+				</c:if>
+								
+				<c:if test="${result=='removed_failed'}">
+				<label class="label label-failed"> Student Payment Removed Failed</label>
+				</c:if>
+			</div>
+			
+			<div class="form-group">
+				<c:if test="${result=='check_field'}">
+					<label class="label label-warning"> Please Check Fields Again</label>
+				</c:if>
+								
+				
+			</div>
+			
 				<br />
-   <form action=".htm" modelAttribute="" method="post" > 
-        <div style="float:center; width: 500px; height: 215px; margin-top: 30px">
-         <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Student ID</span>	         
-	         <span>
-	             <input class="form-control" maxlength="20" style="width:200px"  type="text" id="szStuID" name="szStuID" />
-	         </span>
+				
+		<form action="payment_select_student_details.htm"  method="post" > 
+        	
+         		<div class="row">
+         			<div class="col-xs-6 col-sm-4">
+         				<span >Student ID</span>	   
+         			</div>
+	         		<div class="col-xs-6 col-sm-4">  
+	         		    <input  class="form-control"  placeholder="student_id" type="text" id="student_id" name="student_id" />
+	         		</div> 
+	         			<div class="clearfix visible-xs-block"></div>
+  					<div class="col-xs-6 col-sm-4"> 	
+  						<input type="submit"  value="Find" class="btn btn-submit" />
+  					</div>	         	
+	     		</div>
+	     	
+	     </form>
+				
+		<br>
+		<hr>
+				
+   <form:form action="student_payment_new.htm"  method="post" > 
+       
+       <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span >Student ID</span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+         					<label class="label label-default" > ${student.id} </label>	   
+         			</div>	 	          
+	             <input type="hidden" id="student_id" name="student_id"   value="${student.id}" />	        
 	     </div>
-	     <p></p>  
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Academic Year</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:200px">Academic Year
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
-			  </div>  
-	         </span>
+	     
+	    <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span >Student Code & Name</span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+         				<label class="label label-default" >   ${student.code} -   ${student.name} </label>	   
+         			</div>	 	          
+	                     
 	     </div>
-	     <p></p>        
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Payment Type</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:200px">Payment Type
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Admission Fee</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Semester Fee</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Repeat Exam Fee</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Other Payment</a></li>
-			    </ul>
-			  </div>  
-	         </span>
+	 
+		<br> 
+		
+		 <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span >Academic Year</span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+         			<select id="academicyear" name="academicyear"  class="form-control" aria-labelledby="menu1">
+						  <option value="2017" >2017</option>
+						  <option value="2018">2018</option>
+						  <option value="2019">2019</option>
+						  <option value="2020">2020</option>
+						  <option value="2021">2021</option>
+					</select>
+         			</div>	 	          
+	                    
 	     </div>
-	     <p></p>	     
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Amount</span>
-	         <span>
-	             <input class="form-control" maxlength="10" style="width:100px"  type="number" id="dAmount" name="dAmount" />
-	         </span>
+	     
+	     	 <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span >Payment Type</span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+         			<select id="paymentType" name="paymentType" class="form-control" aria-labelledby="menu1">
+						  <option value="Admission_Fee" >Admission_Fee</option>
+						  <option value="Semester_Fee">Semester_Fee</option>
+						  <option value="Repeat_Exam_Fee">Repeat_Exam_Fee</option>
+						  <option value="Other_Payment">Other Payment</option>
+						  
+					</select>
+         			</div>	 	          
+	                    
 	     </div>
-	     <p></p>       	     
-	     <div align="left">
-             <span style="float:left;width:100;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Insert</button>
-                </span>
-             <span style="float:left;width:100px;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Reset</button>
-             </span>
-         </div>
-	   </div>   
-</form>
+	     
+	  <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span >Amount</span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+         		  <input type="text" id="amount" name="amount"  class="form-control"  placeholder="Amount"  />
+         			</div> 	          
+	                    
+	     </div>
+	     
+	     
+	       <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span >Payment Date</span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+	        		<label class="label label-default">	${curDate}</label>
+         		  <input type="hidden" id="paymentDate" name="paymentDate" value="${curDate}"  placeholder="paymentDate"  />
+         			</div>	 
+	     </div>
+	     
+	    <div class="row">
+	        	<div class="col-xs-6 col-sm-4">
+         				<span > </span>	   
+         			</div>	         
+	        	<div class="col-xs-6 col-sm-4">
+         		  <input  class="btn btn-submit"  placeholder="Amount" type="submit" value="Add"/>
+         		</div>  
+	     </div>
+	     
+</form:form>
 
+<hr>
+	<label class="label label-warning"> STUDENT RELATED PAYMENT DETAILS</label>
+ 		<div class="row">
+ 			<table class="table table-hover">
+  				<tr>
+  					<th>Student ID</th>
+  					<th>Student Name</th>
+  					<th>Payment Year</th>
+  					<th>Payment Type</th>
+  					<th>Payment Date</th>
+  					<th>Amount</th>
+  					<th>Remove</th>
+  				</tr>
+  				
+  				<c:forEach items="${pLi}" var="p">
+  					
+  					<tr>
+  						<td>${p.student.id}</td>
+  						<td>${p.student.name}</td>
+  						<td>${p.academicyear}</td>
+  						<td>${p.paymentType}</td>
+  						<td>${p.paymentDate}</td>
+  						<td>${p.amount}</td>
+  						<td><a href="remove_student_payment_details.htm?paymentId=${p.id}&studentId=${p.student.id}"><label class="label label-warning">Remove </label></td>
+  						
+  					</tr>
+  					
+  				
+  				
+  				</c:forEach>
+  				
+  				
+  				
+			</table>
+ 
+ 		</div>
 </div>
 </div>
 </div>

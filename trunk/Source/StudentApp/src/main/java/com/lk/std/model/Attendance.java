@@ -15,6 +15,7 @@ import javax.persistence.Table;
 import javax.persistence.Version;
 
 import com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus;
+import com.lk.std.constant.OLSIMSEnumConstant.AttendanceStatus;
 
 @Entity(name = "attendance")
 @Table(name = "attendance")
@@ -42,7 +43,7 @@ public class Attendance implements Serializable {
 	private Student student;
 	
 	@Column(name = "attendance_status", nullable = false)
-	private ActiveStatus status;
+	private AttendanceStatus status;
 	
 	@Version
 	@Column(name = "version_id")
@@ -80,11 +81,11 @@ public class Attendance implements Serializable {
 		this.student = student;
 	}
 
-	public ActiveStatus getStatus() {
+	public AttendanceStatus getStatus() {
 		return status;
 	}
 
-	public void setStatus(ActiveStatus status) {
+	public void setStatus(AttendanceStatus status) {
 		this.status = status;
 	}
 

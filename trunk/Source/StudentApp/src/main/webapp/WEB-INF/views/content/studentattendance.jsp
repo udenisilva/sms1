@@ -5,6 +5,8 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+
+	
 <div class="page-title">
 	<div class="title_left">
 		<h2>Student Attendance</h2>
@@ -56,9 +58,12 @@
 							<span
 								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Grade</span>
 							<span>
+							 <input class="form-control" maxlength="10"
+								width="300px" style="width: 100px" type="hidden" id="grade"
+								name="grade.id" value="${gradeId}" />
 								<div class="dropdown">
-									<select class="btn btn-default dropdown-toggle" id="grade"
-										name="grade.id"
+									<select class="btn btn-default dropdown-toggle" id="gradec"
+										name="gradec.id"
 										onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
 										style="width: 100">
 										<option value="">----Select----</option>
@@ -66,8 +71,9 @@
 										<c:forEach items="${grades}" var="grade">
 											<c:choose>
 												<c:when test="${grade.id == gradeId}">
-												<option
-														value="studentattendance.htm?branchId=${branchId}&gradeId=${grade.id}" selected="selected">${grade.grade}</option>
+													<option
+														value="studentattendance.htm?branchId=${branchId}&gradeId=${grade.id}"
+														selected="selected">${grade.grade}</option>
 												</c:when>
 												<c:otherwise>
 													<option
@@ -97,7 +103,7 @@
 								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Date</span>
 							<span> <input class="form-control" maxlength="10"
 								width="300px" style="width: 100px" type="date" id="date"
-								name="date" />
+								name="date" onblur="dateOnblur(this.value)" value="${datez}" />
 							</span>
 						</div>
 						<P></P>
@@ -113,25 +119,91 @@
 								</tr>
 							</thead>
 							<tbody>
-								<c:forEach items="${students}" var="student">
-									<tr>
-										<td>${student.code}<input class="form-control"
-											type="hidden" id="studentId" name="attendance[0].student.id"
-											value="${student.id}" style="width: 180%" />
-										</td>
-										<td>${student.name}</td>
-										<td>
-											<div class="Status">
-												<select class="btn btn-default dropdown-toggle"
-													name="attendance[0].status" id="status" style="width: 100">
-													<c:forEach items="${status}" var="statu">
-														<option value="${statu}">${statu}</option>
-													</c:forEach>
-												</select>
-											</div>
-										</td>
-										<td>Remarks</td>
-									</tr>
+								<c:forEach items="${students}" var="student" varStatus="loop">
+								<c:set var="countz" value="${0}" />
+									<c:choose>
+										<c:when test="${fn:length(attendances) > 0}">
+											<c:forEach items="${attendances}" var="attendance">
+												<c:choose>
+													<c:when test="${student.id == attendance.student.id}">
+													<c:set var="countz" value="${1}" />
+														<tr>
+															<td>${student.code}<input class="form-control"
+																type="hidden" id="studentId"
+																name="attendance[${loop.index}].student.id"
+																value="${student.id}" style="width: 180%" />
+															</td>
+															<td>${student.name}</td>
+															<td>
+																<div class="Status">
+																	<select class="btn btn-default dropdown-toggle"
+																		name="attendance[${loop.index}].status" id="status"
+																		style="width: 100">
+																		<c:forEach items="${status}" var="statu">
+																			<c:choose>
+																				<c:when test="${statu == attendance.status}">
+																					<option value="${statu}" selected="selected">${statu}</option>
+																				</c:when>
+																				<c:otherwise>
+																					<option value="${statu}">${statu}</option>
+																				</c:otherwise>
+																			</c:choose>
+																		</c:forEach>
+																	</select>
+																</div>
+															</td>
+															<td>Remarks</td>
+														</tr>
+													</c:when>
+													<c:when
+														test="${student.id != attendance.student.id && countz ==0}">
+														<tr>
+															<td>${student.code}<input class="form-control"
+																type="hidden" id="studentId"
+																name="attendance[${loop.index}].student.id"
+																value="${student.id}" style="width: 180%" />
+															</td>
+															<td>${student.name}</td>
+															<td>
+																<div class="Status">
+																	<select class="btn btn-default dropdown-toggle"
+																		name="attendance[${loop.index}].status" id="status"
+																		style="width: 100">
+																		<c:forEach items="${status}" var="statu">																			 
+																					<option value="${statu}">${statu}</option>
+																		</c:forEach>
+																	</select>
+																</div>
+															</td>
+															<td>Remarks</td>
+														</tr>
+													</c:when>
+												</c:choose>
+											</c:forEach>
+										</c:when>
+										<c:otherwise>
+											<tr>
+												<td>${student.code}<input class="form-control"
+													type="hidden" id="studentId"
+													name="attendance[${loop.index}].student.id"
+													value="${student.id}" style="width: 180%" />
+												</td>
+												<td>${student.name}</td>
+												<td>
+													<div class="Status">
+														<select class="btn btn-default dropdown-toggle"
+															name="attendance[${loop.index}].status" id="status"
+															style="width: 100">
+															<c:forEach items="${status}" var="statu">
+																<option value="${statu}">${statu}</option>
+															</c:forEach>
+														</select>
+													</div>
+												</td>
+												<td>Remarks</td>
+											</tr>
+										</c:otherwise>
+									</c:choose>
 								</c:forEach>
 							</tbody>
 						</table>
@@ -146,12 +218,16 @@
 							<button type="button" class="btn btn-default">Reset</button>
 						</span>
 					</div>
-
-
 				</form>
 			</div>
 		</div>
 	</div>
 </div>
+
 </body>
+	<script type="text/javascript">
+					function dateOnblur(date) {
+						window.location="studentattendance.htm?branchId="+${branchId}+"&gradeId="+${gradeId}+"&date="+date;
+					}
+	</script>
 </html>

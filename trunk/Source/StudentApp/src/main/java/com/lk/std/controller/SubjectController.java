@@ -16,8 +16,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.lk.std.constant.ApplicationConstants;
 import com.lk.std.model.Branch;
+import com.lk.std.model.Grade;
 import com.lk.std.model.Subject;
 import com.lk.std.service.BranchService;
+import com.lk.std.service.GradeService;
 import com.lk.std.service.SubjectService;
 
 @Controller
@@ -29,6 +31,9 @@ public class SubjectController {
 	@Autowired 
 	private SubjectService subjectServices;
 	
+	@Autowired
+	private GradeService gradeService;
+	
 	
 	  @RequestMapping(value = "/subject_form", method = RequestMethod.GET)
 	  public ModelAndView getHomePage(HttpServletRequest request) {
@@ -37,6 +42,7 @@ public class SubjectController {
 	    
 	    List<Branch> brLi=branchServices.findAll();
 	    List<Subject> sLi=subjectServices.findAll();
+	    List<Grade> grade=gradeService.findAll();
 	    
 	   //  List<Subject> sL2i=subjectServices.getSubjectDetails(1);
 	   
@@ -45,7 +51,8 @@ public class SubjectController {
 	  modelMap.addAttribute("subject",s);	    
 	    modelMap.addAttribute("brLi",brLi);
 	    modelMap.addAttribute("sLi",sLi);
-	    modelMap.addAttribute("action","new");	    
+	    modelMap.addAttribute("action","new");	
+	    modelMap.addAttribute("grade",grade);
 	    return new ModelAndView("subject", modelMap);	    
 	  }
 	  

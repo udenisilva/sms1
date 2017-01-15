@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.lk.std.dao.SubjectRepository;
+import com.lk.std.model.Grade;
 import com.lk.std.model.Subject;
 
 @Service
@@ -23,7 +24,7 @@ public class SubjectServiceImp implements SubjectService {
 	}
 
 	@Override
-	public List<Subject> findByGrade(Long gradeId) {
+	public List<Subject> findByGrade(Grade gradeId) {
 		return subjectRepository.findByGrade(gradeId);
 	}
 	

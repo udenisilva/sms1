@@ -56,7 +56,7 @@ public class StudentAttendanceController {
 		long branchId = 0;
 		List<Grade> grades = null;
 		List<Student> students = null;
-
+		List<Attendance> attendance = null;
 		modelMap.addAttribute("branchs", branchService.findAll());
 		try {
 			if (!StringUtils.isBlank(request.getParameter("branchId"))) {
@@ -82,13 +82,35 @@ public class StudentAttendanceController {
 				students = studentService.findByGrade(grade);
 				modelMap.addAttribute("gradeId", gradeId);
 				System.out.println(students.size());
-				System.out.println("student " + students.get(0).getName()); 
+				System.out.println("student " + students.get(0).getName());
+
+				DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+
+				if (!StringUtils.isBlank(request.getParameter("date"))) {
+					Date bDate;
+					bDate = df.parse(request.getParameter("date"));
+					String newDateString = df.format(bDate);
+					System.out.println(newDateString);
+
+					attendance = attendanceService.findByGradeAndAttDate(grade, bDate);
+					System.out.println(attendance.size() + " size att");
+					int count = 0;
+					for (Attendance att : attendance) {
+						System.out.println(att.getAttDate() + " aa======");
+					}
+					modelMap.addAttribute("datez", request.getParameter("date"));
+					modelMap.addAttribute("attendances", attendance);
+
+				}
+
 			} else {
+				attendance = new ArrayList<>();
 				students = new ArrayList<>();
 			}
 		} catch (Exception e) {
 		}
-		modelMap.addAttribute("status", OLSIMSEnumConstant.ActiveStatus.values());
+
+		modelMap.addAttribute("status", OLSIMSEnumConstant.AttendanceStatus.values());
 		modelMap.addAttribute("grades", grades);
 		modelMap.addAttribute("students", students);
 		return new ModelAndView("studentattendance", modelMap);
@@ -102,7 +124,7 @@ public class StudentAttendanceController {
 		}
 		// Staff staff2=null;
 		Action action = null;
-		
+
 		DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
 
 		if (!StringUtils.isBlank(request.getParameter("date"))) {
@@ -116,7 +138,6 @@ public class StudentAttendanceController {
 				e.printStackTrace();
 			}
 		}
-		
 
 		try {
 			if (!StringUtils.isBlank(request.getParameter("staff_id"))) {
@@ -131,22 +152,31 @@ public class StudentAttendanceController {
 			System.out.println("------------ Exception occured");
 		}
 
+		List<Attendance> attendance = attendanceService.findByGradeAndAttDate(attendanceDto.getGrade(),
+				attendanceDto.getDate());
+
+		for (Attendance att : attendance) {
+			attendanceService.delete(att);
+		}
+
 		for (Attendance att : attendanceDto.getAttendance()) {
-			System.out.println(attendanceDto.getDate()+" date");
+			System.out.println(attendanceDto.getDate() + " date");
 			att.setAttDate(attendanceDto.getDate());
 			att.setGrade(attendanceDto.getGrade());
 			attendanceService.save(att);
 		}
 
-//		if (saveStaff != null) {
-//			// set action logger
-//			actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), saveStaff.getId(),
-//					Session.getLoggedUserId());
-//			return "redirect:staffprofile.htm?staffId=" + saveStaff.getId() + "&" + ApplicationConstants.MESSAGE + "="
-//					+ ApplicationConstants.SUCCESS;
-//		} else {
-			return "redirect:staffprofiler.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
-//		}
+		// if (saveStaff != null) {
+		// // set action logger
+		// actionloggerService.setActionLogger(action, "created by" +
+		// Session.getLoggedUserId(), saveStaff.getId(),
+		// Session.getLoggedUserId());
+		// return "redirect:staffprofile.htm?staffId=" + saveStaff.getId() + "&"
+		// + ApplicationConstants.MESSAGE + "="
+		// + ApplicationConstants.SUCCESS;
+		// } else {
+		return "redirect:studentattendance.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
+		// }
 	}
 
 }

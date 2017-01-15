@@ -1,0 +1,17 @@
+package com.lk.std.dao;
+
+import java.util.List;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.lk.std.model.Grade;
+import com.lk.std.model.Marks;
+import com.lk.std.model.Subject;
+
+public interface MarksRepository extends CrudRepository<Marks, Long>  {
+
+	public List<Marks> findByGradeAndSubject(Grade grade, Subject subject);
+
+	public List<Marks> findByGradeAndSubjectAndAcademicyear(Grade grade, Subject sub, int year);
+
+}

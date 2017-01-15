@@ -1,9 +1,18 @@
 package com.lk.std.service;
 
+import java.util.Date;
+import java.util.List;
+
+import com.lk.std.dto.AttendanceDto;
 import com.lk.std.model.Attendance;
+import com.lk.std.model.Grade;
 
 public interface AttendanceService {
 
 	public Attendance save(Attendance att);
+
+	public List<Attendance> findByGradeAndAttDate(Grade grade, Date bDate);
+
+	public void delete(Attendance att);
 
 }

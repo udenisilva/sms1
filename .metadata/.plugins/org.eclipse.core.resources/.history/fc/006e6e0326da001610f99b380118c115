@@ -1,0 +1,5 @@
+package com.lk.std.dto;
+
+public class MarksDto {
+
+}

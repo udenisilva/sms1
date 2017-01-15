@@ -57,6 +57,9 @@ public class Grade implements Serializable {
 	@OneToMany(mappedBy="grade")
 	private List<Student> student; 
 	
+	@OneToMany(mappedBy="branch")
+	private List<Subject> subject;
+	
 	@Version
 	@Column(name = "version_id")
 	private int versionId;
@@ -153,6 +156,14 @@ public class Grade implements Serializable {
 
 	public void setStudent(List<Student> student) {
 		this.student = student;
+	}
+
+	public List<Subject> getSubject() {
+		return subject;
+	}
+
+	public void setSubject(List<Subject> subject) {
+		this.subject = subject;
 	}
 
  

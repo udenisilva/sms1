@@ -1,0 +1,19 @@
+package com.lk.std.service;
+
+import java.util.List;
+
+import com.lk.std.model.Grade;
+import com.lk.std.model.Marks;
+import com.lk.std.model.Subject;
+
+public interface MarksService {
+
+	public List<Marks> findByGradeAndSubject(Grade grade, Subject sub);
+
+	public void delete(Marks mark);
+
+	public void save(Marks mark);
+
+	public List<Marks> findByGradeAndSubjectAndAcademicyear(Grade grade, Subject sub, int year);
+
+}

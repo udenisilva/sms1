@@ -1,0 +1,22 @@
+package com.lk.std.dto;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+import com.lk.std.model.Grade;
+import com.lk.std.model.Student;
+import com.lk.std.model.Subject;
+
+public class MarksDto {
+	 
+	private int academicyear; 
+	
+	private List<Student> student;
+	 
+	private Subject subject;
+	 
+	private Grade grade;
+
+}

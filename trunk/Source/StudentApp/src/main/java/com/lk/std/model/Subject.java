@@ -49,12 +49,12 @@ public class Subject implements Serializable {
 	@ManyToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name="branch",nullable = false)
 	private Branch branch;
+	
+	@ManyToOne(cascade = CascadeType.DETACH)
+	@JoinColumn(name="grade",nullable = false)
+	private Grade grade;
 
-	@ManyToMany(fetch = FetchType.EAGER)
-	@JoinTable(name = "branch_subject", joinColumns = @JoinColumn(name = "subject_id"), inverseJoinColumns = @JoinColumn(name = "grade_id"))
-	@Cascade(org.hibernate.annotations.CascadeType.ALL)
-	@Fetch(value = FetchMode.SUBSELECT)
-	private List<Grade> grade;
+ 
 
 	
 	@Version
@@ -101,11 +101,12 @@ public class Subject implements Serializable {
 		this.versionId = versionId;
 	}
 
-	public List<Grade> getGrade() {
+
+	public Grade getGrade() {
 		return grade;
 	}
 
-	public void setGrade(List<Grade> grade) {
+	public void setGrade(Grade grade) {
 		this.grade = grade;
 	}
 

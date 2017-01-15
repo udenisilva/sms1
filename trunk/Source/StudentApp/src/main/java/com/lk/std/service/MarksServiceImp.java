@@ -1,0 +1,44 @@
+package com.lk.std.service;
+
+import java.util.List;
+
+import javax.transaction.Transactional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.lk.std.dao.MarksRepository;
+import com.lk.std.model.Grade;
+import com.lk.std.model.Marks;
+import com.lk.std.model.Subject;
+
+@Service
+@Transactional
+public class MarksServiceImp implements MarksService {
+	
+	@Autowired
+	MarksRepository marksRepository;
+
+	@Override
+	public List<Marks> findByGradeAndSubject(Grade grade, Subject subject) { 
+		return marksRepository.findByGradeAndSubject(grade,subject);
+	}
+
+	@Override
+	public void delete(Marks mark) {
+		marksRepository.delete(mark);
+		
+	}
+
+	@Override
+	public void save(Marks mark) {
+		marksRepository.save(mark);
+		
+	}
+
+	@Override
+	public List<Marks> findByGradeAndSubjectAndAcademicyear(Grade grade, Subject sub, int year) { 
+		return marksRepository.findByGradeAndSubjectAndAcademicyear(grade, sub, year);
+	}
+
+}

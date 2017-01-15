@@ -2,7 +2,9 @@ package com.lk.std.controller;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -17,14 +19,18 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.lk.std.constant.ApplicationConstants;
+import com.lk.std.constant.GeneralEnumConstants;
 import com.lk.std.constant.OLSIMSEnumConstant;
+import com.lk.std.constant.GeneralEnumConstants.UserRoleType;
 import com.lk.std.constant.OLSIMSEnumConstant.Action;
 import com.lk.std.model.Staff;
 import com.lk.std.model.SystemUser;
+import com.lk.std.model.UserRole;
 import com.lk.std.service.ActionLoggerService;
 import com.lk.std.service.BranchService;
 import com.lk.std.service.DesignationService;
 import com.lk.std.service.StaffService;
+import com.lk.std.service.SystemUserService;
 import com.lk.std.util.Session;
 
 @Controller
@@ -42,6 +48,9 @@ public class StaffProfileController {
 
 	@Autowired
 	private ActionLoggerService actionloggerService;
+	
+	@Autowired
+	  private SystemUserService systemUserService;
 
 	@RequestMapping(value = "/staffprofile", method = RequestMethod.GET)
 	public ModelAndView getStaffPage(HttpServletRequest request) {
@@ -118,6 +127,20 @@ public class StaffProfileController {
 		}
 
 		Staff saveStaff = staffService.save(staff);
+		
+		SystemUser systemUserM = new SystemUser();
+		systemUserM.setActiveStatus(GeneralEnumConstants.YesNoStatus.YES);
+		systemUserM.setUserName(staff.getEmail());
+		systemUserM.setPassword(staff.getNic());
+		systemUserM.setEmailAddress(staff.getEmail());
+
+		List<UserRole> userRolesM = new ArrayList<UserRole>();
+		UserRole userRoleM = new UserRole();
+		userRoleM.setUserRoleType(UserRoleType.ROLE_USER);
+		userRolesM.add(userRoleM);
+		systemUserM.setUserRoles(userRolesM);
+
+		systemUserService.saveSystemUser(systemUserM);
 
 		if (saveStaff != null) {
 			// set action logger

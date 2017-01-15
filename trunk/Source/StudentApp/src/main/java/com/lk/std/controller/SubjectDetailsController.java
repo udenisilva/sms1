@@ -50,7 +50,7 @@ public class SubjectDetailsController {
 	  public @ResponseBody String getUserDesignation(@RequestParam("gradeId") Long gradeId) {
 	    System.out.println("-------------------------------------- " + gradeId);
 	    try {
-	      return subjectService.findByGrade(gradeId).toString();
+	      return subjectService.findByGrade(gradeService.findById(gradeId)).toString();
 	    } catch (Exception e) {
 	      e.printStackTrace();
 	      return null;

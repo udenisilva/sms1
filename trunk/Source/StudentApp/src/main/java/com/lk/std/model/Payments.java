@@ -35,7 +35,7 @@ public class Payments implements Serializable {
 	private Student student;
 	
 	@Column(name = "payment_type", nullable = false)
-	private PaymentType paymentType;
+	private String paymentType;
 	
 	@Column(name = "payments_amount", nullable = false)
 	private double amount;
@@ -65,12 +65,13 @@ public class Payments implements Serializable {
 	public void setStudent(Student student) {
 		this.student = student;
 	}
+	
 
-	public PaymentType getPaymentType() {
+	public String getPaymentType() {
 		return paymentType;
 	}
 
-	public void setPaymentType(PaymentType paymentType) {
+	public void setPaymentType(String paymentType) {
 		this.paymentType = paymentType;
 	}
 

@@ -1,0 +1,15 @@
+package com.lk.std.service;
+
+import java.util.Date;
+
+import com.lk.std.dto.AttendanceDto;
+import com.lk.std.model.Attendance;
+import com.lk.std.model.Grade;
+
+public interface AttendanceService {
+
+	public Attendance save(Attendance att);
+
+	public AttendanceDto findByGradeAndAttDate(Grade grade, Date bDate);
+
+}

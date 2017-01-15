@@ -91,7 +91,7 @@ public class GeneralEnumConstants {
 	}
 
 	public enum UserRoleType {
-		NONE(0), ROLE_USER(1), ROLE_ADMIN(2), ROLE_GUEST(3), ROLE_DIVISION_HEAD(4);
+		NONE(0), ROLE_USER(1), ROLE_ADMIN(2), ROLE_GUEST(3), ROLE_DIVISION_HEAD(4),PARENT(5);
 
 		private int code;
 

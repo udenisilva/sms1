@@ -162,6 +162,33 @@ public class OLSIMSEnumConstant {
 	    }
 	  }
 
+  public enum AttendanceStatus {
+	   Non(0), Present(1),Absent(2);
+
+	    private int code;
+
+	    private AttendanceStatus(int code) {
+	      this.code = code;
+	    }
+
+	    public int getCode() {
+	      return code;
+	    }
+
+	    private static final Map<Integer, AttendanceStatus> LOOKUP = new HashMap<Integer, AttendanceStatus>();
+
+	    static {
+	      for (AttendanceStatus status : EnumSet.allOf(AttendanceStatus.class)) {
+	        LOOKUP.put(status.getCode(), status);
+	      }
+	    }
+
+	    public static AttendanceStatus fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
+
+  
   public enum PaymentStatus {
     NONE(0), FULL_PAYMENT(1), NOT_PAID(2), TREASUARY_GRANT(3), INSTALLMENTS(4), LOCAL_AUTHORITY(5);
 
