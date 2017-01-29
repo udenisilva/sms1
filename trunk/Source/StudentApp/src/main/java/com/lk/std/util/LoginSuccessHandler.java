@@ -49,12 +49,17 @@ public class LoginSuccessHandler implements AuthenticationSuccessHandler {
               + systemUser.getUserRoles().get(0).isCertifyStatus());
 
           // otherwise send to the default location from front end
+          System.out.println("USER LOGGIN SUCCESSFULLY");
           target.onAuthenticationSuccess(request, response, authentication);
 
         } catch (Exception e) {
+        	System.out.println("USER NULLL EXCEPTION .............");
           e.printStackTrace();
         }
 
+      }else{
+    	  System.out.println("USER NULLL");
+    	  
       }
     }
 

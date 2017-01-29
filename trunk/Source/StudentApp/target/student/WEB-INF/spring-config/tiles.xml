@@ -9,6 +9,12 @@
 		<put-attribute name="title" value="Template" />
 		<put-attribute name="body" value="" />
 	</definition>
+	
+	<!-- Register User Page-->
+    <definition name="subject" extends="home.common">
+        <put-attribute name="title" value="New Subject" />
+        <put-attribute name="body" value="/WEB-INF/views/content/subject.jsp" />        
+    </definition> 
 
 	<!-- Definition for Home Page -->
 	<definition name="home.common" template="/WEB-INF/views/layouts/homeLayout.jsp">
@@ -186,5 +192,26 @@
 		<put-attribute name="body"
 			value="/WEB-INF/views/content/staffprofile.jsp" />
 	</definition>
+	
+	<definition name="gradeNew" extends="home.common">
+		<put-attribute name="title" value="New Grade" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/content/grade.jsp" />
+	</definition>
+	
+		
+	<definition name="student_to_grade" extends="home.common">
+		<put-attribute name="title" value="New Grade" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/content/student_to_grade.jsp" />
+	</definition>
+	
+	   
+    <definition name="classschedule_transfer" extends="home.common">
+		<put-attribute name="title" value="Class Schedule Transfer" />
+		<put-attribute name="body"
+			value="/WEB-INF/views/content/classschedule_transfer.jsp" />
+	</definition>
+	
 
 </tiles-definitions>

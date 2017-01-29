@@ -34,6 +34,8 @@
 		
 		<link rel="stylesheet" href="<c:url value="/css/jquery-ui.min.css"/>" />
 		
+			<link rel="stylesheet" href="<c:url value="/css/bootstrap-datetimepicker.min.css"/>" />
+		
 		<script src="<c:url value="/js/jquery.min.js"/>"></script>
 
     </head>
@@ -55,6 +57,7 @@
 				<!-- bootstrap progress js -->
 				<script src="<c:url value="/js/progressbar/bootstrap-progressbar.min.js"/>" type="text/javascript"></script>
 				<script src="<c:url value="/js/nicescroll/jquery.nicescroll.min.js"/>" type="text/javascript"></script>
+				<script src="<c:url value="/js/bootstrap-datepicker.js"/>" type="text/javascript"></script>
 				<!-- icheck -->
 				<script src="<c:url value="/js/icheck/icheck.min.js"/>" type="text/javascript"></script>
 				<!-- tags -->

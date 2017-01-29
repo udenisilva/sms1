@@ -4,6 +4,44 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 
+<head>
+
+<script type="text/javascript">
+function getGradeList(v){
+		window.location="subjectdetails.htm?branch="+v+"";		
+	}
+
+
+	function getSubjectList(v){
+		var s=document.getElementById("branch").value;
+		
+		window.location="subjectdetails.htm?branch="+s+"&grade_id="+v+"";		
+	}
+
+	function getTeacherDetailsToSubject(v){
+
+		var branch=document.getElementById("branch").value;
+		var grade=document.getElementById("grade_id").value;
+		var subject=v;
+
+		window.location="subjectdetails.htm?branch="+branch+"&grade_id="+grade+"&subject_id="+subject+"";	
+
+		}
+
+	function getStudentListUsingAcademicYear(v){
+	//	alert(v);
+		var ayear=v;
+		var branch=document.getElementById("branch").value;
+		var gradeId=document.getElementById("grade_id").value;
+			
+		window.location="classschedule_transfer.htm?branchId="+branch+"&gradeId="+gradeId+"&academic_year="+ayear+"";	
+		 
+		}
+
+	</script>
+
+</head>
+
 <div class="page-title">
 	<div class="title_left">
 		<h3>
@@ -16,7 +54,7 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="x_panel">
 			<div class="x_title">
-				<h3>Setup Subject</h3>
+				<h3>Setup Subject - Staff Assign/h3>
 				<ul class="nav navbar-right panel_toolbox">
 					<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
 				</ul>
@@ -24,79 +62,138 @@
 			</div>
 			<div class="x_content">
 				<br />
-   <form action=".htm" modelAttribute="" method="post" >
+   <form action="add_staff_to_subject.htm" modelAttribute="" method="post" >
+   
+   					<c:if test="${result=='added'}">
+						<div class="alert alert-success">
+	  						<strong>Success!</strong> Added New Subjects
+						</div>			
+						
+					</c:if>
+					
+					<c:if test="${result=='failed'}">
+						<div class="alert alert-danger">
+  							<strong>Not Added!</strong> Please Check The Details
+						</div>			
+					
+					
+					</c:if>
   
-        <div style="float:center; width: 500px; height: 215px; margin-top: 30px">      
-	      <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Grade</span>	         
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown"  style="width:100px">Grade
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 1</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 2</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 3</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 4</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 5</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 6</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 7</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 8</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 9</a></li>	
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 10</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 11</a></li>
-			      <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Grade 12</a></li>								      
-			    </ul>
-			  </div>     
-	         </span>
-	     </div>
-	     <p></p>	     
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Subject</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Subject
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
-			  </div>  
-	         </span>
-	     </div>
-	     <p></p>	     
-	     <!-- <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Code</span>
-	     	 <input class="form-control" maxlength="3" width="20px" style="width:100px"  type="text" id="szSubCode" name="szSubCode" />	         
-	     </div>
-	     <p></p>	     
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Name</span>
-	     	 <input class="form-control" maxlength="200" width="20px" style="width:360px"  type="text" id="szSubName" name="szSubName" />	         
-	     </div> -->
-
-	     <p></p>	     
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Teacher</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Teacher
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
-			  </div>  
-	         </span>
-	     </div>
-	     <p></p>     
-	     <div align="left">
-             <span style="float:left;width:100;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Insert</button>
-                </span>
-             <span style="float:left;width:100px;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Reset</button>
-             </span>
+  
+   			<div class="row">
+							<div class="col-xs-6 col-sm-2"> 	<span >Branch</span>	 </div>	    
+								  <div class="col-xs-6 col-sm-4">
+								  <select class="form-control" id="branch" onchange="getGradeList(this.value)" name="branch" >
+										<c:if test="${exists==1}">
+										<option value="0">SELECT</option>	
+										</c:if>	
+													
+										<c:forEach items="${branchList}" var="branch">
+											<option value="${branch.id}">${branch.code}</option>										
+										</c:forEach>										
+									</select>
+							</div>								  
+					</div>
+					
+					
+					<br>					
+					 <div class="row">
+							<div class="col-xs-6 col-sm-2"> 	<span >Grade</span>	 </div>	    
+								  <div class="col-xs-6 col-sm-4">
+								  <select class="form-control" id="grade_id" onchange="getSubjectList(this.value)" name="grade_id" >
+										<c:if test="${exists==2}">
+										<option value="${grade.id}">${grade.grade}</option>	
+										</c:if>	
+																
+										<c:forEach items="${gradeList}" var="g">
+											<option value="${g.id}">${g.grade}</option>										
+										</c:forEach>										
+									</select>
+							</div>								  
+					</div>
+					
+					<br>					
+					 <div class="row">
+							<div class="col-xs-6 col-sm-2"> 	<span >Subjects</span>	 </div>	    
+								  <div class="col-xs-6 col-sm-4">
+								  <select class="form-control" id="subject_id" onchange="getTeacherDetailsToSubject(this.value)"  name="subject_id" >
+																	
+										<c:forEach items="${subjectList}" var="s">
+											<option value="${s.id}">${s.subject}</option>										
+										</c:forEach>										
+									</select>
+							</div>								  
+					</div>
+					
+						<br>					
+					 <div class="row">
+							<div class="col-xs-6 col-sm-2"> 	<span >Teacher</span>	 </div>	    
+								  <div class="col-xs-6 col-sm-4">
+								  <select class="form-control" id="staff_id" onchange="getTeacherDetails(this.value)" name="staff_id" >
+																	
+										<c:forEach items="${teacherList}" var="t">
+											<option value="${t.id}">${t.name} -${t.designation.designation}</option>										
+										</c:forEach>										
+									</select>
+							</div>								  
+					</div>
+           
+	       <br>
+	    <div class="row">
+            	<div class="col-xs-6 col-sm-2"> 	<span ></span>	 </div>	   
+            	  <div class="col-xs-6 col-sm-4"> 
+                 <button type="submit"  class="btn btn-default">Insert</button>
+                </div>
+            
          </div>
-	   </div>   
+         
+         
+         <br>
+         
+         <c:if test="${staff==1}">
+         
+        <table class="table table-hover">
+  				<tr>
+  					<th>Staff ID</th>  	
+  					<th>Title</th>			
+  					<th>Staff Name</th>
+  					<th>Address</th>
+  					<th>Nic</th>
+  					<th>Home Number</th>
+  					<th>Mobile Number</th>
+  					<th>Designation</th>
+  					<th>Email</th>
+  					<th>Join Date</th>	
+  				</tr>
+  				
+  				<c:forEach items="${staffList}" var="p">
+  					
+  					<tr>
+  						<td>${p.id}</td>
+  						<td>${p.title}</td>
+  						<td>${p.name}</td>
+  						<td>${p.address}	</td>
+  						<td>${p.nic}</td>
+  						<td>${p.tel}</td>
+  						<td>${p.mobile}</td>
+  						<td>${p.designation.designation}	</td>
+  						<td>${p.email}	</td>
+  						<td>${p.jdate}	</td>
+  								
+  						
+  							
+  			</tr> 					 				
+  				
+  				</c:forEach>	
+			</table>
+         
+         
+         
+         </c:if>
+         
+         
+         
+	
       
 </form>
 </div>

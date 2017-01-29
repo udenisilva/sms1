@@ -44,4 +44,39 @@ public class GradeServiceImp implements GradeService{
 		return gradeRepository.findByBranch(branch);
 	}
 
+	@Override
+	public int remove(Grade grade) {
+		int result=0;
+		try{
+		 gradeRepository.delete(grade);
+		 result=1;
+		}catch (Exception e) {
+			result=0;
+		}
+		
+		return result;
+	}
+
+	@Override
+	public int findByGradeAndId(String grade, long gradeId) {
+			int exists=0;
+	
+			try{
+			Grade g=gradeRepository.findByGradeAndId(grade, gradeId);
+				if(g!=null){
+					exists=1;
+					System.out.println("HEREEEEEEEEE 111111111111 ");
+				}else{
+					exists=0;
+					System.out.println("HEREEEEEEEEE 2222222222222222222222 ");
+				}
+			}catch (Exception e) {
+				System.out.println("ERRRORRRRRRRRRRRRRRRRR ");
+				e.printStackTrace();
+				exists=0;
+			}
+		
+		return exists;
+	}
+
 }

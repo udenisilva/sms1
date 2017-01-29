@@ -1,6 +1,7 @@
 package com.lk.std.controller;
 
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -17,8 +18,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.lk.std.constant.ApplicationConstants;
+import com.lk.std.model.ClassSchedule;
 import com.lk.std.model.Payments;
 import com.lk.std.model.Student;
+import com.lk.std.service.ClassScheduleService;
 import com.lk.std.service.GradeService;
 import com.lk.std.service.PaymentService;
 import com.lk.std.service.StudentService;
@@ -32,6 +35,9 @@ public class StudentPaymentController {
 	
 	@Autowired
 	private StudentService studentservice;
+	
+	@Autowired
+	private ClassScheduleService classScheduleService;
 
 	  @RequestMapping(value = "/studentpayment", method = RequestMethod.GET)
 	  public ModelAndView getHomePage(HttpServletRequest request) {
@@ -47,7 +53,11 @@ public class StudentPaymentController {
 	    ModelMap modelMap = new ModelMap(); 
 	    
 	    System.out.println("STUDENT IDDDDD "+student_id);
+	    List<String> yearList=new ArrayList<String>();
 	    
+		 for(int i=2000;i<2100;i++){
+			 yearList.add(i+"");
+		 }
 	  
 	    
 	    
@@ -58,6 +68,23 @@ public class StudentPaymentController {
 	    		Payments p=new Payments();
 	    		
 	    		List<Payments> pLi=paymentservice.findAllUsingStudentId(student_id);
+	    		
+	    		try{
+	    		ClassSchedule classSchedule=classScheduleService.getActiveClassScheduleByStudent(student_id);
+	    		if(classSchedule!=null){
+	    			yearList.clear();
+	    			yearList.add(classSchedule.getAcademicyear()+"");
+	    			
+	    		  
+	    			
+	    			modelMap.addAttribute("yearList",classSchedule.getAcademicyear());
+	    		}else{
+	    			modelMap.addAttribute("yearList",0);
+	    		}
+	    		
+	    		}catch (Exception e) {
+	    			modelMap.addAttribute("yearList",0);
+				}
 	    		
 	    		String pattern = "yyyy-MM-dd";
 	    		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
@@ -73,6 +100,9 @@ public class StudentPaymentController {
 	    	}catch (Exception e) {
 				System.out.println("EORRRRRRRRRRRRRRR");
 			}
+	    	
+	    
+	    	
 	    return new ModelAndView("studentpayment", modelMap);
 	    }else{
 	    	

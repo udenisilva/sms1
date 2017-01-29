@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +15,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.lk.std.constant.ApplicationConstants;
@@ -23,6 +27,8 @@ import com.lk.std.constant.GeneralEnumConstants;
 import com.lk.std.constant.OLSIMSEnumConstant;
 import com.lk.std.constant.GeneralEnumConstants.UserRoleType;
 import com.lk.std.constant.OLSIMSEnumConstant.Action;
+import com.lk.std.constant.OLSIMSEnumConstant.MessagesCatagory;
+import com.lk.std.dto.HostingForm;
 import com.lk.std.model.Staff;
 import com.lk.std.model.SystemUser;
 import com.lk.std.model.UserRole;
@@ -51,6 +57,26 @@ public class StaffProfileController {
 	
 	@Autowired
 	  private SystemUserService systemUserService;
+	
+	@RequestMapping(value = "/check_ajax",method = RequestMethod.POST)
+	  @ResponseBody
+	  public String  checkEmailExists(@RequestBody HostingForm hostingForm)
+	  {
+	
+		System.out.println(" CHECK USER IS EXISTS  "+hostingForm.getEmail());
+		String exists=systemUserService.validateUsername(hostingForm.getEmail());
+		
+		if(exists.equals("suc")) {
+		
+			System.out.println("  USER IS NOT EXISTS  ");		
+			exists="not_exists";
+		
+		}else{
+			exists="exists";
+			System.out.println("  USER IS  EXISTS  ");
+		}
+	  return exists;
+	 }
 
 	@RequestMapping(value = "/staffprofile", method = RequestMethod.GET)
 	public ModelAndView getStaffPage(HttpServletRequest request) {
@@ -73,18 +99,25 @@ public class StaffProfileController {
 				staff = staffService.findById(staffId);
 			} else {
 				staff = new Staff();
+				modelMap.addAttribute("staff_id", staffService.getNextstaff_id());
 			}
 		} catch (Exception e) { 
 		}
+		
+		
+		modelMap.addAttribute("category", OLSIMSEnumConstant.Gender.values());
+		modelMap.addAttribute("staffList", staffService.findAll());
 		modelMap.addAttribute("staff", staff);
 		return new ModelAndView("staffprofile", modelMap);
 	}
 
-	@RequestMapping(value = "/createStaff", method = RequestMethod.POST)
-	public String StaffPager(HttpServletRequest request, @ModelAttribute("staff") Staff staff, BindingResult errors) {
+	@RequestMapping(value = "/createStaff", method = RequestMethod.GET)
+	public ModelAndView StaffPager(HttpServletRequest request, @ModelAttribute("staff") Staff staff, BindingResult errors) {
 		if (errors.hasErrors()) {
 			System.out.println("------------error occured");
+			
 		}
+		ModelMap modelMap = new ModelMap();
 		// Staff staff2=null;
 		Action action = null;
 
@@ -92,9 +125,11 @@ public class StaffProfileController {
 			if (!StringUtils.isBlank(request.getParameter("staff_id"))) {
 				// staff2=staffService.findById(staff.getId());
 				action = Action.USER_UPDATED;
+				System.out.println("------------UPDATEDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD");
 			} else {
 				// staff2=new Staff();
 				action = Action.USER_CREATED;
+				System.out.println("------------NEWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW");
 			}
 
 		} catch (Exception e) {
@@ -125,31 +160,72 @@ public class StaffProfileController {
 				e.printStackTrace();
 			}
 		}
+		
+	
+		System.out.println("11111111111111 getId= "+staff.getId());
+		System.out.println("11111111111111 getBranch= "+staff.getBranch().getId());
+		System.out.println("11111111111111 getTitle= "+staff.getTitle());
+		System.out.println("11111111111111 getName= "+staff.getName());
+		System.out.println("11111111111111 getAddress= "+staff.getAddress());
+		System.out.println("11111111111111 getDesignation= "+staff.getDesignation());
+		System.out.println("11111111111111 getNic= "+staff.getNic());
+		System.out.println("11111111111111 getTel= "+staff.getTel());
+		System.out.println("11111111111111 getMobile= "+staff.getMobile());
+		System.out.println("11111111111111 getEmail= "+staff.getEmail());
+		System.out.println("11111111111111 getJdate= "+staff.getJdate());
+		System.out.println("11111111111111 getLdate= "+staff.getLdate());
+		System.out.println("11111111111111 getStatus= "+staff.getStatus());
+		System.out.println("11111111111111 getGender= "+staff.getGender());
 
+		System.out.println("11111111111111 getBday= "+staff.getBday());
+		
+		
+		String checkUser=systemUserService.validateUsername(staff.getEmail());
+		
+		 /////////////// IF NOT EXISTS + USER NAME		
+		
 		Staff saveStaff = staffService.save(staff);
 		
-		SystemUser systemUserM = new SystemUser();
-		systemUserM.setActiveStatus(GeneralEnumConstants.YesNoStatus.YES);
-		systemUserM.setUserName(staff.getEmail());
-		systemUserM.setPassword(staff.getNic());
-		systemUserM.setEmailAddress(staff.getEmail());
-
-		List<UserRole> userRolesM = new ArrayList<UserRole>();
-		UserRole userRoleM = new UserRole();
-		userRoleM.setUserRoleType(UserRoleType.ROLE_USER);
-		userRolesM.add(userRoleM);
-		systemUserM.setUserRoles(userRolesM);
+		if(!checkUser.equals("err")) {
+			
+			SystemUser systemUserM = new SystemUser();
+			systemUserM.setActiveStatus(GeneralEnumConstants.YesNoStatus.YES);
+			systemUserM.setUserName(staff.getEmail());
+			systemUserM.setPassword(staff.getNic());
+			systemUserM.setEmailAddress(staff.getEmail());
+	
+			List<UserRole> userRolesM = new ArrayList<UserRole>();
+			UserRole userRoleM = new UserRole();
+			userRoleM.setUserRoleType(UserRoleType.ROLE_USER);
+			userRolesM.add(userRoleM);
+			systemUserM.setUserRoles(userRolesM);
 
 		systemUserService.saveSystemUser(systemUserM);
 
-		if (saveStaff != null) {
-			// set action logger
-			actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), saveStaff.getId(),
-					Session.getLoggedUserId());
-			return "redirect:staffprofile.htm?staffId=" + saveStaff.getId() + "&" + ApplicationConstants.MESSAGE + "="
-					+ ApplicationConstants.SUCCESS;
-		} else {
-			return "redirect:staffprofiler.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
+			if (systemUserService != null) {
+				// set action logger
+				actionloggerService.setActionLogger(action, "created by" + Session.getLoggedUserId(), saveStaff.getId(),
+						Session.getLoggedUserId());
+			
+				modelMap.addAttribute("msg",ApplicationConstants.SUCCESS);
+				
+				modelMap.addAttribute("category", OLSIMSEnumConstant.Gender.values());
+				modelMap.addAttribute("staffList", staffService.findAll());
+				modelMap.addAttribute("designations", designationService.findAll());
+				modelMap.addAttribute("titles", OLSIMSEnumConstant.Title.values());
+				modelMap.addAttribute("status", OLSIMSEnumConstant.ActiveStatus.values());
+				
+				modelMap.addAttribute("staff", new Staff());
+				
+				return new ModelAndView("staffprofile", modelMap);
+			} else {
+				modelMap.addAttribute("msg",ApplicationConstants.ERROR);
+				return new ModelAndView("staffprofile", modelMap);
+			}
+		
+		}else{
+			modelMap.addAttribute("msg",ApplicationConstants.EXISTS_USER_NAME);			
+			return new ModelAndView("staffprofile", modelMap);
 		}
 	}
 

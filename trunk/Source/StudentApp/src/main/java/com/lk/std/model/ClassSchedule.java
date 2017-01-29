@@ -15,6 +15,7 @@ import javax.persistence.Table;
 import javax.persistence.Version;
 
 import com.lk.std.constant.OLSIMSEnumConstant.ActiveStatus;
+import com.lk.std.constant.OLSIMSEnumConstant.TransferStatus;
 
 @Entity(name = "class_schedule")
 @Table(name = "class_schedule")
@@ -30,19 +31,22 @@ public class ClassSchedule implements Serializable{
 	@Column(name = "id", nullable = false)
 	private long id;
 	
-	@ManyToOne(cascade = CascadeType.DETACH)
+	@ManyToOne()
 	@JoinColumn(name="student_id",nullable = false)
 	private Student student;
 	
-	@ManyToOne(cascade = CascadeType.DETACH)
+	@ManyToOne()
 	@JoinColumn(name="grade_id",nullable = false)
 	private Grade grade;
 	
 	@Column(name = "academicyear", nullable = false)
 	private int academicyear;
 	
+	@Column(name = "remarks", nullable = false)
+	private String remarks;
+	
 	@Column(name = "status", nullable = false)
-	private ActiveStatus status;
+	private TransferStatus status;
 	
 	@Version
 	@Column(name = "version_id")
@@ -50,7 +54,20 @@ public class ClassSchedule implements Serializable{
 
 	public long getId() {
 		return id;
+	}	
+	
+
+	public String getRemarks() {
+		return remarks;
 	}
+
+
+
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
+
+
 
 	public void setId(long id) {
 		this.id = id;
@@ -80,11 +97,11 @@ public class ClassSchedule implements Serializable{
 		this.academicyear = academicyear;
 	}
 
-	public ActiveStatus getStatus() {
+	public TransferStatus getStatus() {
 		return status;
 	}
 
-	public void setStatus(ActiveStatus status) {
+	public void setStatus(TransferStatus status) {
 		this.status = status;
 	}
 

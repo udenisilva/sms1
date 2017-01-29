@@ -28,67 +28,118 @@
      
      <form:form action="add_subject.htm" modelAttribute="subject" method="post" >
   
-        <div style="float:center; width: 500px; height: 215px; margin-top: 30px">    
+	        	<c:if test="${result=='success' }">
+	        
+	        		<div class="alert alert-success">
+	  						<strong>Success!</strong> Added New Subject
+					</div>			
+						
+	        	</c:if>
+	        	
+	        	<c:if test="${result=='failed' }">
+	        		
+	        		<div class="alert alert-danger">
+	  						<strong>Failed!</strong>Add New Subject
+					</div>	
+	        	</c:if>
+	
+       
         
 	      <input type="hidden" name="action" value="${action}" id="action">	      
 	      <form:hidden path="id" name="id" id="id" />
 	      <form:hidden path="versionId" name="versionId" id="versionId" />
-	     
-	     <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Subject Code</span>	         
-	         <span>
-	         	            
-			<form:input path="code" class="form-control" id="subject_code" name="subject_code" />			     
-	         </span>
+	     <br>
+	     <div class="row">
+	          <div class="col-xs-6 col-sm-2"> 	<span >Subject Code</span>	 </div>	               
+	          <div class="col-xs-6 col-sm-4">
+	            	<label class="label label-default">	      ${subject.code} </label>
+	          	<form:hidden path="code" class="form-control" id="subject_code" name="subject_code" />	
+	          </div>    
+	        
 	     </div>
-	     
-	      <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Subject Name</span>	         
-	         <span>	            
-			   <form:input path="subject" class="form-control" id="subject_subject" name="subject_subject" />
+	     <br>
+	       <div class="row">
+	            <div class="col-xs-6 col-sm-2"> 	<span >Subject Name</span>	 </div>	   
+	          <div class="col-xs-6 col-sm-4">           
+			   <form:input path="subject" class="form-control"  required="true"   id="subject_subject" name="subject_subject" />
 			     
-	         </span>
+	         </div>
 	     </div>
 	     
-	      <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Branch</span>	         
-	         <span>
+	     <br>
+	       <div class="row">
+	           <div class="col-xs-6 col-sm-2"> 	<span >Grade</span>	 </div>	   	         
+	          <div class="col-xs-6 col-sm-4">      
 	            
-			   <form:select path="branch.id"  class="form-control" id="branch_id" name="branch_id">
+			   <form:select path="grade.id" required="true"   class="form-control" id="grade_id" name="grade_id">
+			   			<option value="${grade.id}">${grade.grade}</option>
+						<c:forEach var="b" items="${gradeList}">
+							<option value="${b.id}">${b.grade}</option>
+						</c:forEach>
+				</form:select>
+	         </div>
+	     </div>
+	     
+	     <br>
+	       <div class="row">
+	           <div class="col-xs-6 col-sm-2"> 	<span >Branch</span>	 </div>	   	         
+	          <div class="col-xs-6 col-sm-4">      
+	            
+			   <form:select path="branch.id" required="true"   class="form-control" id="branch_id" name="branch_id">
 						<c:forEach var="b" items="${brLi}">
 							<option value="${b.id}">${b.address}</option>
 						</c:forEach>
 				</form:select>
-			     
-	         </span>
+	         </div>
 	     </div>
 	    
 	     
-	     <p></p>     
-	     <div align="left">
-             <span style="float:left;width:100;" >&nbsp;</span>
-             <span>
-                 <button type="submit" class="btn btn-default">Insert / Update</button>
-                </span>
-             <span style="float:left;width:100px;" >&nbsp;</span>
-             <span>
-                 <button type="button" class="btn btn-default">Reset</button>
-             </span>
+	  <br>
+	    <div class="row">
+             <div class="col-xs-6 col-sm-2"> 	 </div>	   	  
+             <div class="col-xs-6 col-sm-4">      
+                 <button type="submit" class="btn btn-success">Insert / Update</button>
+              
          </div>
 	   </div>   
       
 </form:form>
+<hr>
 
-  <div style="float:center; width: 500px; height: 215px; margin-top: 30px"> 
-  
+ <div class="row">
+	           <div class="col-xs-6 col-sm-2"> 	<span ></span>	 </div>	   	         
+	          <div class="col-xs-6 col-sm-4">  
+	         <h3> <span class="label label-success">View All Subjects</span></h3>
+	           </div>
+	           
+	            </div>    
+
+  	<form action="select_branch_details.htm" method="get" >
+      <div class="row">
+	           <div class="col-xs-6 col-sm-2"> 	<span >Branch</span>	 </div>	   	         
+	          <div class="col-xs-6 col-sm-4">      
+	            
+			   <select  class="form-control" id="branch_id" name="branch_id">
+						<c:forEach var="b" items="${brLi2}">
+							<option value="${b.id}">${b.address} - ${b.address}</option>
+						</c:forEach>
+				</select>
+	         </div>
+	         
+	           <div class="col-xs-6 col-sm-4"> 
+	             <button type="submit" class="btn btn-success">Find</button>
+	              </div>
+	     </div>
+	</form>
   
   <table class="table table">
-  <tr>
-  	<td>Subject Id<td>
-  	<td>Subject code </td>
-  	<td>Subject Name </td>
-  	<td>Location Name </td>
-  	<td>action </td>
+  	<tr>
+	  	<td>Subject Id<td>
+	  	<td>Subject code </td>
+	  	<td>Subject Name </td>
+	  	<td>Grade </td>
+	  	<td>Location Name </td>
+	  	<td>action </td>
   	
   	</tr>
   	
@@ -99,6 +150,7 @@
   			<td>  ${s.id} </td>
   			<td>  ${s.code} </td>
   			<td>  ${s.subject} </td> 
+  			<td>  ${s.grade.grade} </td> 
   			<td>  ${s.branch.code} </td>
   			<td>  <a href="update_subject_details_view.htm?id=${s.id}">update </a> </td>  		 			
   		</tr>
@@ -107,16 +159,13 @@
   	
   
   </table>
-  
-  
-  
-  </div>
+
      
      
      
 </div>
 </div>
 </div>
-</div>
+
 </body>
 </html>

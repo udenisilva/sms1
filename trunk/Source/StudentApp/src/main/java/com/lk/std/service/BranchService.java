@@ -11,7 +11,11 @@ public interface BranchService {
 
 	public Branch save(Branch branch);
 	
-	public Branch findById(Long id);
+	public Branch findById(long id);
 
 	public List<Grade> findGradeById(long branchId);
+	
+	public int nextBranchId();
+	
+	public String nextBranchCode();
 }

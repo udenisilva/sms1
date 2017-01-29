@@ -20,4 +20,6 @@ public class ClassScheduleController {
 	 
 	    return new ModelAndView("classschedule", modelMap);
 	  }
+	  
+	
 }

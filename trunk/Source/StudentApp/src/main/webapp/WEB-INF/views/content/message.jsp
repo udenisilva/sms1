@@ -25,39 +25,119 @@
 			<div class="x_content">
 				<br />
 				
-   <form action=".htm" modelAttribute="" method="post" > 
+				<c:if test="${result=='add_new'}">
+				
+				<label class="label label-success">
+					New Message Added Successfully
+				</label>
+				
+				</c:if>
+				
+				<c:if test="${result=='not_added'}">
+				
+				<label class="label label-danger">
+					New Message Added Failed
+				</label>
+				
+				</c:if>
+					<c:if test="${result=='check_grade_added'}">
+				
+				<label class="label label-danger">
+						Please Select The Grade
+				</label>
+				
+				</c:if>
+				
+			</div>
+			</div>	
+			</div>
+			</div>
+			
+				
+				
+				
+	<form action="select_grade.htm"  method="get" > 
         <div >       
       		<div align="left" class="Branch">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Category</span>
+      		
+      		<select id="grade_id" name="grade_id" class="form-control" >
+      			
+			<c:forEach items="${grLi}" var="g">
+				<option value="${g.id}">${g.grade} </option>
+			</c:forEach>
+
+      		</select>
+      		
+      		<input type="submit" class="form-group" value="Find">
+      		</div>      		
+      </div>
+  </form>				
+				
+   <form action="add_or_update_grade.htm"  method="get" > 
+        <div >  
+        
+        <div align="left">
+	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Grade</span>
+	     	 	 	   ${message.grade.id} - ${message.grade.grade}     
+	    </div>
+             
+             	<input type="hidden" name="action" value="${action}" class="form-control" />  
+               <input type="hidden" name="message_no" value="1" class="form-control" />  
+               <input type="hidden" name="grade_id"  value="${message.grade.id}"  class="form-control" />  
+             
+      		<div align="left" class="Branch">
+	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Message Title</span>
+	          <input type="text" name="message_title" class="form-control" />  
 	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Category
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Parent</a></li>
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Staff</a></li>	
-			    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Teachers</a></li>
-			    </ul>
-			  </div>  
+	               
+	         
 	         </span>
 	     </div>
 	     <p></p>
       		<div align="left">
 	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Message</span>
-	     	 <textarea class="form-control" rows="5" style="width:400px" id="Address"></textarea>	         
+	     	 	     	 <input  type="message"  name="message" class="form-control" />        
 	     	</div>
 	     	<p></p>	
 	     	<div align="left">
              <span style="float:left;width:100;" >&nbsp;</span>
              <span>
-                 <button type="button" class="btn btn-default">Insert</button>
+                 <button type="submit" class="btn btn-default">Insert</button>
                 </span>
              <span style="float:left;width:100px;" >&nbsp;</span>
              <span>
                  <button type="button" class="btn btn-default">Reset</button>
              </span>
          </div>
-	     </div> 
+	     </div> 	     
+	     
  </form>
+ 
+ 	<table class="table table">
+ 	
+ 	<tr>
+ 		<th>Grade Id</th>
+ 		<th>Grade Name</th>
+ 		<th>Id</th>
+ 		<th>Message Title</th>
+ 		<th>Message</th>
+ 		<th><u>Remove </u></th>
+ 	</tr>
+ 
+ 		<c:forEach items="${msLi}" var="m"> 				
+	 		<tr>
+	 			<td> ${m.grade.id} </td>
+	 			<td> ${m.grade.grade} </td>
+	 			<td> ${m.id}</td>
+	 			<td> ${m.message_titles}</td>
+	 			<td> ${m.message}</td>
+	 			<td> <a href="remove_message.htm?grade_id=${m.grade.id}&msg_id=${m.id}"> remove </a></td>
+	 		</tr>
+ 		</c:forEach>
+ 		
+ 	
+ 	
+ 	</table>
+ 
 </body>
 </html>

@@ -5,7 +5,18 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 
+   <script type="text/javascript">
+            // When the document is ready
+            $(document).ready(function () {
+                
+            //    $('#date').datepicker({
+             //       format: "yy-mm-dd"
+             //   });  
 
+                $("#date").datepicker({ dateFormat: 'yy-mm-dd' });
+            
+            });
+        </script>
 	
 <div class="page-title">
 	<div class="title_left">
@@ -17,7 +28,7 @@
 	<div class="col-md-12 col-sm-12 col-xs-12">
 		<div class="x_panel">
 			<div class="x_title">
-				<h3>Student Attendance</h3>
+				
 				<ul class="nav navbar-right panel_toolbox">
 					<li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a></li>
 				</ul>
@@ -26,19 +37,18 @@
 			<div class="x_content">
 				<br />
 
-				<form action="addattendance.htm" modelAttribute="attendancea"
-					method="post">
-					<div style="float: center; width: 650px; margin-top: 20px">
-
-						<div align="left" class="Branch">
-							<span
-								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Branch</span>
-							<span>
-								<div class="dropdown">
-									<select class="btn btn-default dropdown-toggle" id="branch"
+				<form action="addattendance.htm" modelAttribute="attendancea"  method="post">
+					
+						 <div class="row">
+						  <div class="col-10">
+						 
+							<div class="col-xs-6 col-sm-1"> 	<span >Branch</span>	 </div>	    
+								  <div class="col-xs-6 col-sm-3">
+									<select class="form-control" id="branch"
 										onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
 										name="branch.id" style="width: 100">
 										<option value="">----Select----</option>
+										
 										<c:forEach items="${branchs}" var="branch">
 											<c:choose>
 												<c:when test="${branch.id == branchId}">
@@ -50,19 +60,22 @@
 												</c:otherwise>
 											</c:choose>
 										</c:forEach>
+										
 									</select>
 								</div>
-							</span>
-						</div>
-						<div align="left">
-							<span
-								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Grade</span>
-							<span>
+							</div>
+							
+							<div class="col-10">
+							
+							
+								<div class="col-xs-6 col-sm-1"> 	Grade	 </div>
+								    
 							 <input class="form-control" maxlength="10"
 								width="300px" style="width: 100px" type="hidden" id="grade"
 								name="grade.id" value="${gradeId}" />
-								<div class="dropdown">
-									<select class="btn btn-default dropdown-toggle" id="gradec"
+								
+							   <div class="col-xs-6 col-sm-3">
+									<select class="form-control" id="gradec"
 										name="gradec.id"
 										onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);"
 										style="width: 100">
@@ -81,64 +94,108 @@
 												</c:otherwise>
 											</c:choose>
 										</c:forEach>
+										
 									</select>
 								</div>
-							</span>
+							
+							
+							</div>
+							
 						</div>
-						<p></p>
-						<!--    <div align="left">
-	         <span style="float:left;width:100px; font:Arial, Helvetica, sans-serif; color:#039;" >Class</span>
-	         <span>
-	            <div class="dropdown">
-			    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100px">Class
-			    <span class="caret"></span></button>
-			    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-			    </ul>
-			  </div>  
-	         </span>
-	     </div> -->
-						<p></p>
-						<div align="left">
-							<span
-								style="float: left; width: 100px; font: Arial, Helvetica, sans-serif; color: #039;">Date</span>
-							<span> <input class="form-control" maxlength="10"
-								width="300px" style="width: 100px" type="date" id="date"
-								name="date" onblur="dateOnblur(this.value)" value="${datez}" />
-							</span>
+						
+						<br>
+						
+										
+
+						 <div class="row">
+							 <div class="col-xs-6 col-sm-1"> 	<span >Date</span> </div>	
+							  <div class="col-xs-6 col-sm-3">  	
+								 <input type="date" class="form-control" required="true"  id="date"
+									name="date" onchange="dateOnblur(this.value)" value="${datez}" />
+							</div>
 						</div>
-						<P></P>
-						<table id="myTable1" class="table table-striped table-bordered"
-							cellspacing="0" width="100%">
-							<thead>
+						
+						<br>
+						
+						 <div class="row">
+							 <div class="col-xs-6 col-sm-1"> 	<span ></span> </div>	
+							  <div class="col-xs-6 col-sm-3">  
+								<input type="button"  class="btn btn-success" value="Find" onclick="getAllDetails()" >
+							</div>
+						</div>
+						
+			
+				    
+				             			
+						<hr>
+						
+						 <div class="row">
+							 <div class="col-xs-6 col-sm-2"> 	<span ></span> </div>	
+							  <div class="col-xs-6 col-sm-4">  	
+								 
+								<label class="label label-success"> View Attendance  </label>							
+
+							</div>
+						</div>
+						
+						<br>
+						
+						<table id="myTable1" class="table table-striped" >
+						
+							
 								<tr>
 									<th>Student ID</th>
+									<th>Student Code</th>
 									<th>Student Name</th>
 									<th>Present / Absent</th>
-
-									<th>Remarks</th>
+									
 								</tr>
-							</thead>
-							<tbody>
-								<c:forEach items="${students}" var="student" varStatus="loop">
-								<c:set var="countz" value="${0}" />
-									<c:choose>
-										<c:when test="${fn:length(attendances) > 0}">
-											<c:forEach items="${attendances}" var="attendance">
-												<c:choose>
-													<c:when test="${student.id == attendance.student.id}">
-													<c:set var="countz" value="${1}" />
-														<tr>
-															<td>${student.code}<input class="form-control"
-																type="hidden" id="studentId"
-																name="attendance[${loop.index}].student.id"
-																value="${student.id}" style="width: 180%" />
-															</td>
-															<td>${student.name}</td>
-															<td>
-																<div class="Status">
+						
+							
+							
+						
+							
+								<c:if test="${check==1}">
+									<c:forEach items="${students}" var="student" varStatus="loop">													
+										<tr>
+												<td> ${student.id}  </td>
+													<td>${student.code}<input class="form-control"
+														type="hidden" id="studentId"
+														name="attendance[${loop.index}].student.id"
+														value="${student.id}" style="width: 180%" />
+													</td>
+													<td>${student.name}</td>
+													<td>
+														<div class="Status">
+															<select class="btn btn-default dropdown-toggle"
+																name="attendance[${loop.index}].status" id="status"
+																style="width: 200">
+																<c:forEach items="${status}" var="statu">
+																	<option value="${statu}">${statu}</option>
+																</c:forEach>
+															</select>
+														</div>
+													</td>												
+										</tr>									
+									</c:forEach>
+								</c:if>
+								
+								<c:if test="${check==2}">
+								
+								<c:forEach items="${attendances}" var="attendance" varStatus="loop">													
+										<tr>
+												<td> ${attendance.student.id}  </td>
+													<td>${attendance.student.code}<input class="form-control"
+														type="hidden" id="studentId"
+														name="attendance[${loop.index}].student.id"
+														value="${attendance.student.id}" style="width: 180%" />
+													</td>
+													<td>${attendance.student.name}</td>
+													<td>
+														<div class="Status">
 																	<select class="btn btn-default dropdown-toggle"
 																		name="attendance[${loop.index}].status" id="status"
-																		style="width: 100">
+																		style="width: 200">
 																		<c:forEach items="${status}" var="statu">
 																			<c:choose>
 																				<c:when test="${statu == attendance.status}">
@@ -151,73 +208,26 @@
 																		</c:forEach>
 																	</select>
 																</div>
-															</td>
-															<td>Remarks</td>
-														</tr>
-													</c:when>
-													<c:when
-														test="${student.id != attendance.student.id && countz ==0}">
-														<tr>
-															<td>${student.code}<input class="form-control"
-																type="hidden" id="studentId"
-																name="attendance[${loop.index}].student.id"
-																value="${student.id}" style="width: 180%" />
-															</td>
-															<td>${student.name}</td>
-															<td>
-																<div class="Status">
-																	<select class="btn btn-default dropdown-toggle"
-																		name="attendance[${loop.index}].status" id="status"
-																		style="width: 100">
-																		<c:forEach items="${status}" var="statu">																			 
-																					<option value="${statu}">${statu}</option>
-																		</c:forEach>
-																	</select>
-																</div>
-															</td>
-															<td>Remarks</td>
-														</tr>
-													</c:when>
-												</c:choose>
-											</c:forEach>
-										</c:when>
-										<c:otherwise>
-											<tr>
-												<td>${student.code}<input class="form-control"
-													type="hidden" id="studentId"
-													name="attendance[${loop.index}].student.id"
-													value="${student.id}" style="width: 180%" />
-												</td>
-												<td>${student.name}</td>
-												<td>
-													<div class="Status">
-														<select class="btn btn-default dropdown-toggle"
-															name="attendance[${loop.index}].status" id="status"
-															style="width: 100">
-															<c:forEach items="${status}" var="statu">
-																<option value="${statu}">${statu}</option>
-															</c:forEach>
-														</select>
-													</div>
-												</td>
-												<td>Remarks</td>
-											</tr>
-										</c:otherwise>
-									</c:choose>
-								</c:forEach>
-							</tbody>
+													</td>												
+										</tr>									
+									</c:forEach>
+								
+								
+								</c:if>
+							
 						</table>
 						<P></P>
 
+					
+					<br>
+
+					<div class="row"> 
+						  <div class="col-xs-6 col-sm-2"> </div>	
+						    <div class="col-xs-6 col-sm-4">
+								<button type="submit" class="btn btn-success">Insert / Update</button>
+						 </div>
 					</div>
-					<P></P>
-					<div align="left">
-						<span style="float: left; width: 100;">&nbsp;</span> <span>
-							<button type="submit" class="btn btn-default">Insert</button>
-						</span> <span style="float: left; width: 100px;">&nbsp;</span> <span>
-							<button type="button" class="btn btn-default">Reset</button>
-						</span>
-					</div>
+					
 				</form>
 			</div>
 		</div>
@@ -229,5 +239,11 @@
 					function dateOnblur(date) {
 						window.location="studentattendance.htm?branchId="+${branchId}+"&gradeId="+${gradeId}+"&date="+date;
 					}
+
+					function getAllDetails(){
+						var d=document.getElementById("date").value;
+						window.location="studentattendance.htm?branchId="+${branchId}+"&gradeId="+${gradeId}+"&date="+d;
+									     
+						}
 	</script>
 </html>

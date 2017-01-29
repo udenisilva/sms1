@@ -78,6 +78,8 @@ public class StudentAttendanceController {
 				gradeId = Long.parseLong(request.getParameter("gradeId").trim());
 			}
 			if (gradeId > 0) {
+				
+				modelMap.addAttribute("check",1);
 				Grade grade = gradeService.findById(gradeId);
 				students = studentService.findByGrade(grade);
 				modelMap.addAttribute("gradeId", gradeId);
@@ -88,6 +90,7 @@ public class StudentAttendanceController {
 
 				if (!StringUtils.isBlank(request.getParameter("date"))) {
 					Date bDate;
+					modelMap.addAttribute("check",2);
 					bDate = df.parse(request.getParameter("date"));
 					String newDateString = df.format(bDate);
 					System.out.println(newDateString);
@@ -97,9 +100,18 @@ public class StudentAttendanceController {
 					int count = 0;
 					for (Attendance att : attendance) {
 						System.out.println(att.getAttDate() + " aa======");
+						count=1;
+					}
+					
+					if(count==0){
+						modelMap.addAttribute("attendances", attendance);
+						modelMap.addAttribute("check",1);
+					}else{
+						modelMap.addAttribute("check",2);
+						modelMap.addAttribute("attendances", attendance);
 					}
 					modelMap.addAttribute("datez", request.getParameter("date"));
-					modelMap.addAttribute("attendances", attendance);
+					
 
 				}
 

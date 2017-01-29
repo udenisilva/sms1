@@ -32,8 +32,8 @@ public class Messages implements Serializable {
 	@Column(name = "messages", nullable = false)
 	private String message;
 	
-	@Column(name = "catagory", nullable = false)
-	private MessagesCatagory catagory;
+	@Column(name = "message_title", nullable = false)
+	private String message_titles;
 	
 	@ManyToOne(cascade = CascadeType.DETACH)
 	@JoinColumn(name = "grade_id", nullable = true)
@@ -59,12 +59,14 @@ public class Messages implements Serializable {
 		this.message = message;
 	}
 
-	public MessagesCatagory getCatagory() {
-		return catagory;
+	
+
+	public String getMessage_titles() {
+		return message_titles;
 	}
 
-	public void setCatagory(MessagesCatagory catagory) {
-		this.catagory = catagory;
+	public void setMessage_titles(String message_titles) {
+		this.message_titles = message_titles;
 	}
 
 	public Grade getGrade() {

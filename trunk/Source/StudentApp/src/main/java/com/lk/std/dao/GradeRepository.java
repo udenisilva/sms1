@@ -16,5 +16,7 @@ public interface GradeRepository extends CrudRepository<Grade, Long> {
 	public List<Student> findStudentById(long gradeID);
 
 	public List<Grade> findByBranch(Branch branch);
+	
+	public Grade findByGradeAndId(String grade,long gradeId);
 
 }

@@ -11,10 +11,14 @@ public interface GradeService {
 	public List<Grade> findAll();
 	
 	public Grade save(Grade grade);
+	
+	public int remove(Grade grade);
 
 	public Grade findById(long gradeId);
 	
 	public List<Student> findStudentById(long gradeID);
 
 	public List<Grade> findByBranch(Branch branch);
+	
+	public int findByGradeAndId(String grade,long gradeId);
 }

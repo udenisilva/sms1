@@ -6,6 +6,21 @@
 
 <%@ include file="../commons/commonjs.jsp"%>
 
+<head>
+
+<script>
+	function checkAmount(amount){		
+			if(!isNaN(parseFloat(amount))){
+				document.getElementById("add_btn").disabled=false;
+			}else{
+				document.getElementById("add_btn").disabled=true;
+				 toastr.warning("Please Enter Correct Amount");
+				
+			}
+	}
+</script>
+
+</head>
 
 <div class="page-title">
 	<div class="title_left">
@@ -74,7 +89,7 @@
          				<span >Student ID</span>	   
          			</div>
 	         		<div class="col-xs-6 col-sm-4">  
-	         		    <input  class="form-control"  placeholder="student_id" type="text" id="student_id" name="student_id" />
+	         		    <input  class="form-control" required="true"  placeholder="student_id" type="text" id="student_id" name="student_id" />
 	         		</div> 
 	         			<div class="clearfix visible-xs-block"></div>
   					<div class="col-xs-6 col-sm-4"> 	
@@ -116,23 +131,35 @@
          				<span >Academic Year</span>	   
          			</div>	         
 	        	<div class="col-xs-6 col-sm-4">
-         			<select id="academicyear" name="academicyear"  class="form-control" aria-labelledby="menu1">
-						  <option value="2017" >2017</option>
-						  <option value="2018">2018</option>
-						  <option value="2019">2019</option>
-						  <option value="2020">2020</option>
-						  <option value="2021">2021</option>
+         			<select id="academicyear" name="academicyear" required="true"  class="form-control" aria-labelledby="menu1">
+						 
+						  <c:if test="${yearList!=0}" >  
+						  <option value="${yearList}">${yearList}</option>
+						  </c:if>						  
+						    <option value="2010">2010</option>
+						    <option value="2011">2011</option>
+						    <option value="2012">2012</option>
+						    <option value="2013">2013</option>
+						    <option value="2014">2014</option>
+						    <option value="2015">2015</option>
+						    <option value="2016">2016</option>
+						    <option value="2017">2017</option>
+						    <option value="2018">2018</option>
+						    <option value="2019">2019</option>
+						    <option value="2020">2020</option>
+						  
 					</select>
          			</div>	 	          
 	                    
 	     </div>
+	     <br>
 	     
 	     	 <div class="row">
 	        	<div class="col-xs-6 col-sm-4">
          				<span >Payment Type</span>	   
          			</div>	         
 	        	<div class="col-xs-6 col-sm-4">
-         			<select id="paymentType" name="paymentType" class="form-control" aria-labelledby="menu1">
+         			<select id="paymentType" required="true" name="paymentType"  class="form-control" aria-labelledby="menu1">
 						  <option value="Admission_Fee" >Admission_Fee</option>
 						  <option value="Semester_Fee">Semester_Fee</option>
 						  <option value="Repeat_Exam_Fee">Repeat_Exam_Fee</option>
@@ -143,16 +170,19 @@
 	                    
 	     </div>
 	     
+	     <br>
+	     
 	  <div class="row">
 	        	<div class="col-xs-6 col-sm-4">
          				<span >Amount</span>	   
          			</div>	         
 	        	<div class="col-xs-6 col-sm-4">
-         		  <input type="text" id="amount" name="amount"  class="form-control"  placeholder="Amount"  />
+         		  <input type="text" id="amount" name="amount"  onkeypress="checkAmount(this.value);" required="true" class="form-control"  placeholder="Amount"  />
          			</div> 	          
 	                    
 	     </div>
 	     
+	     <br>
 	     
 	       <div class="row">
 	        	<div class="col-xs-6 col-sm-4">
@@ -164,12 +194,14 @@
          			</div>	 
 	     </div>
 	     
+	     <br>
+	     
 	    <div class="row">
 	        	<div class="col-xs-6 col-sm-4">
          				<span > </span>	   
          			</div>	         
 	        	<div class="col-xs-6 col-sm-4">
-         		  <input  class="btn btn-submit"  placeholder="Amount" type="submit" value="Add"/>
+         		  <input  class="btn btn-warning"  disabled="true"   placeholder="Amount" id="add_btn" name="add_btn" type="submit" value="Add"/>
          		</div>  
 	     </div>
 	     

@@ -40,7 +40,8 @@
 				      <li><a  href="studentpayment.htm">Student Payment</a></li>
 				      <li><a   href="studentattendance.htm">Student Attendance</a></li>
 				      <li><a   href="staffprofile.htm">Staff Profile</a></li>
-				      <li><a   href="classschedule.htm">Class Schedule</a></li>
+				      <li><a   href="classschedule_transfer.htm">Class Schedule Transfer</a></li>
+				      <li><a  href="grade_form.htm">Grade </a></li>
 				      <li><a  href="subject_form.htm">Subject </a></li>
 				      <li><a  href="subjectdetails.htm">Subject Details</a></li>
 				      <li><a   href="results.htm">Results</a></li>

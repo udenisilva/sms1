@@ -13,5 +13,11 @@ public interface StudentService {
 
 	public List<Student> findByGrade(Grade grade);
 	
+	public String getLastStudentDetails();
+	
+	public int getNextStudent_id();
+	
+	public List<Student> findAll();
+	
 
 }

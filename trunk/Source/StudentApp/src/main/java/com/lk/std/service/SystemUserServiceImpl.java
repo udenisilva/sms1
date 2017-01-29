@@ -58,11 +58,21 @@ public class SystemUserServiceImpl implements SystemUserService {
   @Override
   public String validateUsername(String username) {
     SystemUser user = systemUserRepository.findByUserName(username);
+    try{
     if (user == null) {
       return ApplicationConstants.SUCCESS;
     } else {
-      return ApplicationConstants.ERROR;
+    	if(user.getUserId()!=0){
+    		return ApplicationConstants.ERROR;
+    	}else{
+    		return ApplicationConstants.SUCCESS;
+    	}
+      
     }
+    
+    }catch (Exception e) {
+    	return ApplicationConstants.SUCCESS;
+	}
   }
  
 

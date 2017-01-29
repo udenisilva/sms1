@@ -8,7 +8,7 @@
 <div class="col-md-3 left_col">
 	<div class="left_col scroll-view">
 		<div class="navbar nav_title" style="border: 0;">
-			<a href="/olsims/" class="site_title"><i class="fa fa-area-chart"></i> <span>NBRO</span></a>
+			<a href="/olsims/" class="site_title"><i class="fa fa-area-chart"></i> <span>STD</span></a>
 		</div>
 		<div class="clearfix"></div>
 
@@ -18,7 +18,7 @@
 		<div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
 
 			<div class="menu_section">
-				<h3>National Building Research Organization (NBRO)</h3>
+				<h3>Student Management System (STD)</h3>
 				<br> <br>
 
 				<ul class="nav side-menu">

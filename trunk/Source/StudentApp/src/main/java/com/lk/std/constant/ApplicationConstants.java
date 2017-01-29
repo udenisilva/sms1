@@ -8,6 +8,7 @@ public class ApplicationConstants {
   public static final String SUCCESS = "suc";
   public static final String ERROR = "err";
   public static final String MESSAGE = "msg";
+  public static final String EXISTS_USER_NAME = "exists_user_name";
 
   public static final String FILE_TYPE_PDF = "PDF";
   public static final String FILE_TYPE_WORD = "WORD";

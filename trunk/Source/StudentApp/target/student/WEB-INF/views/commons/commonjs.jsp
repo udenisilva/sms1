@@ -130,6 +130,24 @@ function getUserDesignation(selectFieldId,displayFieldId){
 	});
 }
 
+function getUserDesignation(selectFieldId,displayFieldId){
+	var userID = $("#"+selectFieldId).val();	
+	$.ajax({
+	  type: "GET",
+	  contentType: "application/json",
+      dataType: "text",
+	  url: "getGradeSubject.do",
+	  data: {"gradeId":userID},
+	  success: function(data){
+		  // alert(data);
+		  $("#"+displayFieldId).val(data);
+	  },
+	  error: function(data){
+	  	alert("error");
+	  }
+	});
+}
+
 /* ----------------------------------------- upload files ajax ------------------------------------------------- */
 
 //function for check the upload is supported for using browser
@@ -422,7 +440,9 @@ $(function(){
     toastr.success("<spring:message code='application.common.message.success.save' />");
   }else if(getParam("msg") == "err"){
     toastr.error("<spring:message code='application.common.message.error.save.message' />", "<spring:message code='application.common.message.error.save.title' />");
-  }
+  }else if(getParam("msg") == "exists_user_name"){
+	  toastr.warning("User Name Is Exists Please Try another User Name");
+	}
 });
 
 function validatePhone (txtPhone,massage) { 

@@ -12,6 +12,8 @@ public interface SystemUserRepository extends CrudRepository<SystemUser, Long> {
   public SystemUser findByUserName(String userName);
 
   public SystemUser findByUserId(long userId);
+  
+
 
   
 }

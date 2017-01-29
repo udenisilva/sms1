@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -17,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 import com.lk.std.constant.ApplicationConstants;
 import com.lk.std.model.Branch;
 import com.lk.std.model.Grade;
+import com.lk.std.model.Student;
 import com.lk.std.model.Subject;
 import com.lk.std.service.BranchService;
 import com.lk.std.service.GradeService;
@@ -35,6 +37,43 @@ public class SubjectController {
 	private GradeService gradeService;
 	
 	
+	  @RequestMapping(value = "/select_branch_details", method = RequestMethod.GET)
+	  public ModelAndView select_branch_details(HttpServletRequest request) {
+	    ModelMap modelMap = new ModelMap(); 	
+	    System.out.println("LOAD SELECTD BRANCH DETAILS ");
+	    List<Subject> sLi=subjectServices.findAll();
+	    long branchId=0;
+	    try {
+			if (!StringUtils.isBlank(request.getParameter("branch_id"))) {
+				branchId = Long.parseLong(request.getParameter("branch_id").trim());
+			}
+			if (branchId > 0) {
+				sLi=subjectServices.findAllSubjectsByBranchId(branchId);
+			} else {
+			//	student = new Student();
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	    
+	    List<Branch> brLi=branchServices.findAll();
+	   
+	    List<Grade> grade=gradeService.findAll();
+	    
+	   //  List<Subject> sL2i=subjectServices.getSubjectDetails(1);
+	   
+	  
+	     Subject s=new Subject();
+	     modelMap.addAttribute("subject",s);	    
+	    modelMap.addAttribute("brLi",brLi);
+	    modelMap.addAttribute("brLi2",brLi);
+	    modelMap.addAttribute("sLi",sLi);
+	    modelMap.addAttribute("action","new");	
+	    modelMap.addAttribute("grade",grade);
+	    return new ModelAndView("subject", modelMap);	    
+	  }
+	
+	
 	  @RequestMapping(value = "/subject_form", method = RequestMethod.GET)
 	  public ModelAndView getHomePage(HttpServletRequest request) {
 	    ModelMap modelMap = new ModelMap(); 	
@@ -48,11 +87,14 @@ public class SubjectController {
 	   
 	  
 	     Subject s=new Subject();
-	  modelMap.addAttribute("subject",s);	    
+	     s.setCode(subjectServices.generateNextSubjectCode());
+	     
+	     modelMap.addAttribute("subject",s);	    
 	    modelMap.addAttribute("brLi",brLi);
+	    modelMap.addAttribute("brLi2",brLi);
 	    modelMap.addAttribute("sLi",sLi);
 	    modelMap.addAttribute("action","new");	
-	    modelMap.addAttribute("grade",grade);
+	    modelMap.addAttribute("gradeList",grade);
 	    return new ModelAndView("subject", modelMap);	    
 	  }
 	  
@@ -73,6 +115,8 @@ public class SubjectController {
 	    modelMap.addAttribute("subject",s);	    
 	    modelMap.addAttribute("brLi",brLi);
 	    modelMap.addAttribute("sLi",sLi);
+	    List<Grade> grade=gradeService.findAll();
+	    modelMap.addAttribute("gradeList",grade);
 	    
 	    return new ModelAndView("subject", modelMap);
 	    
@@ -88,6 +132,7 @@ public class SubjectController {
 	    Subject s=new Subject();
 	    modelMap.addAttribute("subject",s);	    
 	    modelMap.addAttribute("brLi",brLi);
+	    modelMap.addAttribute("brLi2",brLi);
 	    
 	    return new ModelAndView("subject", modelMap);
 	    
@@ -116,27 +161,32 @@ public class SubjectController {
 		    if(subject!=null) {
 		    	try{
 		    			//return "redirect:subject.htm?" + ApplicationConstants.MESSAGE + "="+ ApplicationConstants.SUCCESS;
-		    		 modelMap.addAttribute(ApplicationConstants.MESSAGE,ApplicationConstants.SUCCESS);
+		    		modelMap.addAttribute("result","success");
 		    		    List<Branch> brLi=branchServices.findAll();
 		    		    List<Subject> sLi=subjectServices.findAll();
 		    		    
 		    		 
+
 		    		     Subject s=new Subject();
+		    		     s.setCode(subjectServices.generateNextSubjectCode());
 		    		    modelMap.addAttribute("subject",s);	    
 		    		    modelMap.addAttribute("brLi",brLi);
+		    		    modelMap.addAttribute("brLi2",brLi);
 		    		    modelMap.addAttribute("sLi",sLi);
 		    		    modelMap.addAttribute("action","new");	   
+		    		    List<Grade> grade=gradeService.findAll();
+		    		    modelMap.addAttribute("gradeList",grade);
 		    		     
 		    		 
 		    		 
 		    		   return new ModelAndView("subject", modelMap);
 			    }catch (Exception e) {
-			    	modelMap.addAttribute(ApplicationConstants.MESSAGE,ApplicationConstants.ERROR);
+			    	modelMap.addAttribute("result","failed");
 			    	   return new ModelAndView("subject", modelMap);
 			    	//  return "redirect:subject.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
 				}
 		    }else{	
-		    	modelMap.addAttribute(ApplicationConstants.MESSAGE,ApplicationConstants.ERROR);
+		    	modelMap.addAttribute("result","failed");
 		    	   return new ModelAndView("subject", modelMap);
 		    	//return "redirect:subject.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
 		    }
@@ -151,22 +201,27 @@ public class SubjectController {
 			    	    List<Subject> sLi=subjectServices.findAll();
 			    	    
 			    	 
-			    	     Subject s=new Subject();
+			    	    Subject s=new Subject();
+		    		     s.setCode(subjectServices.generateNextSubjectCode());
 			    	    modelMap.addAttribute("subject",s);	    
 			    	    modelMap.addAttribute("brLi",brLi);
+			    	    modelMap.addAttribute("brLi2",brLi);
 			    	    modelMap.addAttribute("sLi",sLi);
-			    	    modelMap.addAttribute("action","new");	   
+			    	    modelMap.addAttribute("action","new");	  
+			    	    
+			    	    List<Grade> grade=gradeService.findAll();
+			    	    modelMap.addAttribute("gradeList",grade);
 			    	    
 			    		return new ModelAndView("subject", modelMap);
 			    		//	return "redirect:subject.htm?" + ApplicationConstants.MESSAGE + "="+ ApplicationConstants.SUCCESS;
 			    		
 				    }catch (Exception e) {
-				    	modelMap.addAttribute(ApplicationConstants.MESSAGE,ApplicationConstants.ERROR);
+				      	modelMap.addAttribute("result","failed");
 				    	   return new ModelAndView("subject", modelMap);
 				    	//  return "redirect:subject.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
 					}
 			    }else{
-			    	modelMap.addAttribute(ApplicationConstants.MESSAGE,ApplicationConstants.ERROR);
+			      	modelMap.addAttribute("result","failed");
 			    	   return new ModelAndView("subject", modelMap);
 			    //	return "redirect:subject.htm?" + ApplicationConstants.MESSAGE + "=" + ApplicationConstants.ERROR;
 			    }	    	

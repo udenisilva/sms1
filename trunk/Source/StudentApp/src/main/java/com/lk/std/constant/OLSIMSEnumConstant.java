@@ -135,6 +135,32 @@ public class OLSIMSEnumConstant {
 	      return LOOKUP.get(code);
 	    }
 	  }
+  
+  public enum TransferStatus {
+	   NOT_TRANSFER(0), TRANSFER(1);
+
+	    private int code;
+
+	    private TransferStatus(int code) {
+	      this.code = code;
+	    }
+
+	    public int getCode() {
+	      return code;
+	    }
+
+	    private static final Map<Integer, TransferStatus> LOOKUP = new HashMap<Integer, TransferStatus>();
+
+	    static {
+	      for (TransferStatus status : EnumSet.allOf(TransferStatus.class)) {
+	        LOOKUP.put(status.getCode(), status);
+	      }
+	    }
+
+	    public static TransferStatus fromCode(int code) {
+	      return LOOKUP.get(code);
+	    }
+	  }
  
   public enum ActiveStatus {
 	   NONE(0), ACTIVE(1),INACTIVE(2), TERMINATED(3);
@@ -161,6 +187,8 @@ public class OLSIMSEnumConstant {
 	      return LOOKUP.get(code);
 	    }
 	  }
+  
+  
 
   public enum AttendanceStatus {
 	   Non(0), Present(1),Absent(2);

@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>NBRO|Landslide Management Information System</title>
+	<title>|Student Management System|</title>
 	<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />
 
     <!-- Bootstrap core CSS -->
@@ -55,7 +55,7 @@
                         <div class="mid_center">
                             <div style="border: 0;">
 						<a href="/olsims/" class="site_title"><i
-							class="fa fa-area-chart"></i> <span>NBRO</span></a>
+							class="fa fa-area-chart"></i> <span>STUDENT MANAGEMENT SYSTEM</span></a>
 					</div>
                             <form>
 

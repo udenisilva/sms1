@@ -29,13 +29,53 @@ public class BranchServiceImp implements BranchService{
 	}
 
 	@Override
-	public Branch findById(Long id) { 
+	public Branch findById(long id) { 
 		return branchRepository.findById(id);
 	}
 
 	@Override
 	public List<Grade> findGradeById(long branchId) { 
 		return branchRepository.findGradeById(branchId);
+	}
+
+	@Override
+	public int nextBranchId() {
+		
+		int id=0;
+		
+		try{
+			
+			id=branchRepository.getNextbranch_id();
+			
+		}catch (Exception e) {
+			id=1;
+		}
+		return id;
+	}
+
+	@Override
+	public String nextBranchCode() {
+		String newCode="";
+		
+		try{
+		List<String> codeList=(List<String>) branchRepository.getNextBranch_code();
+		String code="";
+		for (String string : codeList) {
+			code=string;
+		}
+		
+		String ss[]=code.split("-");
+		String id=ss[1];
+		int nextId=Integer.parseInt(id)+1;
+		
+		 newCode="B-"+nextId;
+		}catch(Exception exx){
+			exx.printStackTrace();
+			 newCode="B-1";		
+		}
+		
+		
+		return newCode;
 	}
 
 }
