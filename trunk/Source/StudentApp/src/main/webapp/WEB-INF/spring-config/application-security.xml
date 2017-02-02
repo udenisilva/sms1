@@ -25,8 +25,9 @@
 		<security:intercept-url pattern="/userLogin.htm" access="permitAll" />
 
 		<security:intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')" />
+		<security:intercept-url pattern="/parent/**" access="hasRole('PARENT')" />		
 		<security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
-
+		
 		<security:form-login login-page="/userLogin.htm" 
 		    default-target-url="/home.htm"
 			authentication-failure-url="userLogin.htm?login_error=1" 

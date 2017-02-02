@@ -23,7 +23,7 @@
 		<security:intercept-url pattern="/index.jsp" access="permitAll" />
 		<security:intercept-url pattern="/accessDenied.jsp"	access="permitAll" />
 		<security:intercept-url pattern="/userLogin.htm" access="permitAll" />
-
+ 		<security:intercept-url pattern="/parent/**" access="hasAnyRole('ROLE_USER','PARENT')" />
 		<security:intercept-url pattern="/**" access="hasAnyRole('ROLE_ADMIN','ROLE_USER')" />
 		<security:intercept-url pattern="/admin/**" access="hasRole('ROLE_ADMIN')" />
 

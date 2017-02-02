@@ -156,6 +156,7 @@ public class ParentDetailsController {
 
 		UserRole userRoleF = new UserRole();
 		userRoleF.setUserRoleType(UserRoleType.PARENT);
+		userRoleF.setUserRoleType(UserRoleType.ROLE_USER);
 		userRolesF.add(userRoleF);
 		systemUserF.setUserRoles(userRolesF);
 		
@@ -173,6 +174,7 @@ public class ParentDetailsController {
 		List<UserRole> userRolesM = new ArrayList<UserRole>();
 		UserRole userRoleM = new UserRole();
 		userRoleM.setUserRoleType(UserRoleType.PARENT);
+		userRoleM.setUserRoleType(UserRoleType.ROLE_USER);
 		userRolesM.add(userRoleM);
 		systemUserM.setUserRoles(userRolesM);
 		
